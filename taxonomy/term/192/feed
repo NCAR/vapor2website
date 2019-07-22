@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.vapor.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>VAPOR | Computational Information Systems Laboratory - Installation</title>
+ <link>https://www.vapor.ucar.edu/taxonomy/term/192</link>
+ <description>Support concerning installation of anything VAPOR related.
+</description>
+ <language>en</language>
+<item>
+ <title>Problem starting Vapor</title>
+ <link>https://www.vapor.ucar.edu/forum/problem-starting-vapor</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi. I am a new user of Vapor. I installed VAPOR 3 following the instruction in the website. I tried opening vapor but there were errors that popped out. 
+
+Unable to load library icui18n &quot;Cannot load library icui18n: (icui18n: cannot open shared object file: No such file or directory)&quot; 
+
+And the GUI shows,
+
+InitializeGL failure
+OpenGL version &quot;3.1 Mesa 18.2.2&quot; is too low and is not supported
+
+
+Please help? Thank you so much.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 27 Feb 2019 05:03:31 +0000</pubDate>
+ <dc:creator>ronald.gil.bilang_667750</dc:creator>
+ <guid isPermaLink="false">29791 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/problem-starting-vapor#comments</comments>
+</item>
+<item>
+ <title>How to start the GUI of VAPOR3 on Linux </title>
+ <link>https://www.vapor.ucar.edu/forum/how-start-gui-vapor3-linux</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi, &lt;/p&gt;
+&lt;p&gt;I followed the instructions on the website to download and install VAPOR3 on my Linux system CentOS 7. &lt;a href=&quot;https://www.vapor.ucar.edu/docs/installation&quot;&gt;https://www.vapor.ucar.edu/docs/installation&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Then under the directory ..../VAPOR3/VAPOR3-3.0.0-Linux/bin, I typed &amp;quot;./vapor&amp;quot; to try to start the GUI of VAPOR3, but an error message was given in the terminal:&lt;br /&gt;
+vapor: error while loading shared libraries: liblzma.so.5: cannot open shared object file: No such file or directory&lt;/p&gt;
+&lt;p&gt;I&amp;#039;m wondering if any user environment setup is required before running VAPOR3? &lt;/p&gt;
+&lt;p&gt;Thank you for your help!  &lt;/p&gt;
+&lt;p&gt;Best,&lt;br /&gt;
+Qingfeng&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 18 Dec 2018 22:46:28 +0000</pubDate>
+ <dc:creator>caoxx409_660429</dc:creator>
+ <guid isPermaLink="false">29768 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/how-start-gui-vapor3-linux#comments</comments>
+</item>
+<item>
+ <title>Cannot mix incompatible Qt library</title>
+ <link>https://www.vapor.ucar.edu/forum/cannot-mix-incompatible-qt-library</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello, 
+
+I have linux, I went through all the different step, but somehow I am not able to start vapor. When I write vaporgui ina command line, it comlains about my library. 
+
+Cannot mix incompatible Qt library (version 0x40807) with this library (version 0x40806)
+Aborted (core dumped)
+
+Any idea what&#039;s wrong?
+
+Thanks&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 17 May 2018 21:53:36 +0000</pubDate>
+ <dc:creator>MATTEDOMINIC3_665440</dc:creator>
+ <guid isPermaLink="false">29705 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/cannot-mix-incompatible-qt-library#comments</comments>
+</item>
+<item>
+ <title>how to open vapor interface in ubuntu 16.04? </title>
+ <link>https://www.vapor.ucar.edu/forum/how-open-vapor-interface-ubuntu-1604</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;I have installed binary distribution in my /usr/local path. I have executed the sh file. But how to open vapor interface?&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 11 Jan 2018 06:39:37 +0000</pubDate>
+ <dc:creator>devshreemandal_664714</dc:creator>
+ <guid isPermaLink="false">29686 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/how-open-vapor-interface-ubuntu-1604#comments</comments>
+</item>
+<item>
+ <title>Unable to install on Ubuntu 16.04 VAPOR dependencies</title>
+ <link>https://www.vapor.ucar.edu/forum/unable-install-ubuntu-1604-vapor-dependencies</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello,
+          I am installing VAPOR on a brand new box Ubuntu 16.04 LTS (32 gb ram) and I am unable to install from source the following dependencies - libgeotiff and ftgl. I am using the same version you have described in the documentation-&lt;a href=&quot;https://www.vapor.ucar.edu/internal/downloads/source-distributions&quot;&gt;https://www.vapor.ucar.edu/internal/downloads/source-distributions&lt;/a&gt;
+
+Can you guide me on how I could go about fixing the install errors so that I can use VAPOR ?
+
+Best regards,
+Ashwin.
+
+Here are the logs 
+
+make  all-recursive
+make[1]: Entering directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5&#039;
+Making all in src
+make[2]: Entering directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5/src&#039;
+make[2]: Nothing to be done for &#039;all&#039;.
+make[2]: Leaving directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5/src&#039;
+Making all in test
+make[2]: Entering directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5/test&#039;
+make[2]: Nothing to be done for &#039;all&#039;.
+make[2]: Leaving directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5/test&#039;
+Making all in demo
+make[2]: Entering directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5/demo&#039;
+/bin/bash ../libtool --tag=CXX   --mode=link g++ -I/usr/local/include/freetype2 -I/usr/local/include/libpng16 -I/usr/local/include  -g -O2 -L/usr/local/lib -lfreetype -lglut  -o simple simple-simple.o  ../src/libftgl.la 
+g++ -I/usr/local/include/freetype2 -I/usr/local/include/libpng16 -I/usr/local/include -g -O2 -o .libs/simple simple-simple.o  -L/usr/local/lib /usr/local/lib/libfreetype.so -lglut ../src/.libs/libftgl.so 
+/usr/bin/ld: simple-simple.o: undefined reference to symbol &#039;glEnable&#039;
+//usr/lib/x86_64-linux-gnu/mesa/libGL.so.1: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+Makefile:327: recipe for target &#039;simple&#039; failed
+make[2]: *** [simple] Error 1
+make[2]: Leaving directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5/demo&#039;
+Makefile:338: recipe for target &#039;all-recursive&#039; failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory &#039;/home/winash12/meteorology_project/ftgl-2.1.3~rc5&#039;
+Makefile:249: recipe for target &#039;all&#039; failed
+make: *** [all] Error 2
+
+
+make  all-recursive
+make[1]: Entering directory &#039;/home/winash12/meteorology_project/libgeotiff-1.4.2&#039;
+Making all in libxtiff
+make[2]: Entering directory &#039;/home/winash12/meteorology_project/libgeotiff-1.4.2/libxtiff&#039;
+/bin/bash ../libtool  --tag=CC   --mode=link gcc -I../ -Iyes -DHAVE_TIFF=1  -g -O2 -O3 -DNDEBUG   -o libxtiff.la  xtiff.lo  -lproj -Lyes -ltiff -lm  
+../libtool: line 6000: cd: yes: No such file or directory
+libtool: link: cannot determine absolute directory name of `yes&#039;
+Makefile:400: recipe for target &#039;libxtiff.la&#039; failed
+make[2]: *** [libxtiff.la] Error 1
+make[2]: Leaving directory &#039;/home/winash12/meteorology_project/libgeotiff-1.4.2/libxtiff&#039;
+Makefile:836: recipe for target &#039;all-recursive&#039; failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory &#039;/home/winash12/meteorology_project/libgeotiff-1.4.2&#039;
+Makefile:592: recipe for target &#039;all&#039; failed
+make: *** [all] Error 2&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sun, 26 Nov 2017 13:04:15 +0000</pubDate>
+ <dc:creator>winash12_660754</dc:creator>
+ <guid isPermaLink="false">29669 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/unable-install-ubuntu-1604-vapor-dependencies#comments</comments>
+</item>
+<item>
+ <title>There is no the third party for 32.</title>
+ <link>https://www.vapor.ucar.edu/forum/there-no-third-party-32</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;why the Vapor3rdParty2015 is just for 32 ?
+and there is no 3rd party for 32&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 26 Sep 2017 00:45:03 +0000</pubDate>
+ <dc:creator>guojian409237405_664165</dc:creator>
+ <guid isPermaLink="false">29665 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/there-no-third-party-32#comments</comments>
+</item>
+<item>
+ <title>CUDA and VAPOR</title>
+ <link>https://www.vapor.ucar.edu/forum/cuda-and-vapor</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi All,
+I am setting up VAPOR on a 64 core server with 2 video cards in it. I have installed the drivers for the cards and CUDA-8.0. Is there an installation flag or a specific way I have to setup VAPOR to have the program utilize the GPU&#039;s?
+Thank You,
+Marshall Stageberg&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 06 Jul 2017 18:48:24 +0000</pubDate>
+ <dc:creator>stma0605_657346</dc:creator>
+ <guid isPermaLink="false">29648 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/cuda-and-vapor#comments</comments>
+</item>
+<item>
+ <title>Code: 4017 Message: No .efc files found in directory:</title>
+ <link>https://www.vapor.ucar.edu/forum/code-4017-message-no-efc-files-found-directory-0</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi there !&lt;/p&gt;
+
+&lt;p&gt;I am new here. I downloaded the binary installation. Unpacked using tar command. Installed through vapor-install.csh in usr/local/vapor-2.6.0. Edited profile to recognize vaporgui as a command.&lt;/p&gt;
+
+&lt;p&gt;Now, I executed vapor-setup.sh and got the following message:
+&lt;/p&gt;
+
+&lt;p&gt;./vapor-setup.sh&lt;/p&gt; 
+&lt;p&gt;######################## WARNING ##############################
+&lt;/p&gt;
+&lt;p&gt;The LD_LIBRARY_PATH environment variable is set.
+&lt;/p&gt;
+
+&lt;p&gt;Some VAPOR applications may fail to run correctly.
+&lt;/p&gt;
+
+&lt;p&gt;To un-set LD_LIBRARY_PATH execute: unset LD_LIBRARY_PATH
+&lt;/p&gt;
+&lt;p&gt;######################## WARNING ##############################
+&lt;/p&gt;
+
+&lt;p&gt;I executed &quot;unset LD_LIBRARY_PATH&quot; again executed vapor-setup.sh
+&lt;/p&gt;
+&lt;p&gt;And then vaporgui
+&lt;/p&gt;
+&lt;p&gt;I am receiving following two messages:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;
+VAPOR Error&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Code: 4017&lt;/p&gt;
+&lt;p&gt;Message: No .efc files found in directory:&lt;/p&gt; 
+
+&lt;p&gt;&lt;strong&gt;VAPoR Banner&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Could not load banner image.
+
+&lt;/p&gt;
+
+&lt;p&gt;I am stuck now and could not find answers in previous threads.
+&lt;/p&gt;
+Please help.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sun, 28 May 2017 10:38:26 +0000</pubDate>
+ <dc:creator>abhi.ujjwal_663324</dc:creator>
+ <guid isPermaLink="false">29638 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/code-4017-message-no-efc-files-found-directory-0#comments</comments>
+</item>
+<item>
+ <title>Parallel VAPOR - Linux</title>
+ <link>https://www.vapor.ucar.edu/forum/parallel-vapor-linux</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi All,
+I was curious if I will have to build VAPOR from source using MPI wrappers to have it install in parallel or if there is an easier way of running vapor in parallel?
+Thank You
+Marshall&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 22 Nov 2016 15:46:57 +0000</pubDate>
+ <dc:creator>stma0605_657346</dc:creator>
+ <guid isPermaLink="false">29580 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/parallel-vapor-linux#comments</comments>
+</item>
+<item>
+ <title>Vapor on tablet or 2 in 1 laptop</title>
+ <link>https://www.vapor.ucar.edu/forum/vapor-tablet-or-2-1-laptop</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Dear Colleagues,
+Is there any large tablet/2-1 laptop hardware (Windows based) that allows to run Vapor smoothly, like Microsoft Surface Pro, Lenovo Yoga ?  
+Thanks,
+Zbigniew Piotrowski&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sun, 30 Oct 2016 10:59:41 +0000</pubDate>
+ <dc:creator>piotrows</dc:creator>
+ <guid isPermaLink="false">29558 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/vapor-tablet-or-2-1-laptop#comments</comments>
+</item>
+</channel>
+</rss>

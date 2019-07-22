@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.vapor.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>VAPOR | Computational Information Systems Laboratory - Sandy  Images</title>
+ <link>https://www.vapor.ucar.edu/term/gallery/sandy-images</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Hurricane Sandy Air-Parcel Trajectories</title>
+ <link>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-air-parcel-trajectories</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/unsteadySouthBarbs0150.jpg?itok=dmuaxOD-&quot; width=&quot;675&quot; height=&quot;547&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hurricane Sandy WRF-ARW air-parcel trajectories, seeded at 1000m every 4h, beginning at 1200 UTC 26 October 2012.  Key features include: rapid ascent of air parcels to the tropopause near the inner core and along the outer radius of Sandy and its western flank.  The potential temperature transition from cold to warm indicates the latent heating as parcels ascend with the storm&#039;s inner core.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 15 Aug 2013 22:22:16 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28840 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-air-parcel-trajectories#comments</comments>
+</item>
+<item>
+ <title>Hurricane Sandy Potential Temperature</title>
+ <link>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-potential-temperature</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/T1000m0150.jpg?itok=WC_xe_lN&quot; width=&quot;675&quot; height=&quot;547&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hurricane Sandy WRF-ARW 1000m potential temperature with horizontal wind vectors.  Key features include:  enhancement of Sandy&#039;s inner warm-core temperature when passing over the axis of the Gulf Stream; cyclonic encirclement of the cold continental polar air.  Both processes increased the baroclinicity and wind speeds surrounding Sandy&#039;s warm inner core and decreased the central pressure preceding landfall.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 15 Aug 2013 22:17:39 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28843 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-potential-temperature#comments</comments>
+</item>
+<item>
+ <title>Hurricane Sandy Horizontal Wind Speed</title>
+ <link>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-horizontal-wind-speed</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/wind1000uv0150.jpg?itok=-SzJBQZR&quot; width=&quot;675&quot; height=&quot;547&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hurricane Sandy WRF-ARW 1000m wind speed with horizontal wind vectors.  Key features include: well-defined wind maximum (&amp;gt;40 m/s) encircling Sandy&#039;s inner core persistent throughout the simulation; development of well-defined outer radius wind maximum conncurrent with cold air encirclement. &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 15 Aug 2013 22:12:34 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28846 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-horizontal-wind-speed#comments</comments>
+</item>
+<item>
+ <title>Hurricane Sandy Radar Reflectivity</title>
+ <link>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-radar-reflectivity</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/dbz0150.jpg?itok=hmZySWGz&quot; width=&quot;675&quot; height=&quot;547&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hurricane Sandy WRF-ARW maximum radar reflectivity overlaid with 1000m horizontal wind vectors.  Key features:  Maintenance of convection near the central core, and widespread convective and stratiform precipitation along the encircling outer wind maximum on the west and southwest flanks of Sandy.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 15 Aug 2013 22:08:06 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28849 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-radar-reflectivity#comments</comments>
+</item>
+<item>
+ <title>Hurricane Sandy Cloud-Top Temperature</title>
+ <link>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-cloud-top-temperature</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/cttbarbsA0150.jpg?itok=lLTkbNfQ&quot; width=&quot;675&quot; height=&quot;547&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hurricane Sandy WRF-ARW cloud-top temperature overlayed with 1000m horizontal wind vectors.  Key features include: signature of dramatic anticyclonic outflow aloft on the western flank of Sandy and lower-tropospheric cyclonic cloud rotation and intermittent cold cloud top convective activity near inner core and outer cold air encirclement.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 15 Aug 2013 22:01:30 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28852 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/sandy-images/hurricane-sandy-cloud-top-temperature#comments</comments>
+</item>
+<item>
+ <title>Potential vorticity at 1000 meters</title>
+ <link>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-vorticity-1000-meters</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/sandyAMSPV1000.jpg?itok=BjuZ9vGA&quot; width=&quot;675&quot; height=&quot;535&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Top view of WRF-ARW 1000 meter potential vorticity (PV).  Key feature: encirclement of inner-core PV by the ourt PV filaments and subsequent radial contractionof the outer PV ring during intensification just before landfall.  Colored according to potential vorticity units (PVU).&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 09 Jul 2013 20:18:44 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28813 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-vorticity-1000-meters#comments</comments>
+</item>
+<item>
+ <title>Potential vorticity on the T=322 isosurface, viewed from the south</title>
+ <link>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-vorticity-t322-isosurface-viewed-south</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/sandyAMSPV322T.jpg?itok=2fbrDM6W&quot; width=&quot;675&quot; height=&quot;534&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;WRF-ARW potential vorticity (PV) on the 322-K isentropic surface.  Key features include: Encirclement of Sandy inner-core by 322-K polar stratospheric PV.  Radial contraction of low-level PV ring concurrent with downward-penetration of 322-K PV prio to landfall.  Colored according to potential vorticity units (PVU). Discussed in &lt;a href=&quot;https://ams.confex.com/ams/93Annual/flvgateway.cgi/id/23249?recordingid=23249&quot;&gt;Mel Shapiro&#039;s presentation at the AMS 2013 Townhall&lt;/a&gt; &quot;A research-community perspective of the life cycle of Hurricane Sandy&quot;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 09 Jul 2013 20:15:42 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28810 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-vorticity-t322-isosurface-viewed-south#comments</comments>
+</item>
+<item>
+ <title>Potential vorticity on the T=322 isosurface, viewed from above</title>
+ <link>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-vorticity-t322-isosurface-viewed-above</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/sandyAMSPV322TTop.jpg?itok=k3A-kbPj&quot; width=&quot;675&quot; height=&quot;531&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Top view of WRF-ARW potential vorticity (PV) on the 322-K isentropic surface. Key features include: encirclement of the Sandy inner-core diabatic PV tower by polar stratospheric potential vorticity after 12:00 UTC 29 October 2012; enhancement of extratropical cyclonic wave breaking by Sandy&#039;s anticyclonic outflow jet in its northwestern quadrant. Color indicates potential vorticity units (PVU). Discussed in &lt;a href=&quot;https://ams.confex.com/ams/93Annual/flvgateway.cgi/id/23249?recordingid=23249&quot;&gt;Mel Shapiro&#039;s presentation at the AMS 2013 Townhall&lt;/a&gt; &quot;A research-community perspective of the life cycle of Hurricane Sandy&quot;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 09 Jul 2013 20:08:06 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28825 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-vorticity-t322-isosurface-viewed-above#comments</comments>
+</item>
+<item>
+ <title>Potential temperature at 1000 meters</title>
+ <link>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-temperature-1000-meters</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/sandyAMST1000.jpg?itok=_lm-Uqnl&quot; width=&quot;675&quot; height=&quot;532&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;WRF-ARW simulation of potential temperature at 1000 meters, with horizontal wind vectors.  Key features include: enhancement of Sandy&#039;s inner warm-core temperature when passing over the axis of the Gulf Stream; cyclonic encirclement of the cold continental polar air.  Both processes increased the baroclinicity and wind speed surrounding Sandy&#039;s warm inner core and decreased the central pressure preceding landfall.  Color indicates potential temperature in degrees C. Discussed in &lt;a href=&quot;https://ams.confex.com/ams/93Annual/flvgateway.cgi/id/23249?recordingid=23249&quot;&gt;Mel Shapiro&#039;s presentation at the AMS 2013 Townhall&lt;/a&gt; &quot;A research-community perspective of the life cycle of Hurricane Sandy&quot;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 09 Jul 2013 19:27:59 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28822 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/hurricane-sandy/potential-temperature-1000-meters#comments</comments>
+</item>
+<item>
+ <title>Wind at 1000 meters</title>
+ <link>https://www.vapor.ucar.edu/gallery/hurricane-sandy/wind-1000-meters</link>
+ <description>&lt;div class=&quot;field field-name-field-image-upload field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img src=&quot;https://www.vapor.ucar.edu/sites/default/files/styles/100__wide/public/gallery/images/sandyAMSUV1000.jpg?itok=43lDTYhM&quot; width=&quot;675&quot; height=&quot;534&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Wind at 1000 meters with horizontal wind vectors. Key features include: well-defined wind maximum (&amp;gt; 40 m/s) encircling Sandy&#039;s inner core persistent throughout the simulation; development of well-defined outer radius wind maximum concurrent with cold air enrichment.  Color indicates wind speed in m/s. Discussed in &lt;a href=&quot;https://ams.confex.com/ams/93Annual/flvgateway.cgi/id/23249?recordingid=23249&quot;&gt;Mel Shapiro&#039;s presentation at the AMS 2013 Townhall&lt;/a&gt; &quot;A research-community perspective of the life cycle of Hurricane Sandy&quot;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 09 Jul 2013 19:23:34 +0000</pubDate>
+ <dc:creator>alan</dc:creator>
+ <guid isPermaLink="false">28819 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/hurricane-sandy/wind-1000-meters#comments</comments>
+</item>
+</channel>
+</rss>

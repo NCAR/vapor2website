@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.vapor.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>VAPOR | Computational Information Systems Laboratory - Usage</title>
+ <link>https://www.vapor.ucar.edu/taxonomy/term/198</link>
+ <description>Support for all aspects of usage: command line tools, VAPOR GUI, and more.
+</description>
+ <language>en</language>
+<item>
+ <title>Error visualizing lowest levels of data</title>
+ <link>https://www.vapor.ucar.edu/forum/error-visualizing-lowest-levels-data</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello,
+
+I&#039;m using VAPOR to visualize output from CM1 simulations.  I can confirm that I have data at z = 25 m, my first model vertical grid level.  However, when I try to create a contour plot for, say, reflectivity at z = 25 m, no data plots. In fact, my reflectivity will not plot until I do so for my third vertical level (z = 125 m).  As for the &quot;region&quot; I set for my VAPOR analyses: it is centered on z = 500 m and is 1 km in vertical depth.
+
+Not sure if it&#039;s related or not as I&#039;ve had the above issue previously and did not have the following error message pop up, but this error sometimes pops up when trying to plot other variables at z = 25 m (or variables at certain timesteps):  &quot;Session Save Error 1, creating Data Manager: Failed to read region from variable/timestep/level/lod (zvort, 72, 0, 0)&quot;
+
+Any tips are very much appreciated!  Not sure if I&#039;m missing some trick/setting or if this issue is indicative of some problem in my creation of my VAPOR input files?
+
+Thanks so much!
+
+Best,
+Alicia&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 19 Jun 2019 19:38:51 +0000</pubDate>
+ <dc:creator>amk5375_665346</dc:creator>
+ <guid isPermaLink="false">29817 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/error-visualizing-lowest-levels-data#comments</comments>
+</item>
+<item>
+ <title>VAPOR error</title>
+ <link>https://www.vapor.ucar.edu/forum/vapor-error</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi y&#039;all, 
+
+I am using CReSS (Cloud Resolving Storm Simulator) data in VAPOR. Apparently the data file is in binary (.bin extension file) and I convert it to netcdf via CDO. But when I load the file I get this error message. 
+
+
+&quot;Unclassified error: Code: 1
+Message: Error reading required attribute : DX&quot;
+
+I am using Ubuntu 18.4 and vapor version 2.6.0.RC0&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 13 Jun 2019 01:09:34 +0000</pubDate>
+ <dc:creator>kesguerra22_666650</dc:creator>
+ <guid isPermaLink="false">29814 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/vapor-error#comments</comments>
+</item>
+<item>
+ <title>Flow visualization is not working in VAPOR3</title>
+ <link>https://www.vapor.ucar.edu/forum/flow-visualization-not-working-vapor3</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello
+
+I am using VAPOR3 to visualized WRF output. &lt;p&gt;
+VDC and data files are made using &quot;wrfvdccreate&quot; and &quot;wrf2vdc&quot; as below &lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+&amp;gt; wrfvdccreate wrfout_d01_2016-07-05_06:00:00 test.vdc &lt;/p&gt;&lt;p&gt;
+&amp;gt; wrf2vdc wrfout_d01_2016-07-05_06:00:00 test.vdc &lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+All is working fine, but flow visualization (streamline) does not appear in the
+renderer menu. Barb, contour, isosurface etc are all fine, but NO flow (attached figure) &lt;/p&gt;&lt;p&gt;
+Is it no longer supported, or my data handling misses something?&lt;/p&gt;&lt;p&gt;
+&lt;a&gt; This is my Renderer menu &lt;/a&gt;&lt;/p&gt;&lt;p&gt;
+(I am using macOS 10.14)&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+Thanks for your help&lt;/p&gt;&lt;p&gt;
+Any comment will be very helpful!&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sat, 04 May 2019 01:29:32 +0000</pubDate>
+ <dc:creator>joowan_668152</dc:creator>
+ <guid isPermaLink="false">29812 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/flow-visualization-not-working-vapor3#comments</comments>
+</item>
+<item>
+ <title>Flow visualization (streamline) is missing in Vapor3</title>
+ <link>https://www.vapor.ucar.edu/forum/flow-visualization-streamline-missing-vapor3</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello
+
+I am using VAPOR3 to visualized WRF output. &lt;p&gt;
+VDC and data files are made using &quot;wrfvdccreate&quot; and &quot;wrf2vdc&quot; as below &lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+&amp;gt; wrfvdccreate wrfout_d01_2016-07-05_06:00:00 test.vdc &lt;/p&gt;&lt;p&gt;
+&amp;gt; wrf2vdc wrfout_d01_2016-07-05_06:00:00 test.vdc &lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+All is working fine, but flow visualization (streamline) does not appear in the
+renderer menu. Barb, contour, isosurface etc are all fine, but NO flow (attached figure) &lt;/p&gt;&lt;p&gt;
+Is it no longer supported, or my data handling misses something?&lt;/p&gt;&lt;p&gt;
+&lt;a&gt; This is my Renderer menu &lt;/a&gt;&lt;/p&gt;&lt;p&gt;
+(I am using macOS 10.14)&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+Thanks for your help&lt;/p&gt;&lt;p&gt;
+Any comment will be very helpful!&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sat, 04 May 2019 01:25:28 +0000</pubDate>
+ <dc:creator>joowan_668152</dc:creator>
+ <guid isPermaLink="false">29809 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/flow-visualization-streamline-missing-vapor3#comments</comments>
+</item>
+<item>
+ <title>Import openfoam data to Vapor</title>
+ <link>https://www.vapor.ucar.edu/forum/import-openfoam-data-vapor</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello
+I would like to know if its is possible to import OpenFOAM data to Vapor.
+
+I did search for converters but couldnt succeed.
+I can convert OpenFOAM data to vtk (paraview) .plt(Tecplot) .cas(Ensight).  It would be great if I could atleast convert any of these to .vdf.
+
+Thank you&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 01 May 2019 12:57:41 +0000</pubDate>
+ <dc:creator>M.Chakkingal_668146</dc:creator>
+ <guid isPermaLink="false">29806 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/import-openfoam-data-vapor#comments</comments>
+</item>
+<item>
+ <title>Export to IDL</title>
+ <link>https://www.vapor.ucar.edu/forum/export-idl</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi! 
+
+Why do I get an error message when I click on the &#039;Export to IDL&#039; tab ? I am trying to find a way to import the vapor field lines into idl for further analysis..
+
+Thanks,
+Lily&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 26 Apr 2019 20:30:38 +0000</pubDate>
+ <dc:creator>gakr4055_667866</dc:creator>
+ <guid isPermaLink="false">29803 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/export-idl#comments</comments>
+</item>
+<item>
+ <title>flow visualization - automatic scaling - what it means to set length &gt; 1 ?</title>
+ <link>https://www.vapor.ucar.edu/forum/flow-visualization-automatic-scaling-what-it-means-set-length-1</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi! 
+
+I read here  : &lt;a href=&quot;https://www.vapor.ucar.edu/docs/vapor-gui-general-guide/streamlines-steady-flow&quot;&gt;https://www.vapor.ucar.edu/docs/vapor-gui-general-guide/streamlines-stea...&lt;/a&gt; 
+that the length variable controls &quot;the number of crossings of the data domain of a flow line before the integration is stopped&quot;. 
+And I am wondering what that actually means for a flow line. Does it means that if a line meets a boundary, it is going to stop when length=1 ? And when length=2 for example, it will stop integrating when the line meets the boundaries twice? 
+
+Thanks! 
+
+Lily&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 05 Apr 2019 17:58:10 +0000</pubDate>
+ <dc:creator>gakr4055_667866</dc:creator>
+ <guid isPermaLink="false">29801 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/flow-visualization-automatic-scaling-what-it-means-set-length-1#comments</comments>
+</item>
+<item>
+ <title>vdc file is empty, but no error is reported</title>
+ <link>https://www.vapor.ucar.edu/forum/vdc-file-empty-no-error-reported-0</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi, I&amp;#039;ve used version 2 many times, but now I&amp;#039;m trying to get spun up on using version 3 with some climate model data on an unstructured grid (E3SM). I&amp;#039;m having trouble creating the vdc file. I get an empty file, but there&amp;#039;s no error that something went wrong. It seems that the documentation hasn&amp;#039;t been updated to reflect the new command line tools, so maybe I&amp;#039;m just using the wrong commands.&lt;/p&gt;
+&lt;p&gt;Here are the commands I&amp;#039;m using (shortened for readability):&lt;/p&gt;
+&lt;p&gt;cfvdccreate -force -vars CLDLIQ:LHFLX:TMQ test_case.cam.h2.nc test_case.cam.h1.nc test.vdc&lt;/p&gt;
+&lt;p&gt;cf2vdc -vars CLDLIQ:LHFLX:TMQ test_case.cam.h2.nc test_case.cam.h1.nc test.vdc&lt;/p&gt;
+&lt;p&gt;the output is just this:&lt;br /&gt;
+Copying variable ilev&lt;br /&gt;
+Time step 0&lt;br /&gt;
+Copying variable lev&lt;br /&gt;
+Time step 0&lt;br /&gt;
+Copying variable CLDLIQ&lt;br /&gt;
+Copying variable LHFLX&lt;br /&gt;
+Copying variable TMQ&lt;/p&gt;
+&lt;p&gt;but when do an ncdump on the file there&amp;#039;s no mention of the variables.&lt;/p&gt;
+&lt;p&gt;So what am I doing wrong?&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 02 Apr 2019 21:24:51 +0000</pubDate>
+ <dc:creator>whannah</dc:creator>
+ <guid isPermaLink="false">29799 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/vdc-file-empty-no-error-reported-0#comments</comments>
+</item>
+<item>
+ <title>tiff2geotiff</title>
+ <link>https://www.vapor.ucar.edu/forum/tiff2geotiff</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi, I am a new user of VAPOR. I am trying to convert a tiff file to geotiff file following the instruction in the documentation page of tiff2geotiff.
+
+tiff2geotiff.exe -4 &quot;+proj=latlong +ellps=sphere&quot; -n &quot;119.613 13.9975 122.388 17.8769&quot; NE2_HR_LC_SR.tif test.gtif         
+
+Results shows TIFFOPEN: test.gtif: Permission Denied.
+
+Can someone help me with this? Thanks!&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 26 Mar 2019 04:56:25 +0000</pubDate>
+ <dc:creator>ronald.gil.bilang_667750</dc:creator>
+ <guid isPermaLink="false">29793 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/tiff2geotiff#comments</comments>
+</item>
+<item>
+ <title>Rainfall visualization</title>
+ <link>https://www.vapor.ucar.edu/forum/rainfall-visualization</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;The WRF has RAINNC and RAINC variables in accumulated form. Is there any way I can show the daily rainfall (subtracting the RAIN of previous day) in Vapor directly?&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 25 Feb 2019 06:22:19 +0000</pubDate>
+ <dc:creator>ashishnavale3593_667711</dc:creator>
+ <guid isPermaLink="false">29788 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/rainfall-visualization#comments</comments>
+</item>
+</channel>
+</rss>

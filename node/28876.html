@@ -1,0 +1,1375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="../vapor-installation.html" />
+<link rel="shortlink" href="28876.html" />
+<link rel="shortcut icon" href="../sites/default/themes/troposphere/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>VAPOR Installation | VAPOR | Computational Information Systems Laboratory</title>
+  <style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/system/system.base.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.menus.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.messages.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.theme.css?pv0ud8");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/book/book.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/comment/comment.css?pv0ud8");
+@import url("../sites/all/modules/date/date_api/date.css%3Fpv0ud8.css");
+@import url("../sites/all/modules/date/date_popup/themes/datepicker.1.7.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/field/theme/field.css?pv0ud8");
+@import url("../sites/default/modules/contrib/google_cse/google_cse.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/node/node.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/search/search.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/user/user.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/forum/forum.css?pv0ud8");
+@import url("../sites/all/modules/views/css/views.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/bootstrap.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/base.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/default.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/compatibility.css%3Fpv0ud8.css");
+</style>
+<link type="text/css" rel="stylesheet" href="28876.html" media="all" />
+<style type="text/css" media="all">
+@import url("../sites/default/themes/atmos/css/fonts.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/layout.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/nice_menus_default.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/style.css%3Fpv0ud8.css");
+@import url("../sites/default/files/color/troposphere-81dde954/colors.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_imgcaption.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_tinymce.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/custom.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/troposphere/css/override.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="print">
+@import url("../sites/default/themes/atmos/css/print.css%3Fpv0ud8.css");
+</style>
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie6.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie7.css?pv0ud8" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="../sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_f_6-OzlFXjayKlsU5sJKLwjz7LFQvdIZDm-Mt6jKwyM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_sR3RTelOZw0SR_bvHhelrkLY8DKYJcs5zvhbaS-zcpk.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-332815-8", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/default/files/js/js_ZxgiY_hLe37tS2x4OLfl0ivRyI_9yEJY0M6vxub3dJI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"troposphere","theme_token":"70-l8i8P157RdEUrLSU-1GwYKlyPOMV63Ocp2P6Z3GQ","js":{"sites\/default\/modules\/contrib\/google_cse\/google_cse_results.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/default\/themes\/atmos\/js\/site.js":1,"sites\/default\/themes\/atmos\/js\/atmos_imgcaption.js":1,"sites\/default\/themes\/troposphere\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"":1,"sites\/default\/themes\/atmos\/css\/fonts.css":1,"sites\/default\/themes\/atmos\/css\/layout.css":1,"sites\/default\/themes\/atmos\/css\/nice_menus_default.css":1,"sites\/default\/themes\/atmos\/css\/style.css":1,"sites\/default\/themes\/troposphere\/css\/colors.css":1,"sites\/default\/themes\/atmos\/css\/atmos_imgcaption.css":1,"sites\/default\/themes\/atmos\/css\/atmos_tinymce.css":1,"sites\/default\/themes\/atmos\/css\/custom.css":1,"sites\/default\/themes\/troposphere\/css\/override.css":1,"sites\/default\/themes\/atmos\/css\/print.css":1,"sites\/default\/themes\/troposphere\/css\/ie.css":1,"sites\/default\/themes\/troposphere\/css\/ie6.css":1,"sites\/default\/themes\/troposphere\/css\/ie7.css":1}},"googleCSE":{"cx":"016712339613867830978:nuqoefb2ivy","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/\/www.google.com\/cse":true,"\/node\/28876":true}});
+//--><!]]>
+</script>
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'rpo4dvf'
+    };
+    var d = false;
+    var tk = document.createElement('script');
+    tk.src = '//use.typekit.net/' + config.kitId + '.js';
+    tk.type = 'text/javascript';
+    tk.async = 'true';
+    tk.onload = tk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (d || rs && rs != 'complete' && rs != 'loaded') return;
+      d = true;
+      try { Typekit.load(config); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tk, s);
+  })();
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-28876 node-type-page featured" >
+  <div id="skip-link">
+    <a href="28876.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!-- TOP NAV -->
+<div id="header-wrap">
+<!-- <div id="navigation"></div> -->
+<div id="header" class="clear-block>">
+          <div id="navigation">
+<div id="featured" class="clear-block">
+      <div class="region region-featured">
+    <div id="block-google-cse-google-cse" class="block block-google-cse">
+
+    <h2>Search</h2>
+  
+  <div class="content">
+    
+
+  <form action="https://www.google.com/cse" method="get" id="google-cse-results-searchbox-form" accept-charset="UTF-8"><div><input type="hidden" name="cx" value="016712339613867830978:nuqoefb2ivy" />
+<input type="hidden" name="cof" value="FORID:0" />
+<div class="form-item form-type-textfield form-item-query">
+  <label for="edit-query">Enter your keywords </label>
+ <input type="text" id="edit-query" name="query" value="" size="40" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-sa" name="op" value="Search" class="form-submit" /><input type="hidden" name="ie" value="utf-8" />
+<input type="hidden" name="form_build_id" value="form-NCXg5C06kO4uOFlpgVAHujiHjGwBWsQd2JFgLok4bP4" />
+<input type="hidden" name="form_id" value="google_cse_results_searchbox_form" />
+</div></form>
+<div id="google-cse-results">
+  <gcse:searchbox-only gname="google_cse"></gcse:searchbox-only>  <noscript>
+    You must enable JavaScript to view the search results.  </noscript>
+</div>
+  </div>
+</div>
+  </div>
+</div> <!-- /featured --> </div><!-- end navbar -->    
+  <div class="section clearfix align-center-wrapper">   
+<div id="logo-nav-wrapper">
+      <div id="logo-floater">
+      <a href="https://www.vapor.ucar.edu/" title="Home" rel="home" id="logo">
+        <img src="../sites/default/themes/troposphere/images/vapor-logo-white.png" alt="Home" />
+      </a>
+    </div>
+    <div id="main-nav-wrapper">
+        </div>
+</div>
+
+
+    <div id="name-and-slogan">
+
+      <div id="site-name" class="element-invisible">
+        <strong>
+          <a href="https://www.vapor.ucar.edu/" title="Home" rel="home"><span>VAPOR | Computational Information Systems Laboratory</span></a>
+        </strong>
+      </div>
+
+<div class="nsf-logo"><img src="https://www.vapor.ucar.edu/sites/default/themes/troposphere/images/nsf.png"/></div><!-- .slogan -->
+    </div> <!-- /#name-and-slogan -->
+
+
+  </div> <!-- /.section -->
+</div> <!-- /#header -->
+<div id="header-sub-nav">
+  <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="28876.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-243ykHPWg1Tdo7bfq2PRKXpRHXGPrwqqgg6v1gtXT50" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu">
+
+    
+  <div class="content">
+    <div  class="tb-megamenu tb-megamenu-main-menu">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="icon-reorder"></i>
+    </button>
+    <div class="nav-collapse collapse always-show">
+    <ul  class="tb-megamenu-nav nav level-0 items-6">
+  <li  data-id="6983" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    VAPOR 3          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="6989" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-3-overview" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6986" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/docs/features" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="6998" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/docs/installation" class="">
+        
+    Installation          </a>
+  </li>
+
+<li  data-id="6995" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/docs/training" class="">
+        
+    Training          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="200" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    VAPOR          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li  data-id="6358" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/overview" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6340" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/vapor-features" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="5830" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/news" class="">
+        
+    News          </a>
+  </li>
+
+<li  data-id="6343" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/credits" class="">
+        
+    Credits          </a>
+  </li>
+
+<li  data-id="6346" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../page/citing-vapor-your-work.html" class="">
+        
+    Citing VAPOR          </a>
+  </li>
+
+<li  data-id="6349" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/publications" class="">
+        
+    Publications          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5616" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    Documentation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="980" style="width: 980px;" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-4" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5760" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="https://www.vapor.ucar.edu/docs/usage" class="mega-group-title">
+        
+    Usage          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-8">
+  <li  data-id="6379" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/usage/getting-started-vapor" class="">
+        
+    Getting Started          </a>
+  </li>
+
+<li  data-id="6382" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-data-preparation/vapor-data-preparation.html" class="">
+        
+    Data Preparation          </a>
+  </li>
+
+<li  data-id="6352" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-tutorials" class="">
+        
+    Tutorials          </a>
+  </li>
+
+<li  data-id="6385" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/usage/vapor-gui-general-guide" class="">
+        
+    VAPOR GUI Guide          </a>
+  </li>
+
+<li  data-id="6388" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-gui-help/render-tabs.html" class="">
+        
+    VAPOR GUI Renderer Guide          </a>
+  </li>
+
+<li  data-id="6391" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/data-analysis-vapor/data-analysis-vapor.html" class="">
+        
+    Data Analysis          </a>
+  </li>
+
+<li  data-id="6355" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-presentations" class="">
+        
+    Presentations          </a>
+  </li>
+
+<li  data-id="6394" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-faq" class="">
+        
+    FAQ          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-6" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5763" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/reference-manuals/reference-manuals.html" class="mega-group-title">
+        
+    Reference          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li  data-id="6397" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/reference-manuals/command-line-interface-reference" class="">
+        
+    Command Line Tools          </a>
+  </li>
+
+<li  data-id="6400" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../page/vapor-idl-extension.html" class="">
+        
+    IDL          </a>
+  </li>
+
+<li  data-id="6403" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/reference-manuals/usage-guides" class="">
+        
+    Usage Guides          </a>
+  </li>
+
+<li  data-id="6530" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/reference-manuals/programming-apis" class="">
+        
+    Programming APIs          </a>
+  </li>
+
+<li  data-id="5658" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://sourceforge.net/projects/vapor" class="">
+        
+    SourceForge Project Site          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="6364" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/vapor-installation/vapor-installation.html" class="mega-group-title">
+        
+    Installation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li  data-id="6367" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-installation/release-notes" class="">
+        
+    Release Notes          </a>
+  </li>
+
+<li  data-id="6370" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-installation/vapor-binary-installation" class="">
+        
+    Binary Installation          </a>
+  </li>
+
+<li  data-id="6373" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-installation/vapor-source-installation" class="">
+        
+    Source Installation          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5661" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="left" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-left dropdown">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    Gallery          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-7">
+  <li  data-id="6555" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/weather" class="">
+        
+    Weather          </a>
+  </li>
+
+<li  data-id="6561" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/climate" class="">
+        
+    Climate          </a>
+  </li>
+
+<li  data-id="6592" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/oceanography" class="">
+        
+    Oceanography          </a>
+  </li>
+
+<li  data-id="6595" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/astrophysics" class="">
+        
+    Astrophysics          </a>
+  </li>
+
+<li  data-id="6519" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/Turbulence" class="">
+        
+    Turbulence          </a>
+  </li>
+
+<li  data-id="6598" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/biology" class="">
+        
+    Biology          </a>
+  </li>
+
+<li  data-id="6601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega dropdown-submenu">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    Archive          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-6">
+  <li  data-id="6607" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/ultra-high-res-sandy-videos" class="">
+        
+    Ultra-High Res Sandy Videos          </a>
+  </li>
+
+<li  data-id="6604" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/original-sandy-videos" class="">
+        
+    Original Sandy Videos          </a>
+  </li>
+
+<li  data-id="6610" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/term/gallery/sandy-images" class="">
+        
+    Sandy Images          </a>
+  </li>
+
+<li  data-id="6616" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/term/gallery/kisti-2014" class="">
+        
+    KISTI Competition 2014          </a>
+  </li>
+
+<li  data-id="6451" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/toy-workshop-2008" class="">
+        
+    Toy Workshop 2008          </a>
+  </li>
+
+<li  data-id="6558" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="https://www.vapor.ucar.edu/gallery/miscellaneous" class="">
+        
+    Miscellaneous          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="6469" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    Downloads          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-3">
+  <li  data-id="6436" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/internal/downloads/binary-distributions" class="">
+        
+    Binary Distributions          </a>
+  </li>
+
+<li  data-id="6439" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/internal/downloads/source-distributions" class="">
+        
+    Source Distributions          </a>
+  </li>
+
+<li  data-id="6442" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/internal/downloads/example-data" class="">
+        
+    Example Data          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5691" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28876.html#" class="dropdown-toggle">
+        
+    Support          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-12" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="5694" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/forum" class="">
+        
+    Forum          </a>
+  </li>
+
+<li  data-id="6406" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="https://www.vapor.ucar.edu/docs/vapor-faq" class="">
+        
+    FAQ          </a>
+  </li>
+
+<li  data-id="5703" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Report Bugs          </a>
+  </li>
+
+<li  data-id="5601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Contact Us          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+      </div>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div> <!-- /#header-wrap -->
+
+
+
+<div id="wrap">
+  <div id="container" class="clear-block">
+
+    <div id="center-wrapper" class="clear-block">
+
+      
+      
+        <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+
+                <div id="tabs-wrapper" class="clear-block"></div>                
+      
+
+
+  <!-- Some content types intentinally strip $node->title in the node-CONTENT_TYPE.tpl.php file.
+  Views and panels are not content types, so no $node->type, but do have $title.  Check for that first.
+  If there is a $node->type, check to see if $node->title exists -->
+<div id="content-head"><div class="breadcrumbs"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="https://www.vapor.ucar.edu/">Home</a></div></div><h1 class="title with-tabs">VAPOR Installation</h1></div>          <div id="main-content" class="clear-block">
+            
+              <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-28876" class="node node-page node-full clearfix">
+
+      
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><h1 style="text-align: center; font-size: x-large">VAPOR Installation Instructions</h1></p>
+<hr>
+<p>VAPOR is available in both binary installation packages and full source
+   installation. Instructions are provided for both types of install. Make
+   sure to review the Dependencies and Release Notes before beginning your
+   installation.
+</p>
+<a id="bininstall"></a>
+<h1>VAPOR Binary Installation Instructions</h1>
+<hr>
+<h3>VAPOR Binary Installation Dependencies</h3>
+<h4>OpenGL Graphics Drivers </h4>
+
+<p>For best rendering performance it is imperative that hardware accelerated 
+   graphics are available on your system, and that an OpenGL driver, optimized 
+   for use with your graphics card, is installed. Under some operating systems,
+   notably Linux, the hardware may be present, but the driver is absent (or 
+   misconfigured). The command below may be helpful on Linux systems for 
+   determining if your OpenGL driver is properly configured (look for the 
+   presence of either the nVidia or ATI vendor string, as appropriate for your 
+   hardware):
+</p>
+
+<pre>
+      glxinfo | grep version
+</pre>
+
+<p>Note that Linux is notorius for uninstalling vendor-provided OpenGL drivers 
+   during OS upgrades
+</p>
+
+<h3>VAPOR Binary Installation Instructions for UNIX</h3>
+
+<p>This document describes the VAPOR installation process for pre-compiled 
+   binaries on UNIX. If you have not already done so, download an appropriate 
+   VAPOR image from the <a href="http://docs.vapor.ucar.edu/page/vapor-download">download site</a>.  Unless otherwise noted in the 
+   release notes below, pre-compiled binaries are built with compiler optimization 
+   enabled, and IDL support turned on.  Sites requiring a different configuration will 
+   need to build VAPOR from source code.</p>
+
+<p>The binary installation process for UNIX is comprised of three basic steps: 
+   1) unpacking the distribution image, 2) running the installation script, 
+   and 3) setting up the user environment. 
+</p>
+
+<h3>Unpacking</h3>
+
+<p>Unpack the compressed tar file containing VAPOR into a scratch workspace 
+   (e.g. /tmp) and change working directories to the distribution subdirectory.
+   The following commands might be used to unpack VAPOR version 1.0 on a Linux 
+   x86_64 system, for example: 
+</p>
+
+<pre>
+      gunzip vapor-2.0.0-Linux_x86_64.tar.gz
+      tar xf vapor-2.0.0-Linux_x86_64.tar
+      cd vapor-2.0.0-Linux_x86_64
+</pre>  
+
+<h3>Installing</h3>
+
+<p>Next, run the <strong>vapor-install.csh</strong> installation script 
+   providing a single argument informing the script of where to install VAPOR. 
+   For example the command 
+</p>
+
+<pre>
+     ./vapor-install.csh /usr/local/apps
+</pre>  
+
+<p>would install VAPOR executables, libraries, and examples in the directory
+<strong> /usr/local/apps/vapor-<em>version</em></strong>, where <em>version</em> is the current version number. 
+For example: /usr/local/apps/vapor-2.0.0</p>
+
+<h4>User Environment Setup </h4>
+
+<p>The VAPOR suite of applications relies on a number of shared libraries and other dependencies. 
+   Users are required to execute a configuration script prior to running any VAPOR 
+   commands. For convenience it is advised that users place this command in their login 
+   script (.login   for C shell or .profile   for other shells).  Once the variables are set in the 
+   login script, there is no   need to run the environment script files for each session.
+</p>
+
+<table border="1" bgcolor="#FFFF00">
+<tr>
+  <td><p><strong>C-shell derivative users (csh, tcsh) </strong></p>
+      <p>If you are a C-shell (csh, tcsh) user you must execute the following 
+         command prior to running any VAPOR utilities:
+      </p>
+      <pre>
+           source <em>vapor_home</em>/bin/vapor-setup.csh
+      </pre>        
+      <p>where <em>vapor_home</em> is the root of the installation directory 
+         for VAPOR (e.g. /usr/local/apps/vapor-2.0.0)</p>        
+      <p><strong>Bourne shell derivative users (ksh, bash, sh) </strong></p>
+      <p>If you are a Bourne shell (sh, bash, ksh) user you must execute the 
+         following command prior to running any VAPOR utilities:
+      </p>
+
+      <pre>
+            . <em>vapor_home</em>/bin/vapor-setup.sh
+      </pre>
+      <p>where <em>vapor_home</em> is the root of the installation directory 
+         for VAPOR (e.g. /usr/local/apps/vapor-2.0.0). Note the &quot;.&quot; is the bourne shell command for 
+         sourcing a file.      </p>
+
+    </td>
+  </tr>
+</table>
+
+<h4>Platform Specific Installation Notes<strong>AIX - all versions</strong></h4>
+
+<p>Only command line utilities are distributed: the VAPOR GUI is NOT included. 
+</p>
+
+<h3>VAPOR Binary Installation Instructions for Windows</h2>
+
+<p>This document describes the VAPOR installation process for pre-compiled 
+  binaries on Windows systems. If you have not already done so, download an 
+  appropriate VAPOR image from the <a href="http://docs.vapor.ucar.edu/page/vapor-download">
+  download site</a>. Unless otherwise noted in the release notes below, 
+  pre-compiled binaries are built with compiler optimization enabled, and IDL 
+  support turned on. Sites requiring a 
+  different configuration will need to build VAPOR from source code.</p>
+
+<h3>To install VAPOR on Windows 2000 or Windows XP:</h3>
+<ol start="1" type="1">
+  <li>If you are using antivirus software, you should disable it during the 
+      installation, as it may interfere with the execution of some scripts 
+      that are run during the install.</li>
+  <li>If you have previously installed VAPOR (version 1.1.0 or later*), uninstall it as follows:
+    <ol>
+      <li>From the start menu click settings-&gt;Control Panel, to launch the Control Panel, and double-click &quot;Add or Remove Programs&quot;.</li>
+      <li>Select VAPOR and click &quot;Remove&quot;, and follow the instructions to remove VAPOR from your computer</li>
+    </ol>
+  </li>
+  <li>Download the file vapor-x.x.x-win32.msi where &lsquo;x.x.x&rsquo; is the 
+      version number.&nbsp; </li>
+  <li>Double-click on the downloaded .msi file to begin the installation.&nbsp;
+      The default installation will install VAPOR in the Program Files 
+      directory.&nbsp; </li>
+
+  <li>On some older versions of windows your system may not be able to execute 
+      the msi installer.&nbsp; On these systems, you should in addition 
+      download the file vapor-x.x.x-win32extras.zip, unzipping it into the 
+      same directory where you downloaded the file vapor-x.x.x-win32.msi.&nbsp;
+      Then double-click on Setup.exe in that directory. </li>
+</ol>
+
+<h3>Installation on Windows Vista Systems:</h3>
+<p>To install VAPOR on Vista systems, a modification to the above instructions is required: User Account Control (UAC) should be temporarily 
+   disabled. To disable UAC, from the control panel, select &quot;user 
+accounts&quot;, and click &quot;turn off user account control&quot;. You will need to restart your system after UAC is disabled. Then proceed to follow the above instructions for Windows XP and 2000. After the installation is complete, UAC can be re-enabled and the system will need to be restarted again.</p>
+
+<p>You can bypass disabling of UAC for installation (avoid two restarts) as follows:</p>
+<ol>
+  <li>Start a command	prompt as an administrator
+    <ol>
+      <li>Navigate to Start-&gt;All Programs-&gt;Accessories-&gt;Command Prompt</li>
+      <li>Right-click on the shortcut that appears and select &quot;Run as Administrator&quot;      </li>
+
+    </ol>
+  </li>
+  <li>Utilize msiexec to install your program:
+    <ol>
+      <li>Enter and run 'msiexec.exe /i &lt;path to vpar-x.x.x-win32.msi&gt;</li>
+      <li>Follow the prompts</li>
+    </ol>
+  </li>
+
+</ol>
+<p>You can launch the VAPOR user interface by double-clicking on the <em>vaporgui</em> <img src="https://www.vapor.ucar.edu/images/icons/icon.png" alt="icon" width="24" 
+   height="24" />&nbsp;icon on your desktop.&nbsp; If you double-click on a 
+   VAPOR session file (*.vss) or on a VAPOR metadata file (*.vdf), this will 
+   launch the VAPOR user interface, and initialize it with the specified file. 
+   You can also launch the VAPOR user interface and the other VAPOR executables
+   (<em>raw2vdf, vdf2raw, vdfcreate, wrfvdfcreate, wrf2vdf, ncdf2vdf,etc, </em>) by typing the command into a windows (DOS)
+   command shell. &nbsp;If you have IDL installed on your system, you are already set 
+up for using the VAPOR IDL library. </p>
+<h3>*Users of VAPOR 1.0.x:</h3>
+<p> If you previously installed VAPOR version 1.0.x on your Windows 
+  system, and did not<em></em> uninstall it, you should uninstall it as follows: </p>
+
+<ol start="1" type="1">
+  <li>Remove the former vapor bin directory (vapor-x.x.x/bin) from your Windows
+    execution path. To do this, click on Start-&gt;Settings-&gt;Control 
+    Panel-&gt;System. On the &quot;Advanced&quot; tab, click 
+    &quot;Environment Variables&quot;, select &quot;path&quot;, and click 
+    &quot;edit&quot;. Remove the vapor bin path and the following semi-colon 
+    from the list. </li>
+  <li>Delete the VAPOR executables that you installed.</li>
+
+  <li>If you put the VAPOR bin directory in your IDL_DLM_PATH, you should 
+    remove it.&nbsp; Click on Start-&gt;Settings-&gt;Control Panel-&gt;System.
+    On the &quot;Advanced&quot; tab, click &quot;Environment Variables&quot;,
+    and edit the IDL_DLM_PATH, removing the path to the former VAPOR bin
+    directory.</li>
+</ol>
+
+<h3>VAPOR Binary Installation Instructions for Mac OS X</h3>
+
+<p>This document describes the VAPOR installation process for pre-compiled
+  binaries on Mac OS X systems. If you have not already done so, download an
+  appropriate VAPOR image from the <a href="http://docs.vapor.ucar.edu/page/vapor-download">
+  download site</a>. Unless otherwise noted in the release notes below,
+  pre-compiled binaries are built with compiler optimization enabled, and IDL
+  support turned on. Sites requiring a
+  different configuration will need to build VAPOR from source code.</p>
+
+<p>On the Mac OS X platform VAPOR is installed via a Mac <em>installation 
+   package</em>, delivered as a <em>disk image</em>. Installation is 
+   trivial:
+</p>
+
+<ol>
+  <li><a href="http://docs.vapor.ucar.edu/page/vapor-download">Download</a> the disk image file 
+      vapor-<em>x.x.x</em>-Darwin_<em>platform</em>.dmg, where '<em>x.x.x</em>'
+      is the version number, and <em>platform</em> is one of 
+      <strong>i386</strong> (intel 32-bit binaries), <strong>x86_64</strong> (intel 64-bit binaries), or 
+      <strong>universal</strong>.</li>
+
+  <li>Double click disk image file.</li>
+  <li>The Mac OS X Finder will open a window displaying the VAPOR installation 
+      package file. Double click on the installation package file and follow 
+      the Mac OS X Installer directions.</li>
+</ol>
+
+<h3>User Environment Setup </h3>
+
+<p>The VAPOR installer provided for the Mac will install the VAPOR <em>application 
+   bundle</em> under /Applications/VAPOR.app. The important instructions below assume the default installation location is chosen. </p>
+
+<table border="1" bgcolor="#FFFF00">
+  <tr>
+    <td><p><strong>C-shell derivative users (csh, tcsh) </strong></p>
+      <p>If you are a C-shell (csh, tcsh) user you must execute the following 
+        command prior to running any VAPOR command line utilities: </p>
+      <pre>
+            source /Applications/VAPOR.app/Contents/MacOS/vapor-setup.csh
+      </pre>
+      <p><strong>Bourne shell derivative users (ksh, bash, sh) </strong></p>
+
+      <p>If you are a Bourne shell (sh, bash, ksh) user you must execute the 
+        following command prior to running any VAPOR command line utilties: </p>
+      <pre>
+             . /Applications/VAPOR.app/Contents/MacOS/vapor-setup.sh
+      </pre>
+    </td>
+  </tr>
+</table>
+
+<a id="srcinstall"></a>
+<h1>VAPOR Source Installation Instructions</h1>
+<hr>
+<p><strong>Note: We strongly recommend using the binary installation whenever possible, and only trying to install from source as a last recourse.</strong></p>
+
+<h3>VAPOR Source Installation Dependencies</h3>
+<h4>3rd Party Applications and Libraries</h4>
+
+<p>VAPOR depends on a small number of 3rd party applications. Before you can
+   begin the installation of VAPOR you must verify the existence of these 3rd
+   party packages and know where they live on your system. If the VAPOR 3rd
+   party dependencies do not already exist, or if they have incompatible
+   version numbers, you must acquire and install appropriate versions. The
+   table below list all 3rd party applications, providing the version number
+   for which VAPOR has been tested against, and a URL for obtaining the
+   software if needed. <strong>Note, in many instances a mismatched version
+   number, particulary a higher version number than what is recommend, will
+   cause no harm</strong>. Try it and see if it works.
+</p>
+<a id="depsrc"></a>
+<table border="1" cellspacing="1">
+  <tr>
+    <th  >Library</th>
+    <th>Version</th>
+    <th border="1">Description</th>
+    <th>URL</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td>Expat</td>
+    <td>2.0.1</td>
+    <td>XML Parser </td>
+    <td><a href="http://expat.sourceforge.net">
+           http://expat.sourceforge.net</a><br />
+        or download version 2.0.1 source from
+        <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/expat-2.0.1.tar.gz">
+        here</a> or windows binary from
+        <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/expat-win32bin-2.0.1.exe">here</a>. </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Qt</td>
+    <td><p>3.3.8b (vapor &lt;= 1.5.2)</p>
+    <p>4.6.1 (vapor &gt;= 2.0)</p></td>
+    <td>Qt (formerly Trolltech's) cross platform development environment </td>
+
+    <td><a href="http://qt.nokia.com">http://qt.nokia.com/</a><br />
+        or simply download 3.3.8b from
+        <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/qt-x11-free-3.3.8b.tar.gz">here</a> , or 4.6.1 from <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/qt-everywhere-opensource-src-4.6.1.tar.gz">here</a>.</td>
+    <td>Qt must be compiled with threads enabled. Open Source versions of Qt
+        for Windows are not available at this time. On the Mac Qt 4.x must be configured with &quot;-cocoa&quot;</td>
+  </tr>
+
+  <tr>
+    <td>netCDF</td>
+    <td>4.0.1</td>
+    <td>Network Common Data Form </td>
+    <td><a href="http://www.unidata.ucar.edu/software/netcdf">http://www.unidata.ucar.edu/software/netcdf</a></td>
+    <td>netCDF must be compiled with -fPIC on x86_64 and ia64 architectures.</td>
+
+  </tr>
+  <tr>
+    <td>PROJ.4</td>
+    <td>4.7.0</td>
+    <td>Cartographics Projections Library</td>
+    <td><a href="http://trac.osgeo.org/proj/">http://trac.osgeo.org/proj/</a>        <br />or download from
+        <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/proj-4.6.1.tar.gz">
+
+           here</a></td>
+    <td>check the Windows install instructions for a prebuilt version</td>
+  </tr>
+  <tr>
+    <td>TIFF</td>
+    <td>3.8.2</td>
+    <td>TIFF Library</td>
+
+    <td><a href="http://www.libtiff.org/">http://www.libtiff.org/</a></td>
+    <td>check the Windows install instructions for a prebuilt version</td>
+  </tr>
+  <tr>
+    <td>GeoTIFF</td>
+    <td>1.2.5</td>
+    <td>Interchange format for georeferenced raster imagery. </td>
+
+    <td><a href="http://trac.osgeo.org/geotiff/">
+           http://trac.osgeo.org/geotiff/</a><br /> or download from
+        <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/libgeotiff-1.2.5.tar.gz">here</a></td>
+    <td>check the Windows install instructions for a prebuilt version</td>
+  </tr>
+  <tr>
+    <td scope="row">Python</td>
+
+    <td>2.6.5</td>
+    <td>Python interpreted language</td>
+    <td><a href="http://www.python.org/">http://www.python.org/</a></td>
+    <td>Not compatible with version 2.7.x or 3.x</td>
+  </tr>
+  <tr>
+    <td scope="row">NumPy</td>
+
+    <td>1.5.0</td>
+    <td>Scientific computuing module for python</td>
+    <td><a href="http://numpy.scipy.org/">http://numpy.scipy.org/</a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td scope="row">Glew</td>
+
+    <td>1.5.1</td>
+    <td>OpenGL extension library</td>
+    <td><a href="http://glew.sourceforge.net/">http://glew.sourceforge.net/</a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td scope="row">HDF5</td>
+
+    <td>1.8.3</td>
+    <td>scientific data model</td>
+    <td><a href="http://www.hdfgroup.org/HDF5/">http://www.hdfgroup.org/HDF5/</a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<p>In addition to the required Open Source libraries described above, a number
+   of optional, commercial applications exist that may enhance VAPOR's
+   capabilities. These not-for-free packages are described below.
+</p>
+
+<table border="1">
+  <tr>
+    <th>Package</th>
+    <th>Version</th>
+    <th>Description</th>
+    <th>URL</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <td>ITT IDL </td>
+    <td>7.0</td>
+    <td>ITT's Interactive Data Language </td>
+    <td><a href="http://www.ittvis.com">www.ittvis.com</a></td>
+    <td>IDL is a  data processing language that when combined with VAPOR
+        provides a powerful environment for qualitative and quantitative data
+        exploration </td>
+  </tr>
+</table>
+
+<h4>OpenGL Drivers </h4>
+<p>For best rendering performance it is imperative that hardware accelerated
+   graphics are available on your system, and that an OpenGL driver, optimized
+   for use with your graphics card, is installed. Under some operating systems,
+   notably Linux, the hardware may be present, but the driver is absent (or
+   misconfigured). The command below may be helpful on Linux systems for
+   determining if your OpenGL driver is properly configured (look for the
+   presence of either the nVidia or ATI vendor string, as appropriate for your
+   hardware):
+</p>
+
+<pre>
+     glxinfo | grep version
+</pre>
+
+<p>Note that Linux is notorius for uninstalling vendor-provided OpenGL drivers
+   during OS upgrades.
+</p>
+
+<h3>VAPOR Source Code Installation Instructions for UNIX and Mac</h3>
+
+<p>The instructions below describes the process for building and installing 
+   VAPOR on UNIX and Mac platforms.</p>
+<table width="716" height="74" border="1" bgcolor="#FFFF00">
+  <tr>
+    <td><p><strong>Note: it is strongly recommended that the <a href="http://docs.vapor.ucar.edu/page/vapor-download">binary installation</a> be used if at all possible. Building from source can be difficult and time consuming.</strong></p>    </td>
+  </tr>
+</table>
+<p>Note to Mac users: the instructions below will not generate a Mac Application (.app file): the resulting vaporgui executable must be invoked from the command line.</p>
+<h4>Unpacking</h4>
+
+<p>After resolving any of VAPOR library <a href="http://docs.vapor.ucar.edu/page/vapor-installation#depsrc">dependencies</a>, you  
+   are ready to begin the build process. If you haven't done so already, 
+   <a href="http://docs.vapor.ucar.edu/page/vapor-download">download the source tar file</a>. 
+   After downloading, uncompress and unpack  the tar file, and then change 
+   working directories to the VAPOR source directory by using  the following 
+   commands or their equivalents:</p>
+
+<pre>
+     gunzip vapor-x.x.x-src.tar.gz
+     tar xf vapor-x.x.x-src.tar
+     cd vapor-x.x.x-src 
+</pre>
+
+<p>where 'x.x.x' is the VAPOR version number. </p>
+
+<h4>Configuration </h4>
+
+<p>The first step in the compilation process is to edit the top-level 
+   <em>options.mk</em> file. This file contains <a href="http://www.gnu.org/software/make/">gmake</a> Makefile macros that 
+   are used to inform the build system of the locations of various 3rd party 
+   packages, and also allows you to configure various optional components. In 
+   particular, the macros with &quot;PATH&quot; suffixes will in most cases need to 
+   be defined to point to the locations of various library and header file paths. Other 
+   macros of interest are the INSTALL_PREFIX and macros with the &quot;IDL&quot; prefix, 
+   which tell the build system where to install VAPOR, and control whether IDL 
+   support routines are generated, respectively. The most up-to-date, and complete 
+   descriptions of these and other variables are found as comments in the <em>options.mk</em> file itself.</p>
+
+<h4>Compiling and Installing </h4>
+
+<p>Once the VAPOR installation system has been configured, you may compile by 
+   simply typing:
+</p>
+
+<pre>
+     gmake
+</pre>
+<p>or possibly just</p>
+<pre>
+     make
+</pre>
+<p>if your version of make is gmake compilant. The build process takes anywhere from a few minutes to a half an hour. 
+  After compiling the software, executable and libraries may be installed by 
+  executing </p>
+<pre>
+     gmake install
+</pre>
+
+<p>Executables, libraries, and header files will be installed to the 
+   installation target directory defined previously in the configuration 
+   step. 
+</p>      
+
+<a id="envsetup"></a>
+<h4>User Environment Setup </h4>
+
+<p>The VAPOR suite of applications relies on a number of shared libraries. Users 
+  will be required to execute a configuration script prior to running any VAPOR commands. 
+  The script <em>vapor_home</em>/bin/vapor-setup.sh should be sourced by all users 
+  before starting a VAPOR session, where <em>vapor_home</em> is the value of 
+  the INSTALL_PREFIX_DIR macro found in the <em>options.mk</em> file used to configure 
+  vapor. For convenience it is advised that users place this command in their login script 
+  (.login   for C shell or .profile   for other shells). Once the variables are set in the login script, 
+  there is no need to run the environment script files for each session. </p>
+
+<table border="1" bgcolor="#FFFF00">
+  <tr>
+    <td><p><strong>C-shell derivative users (csh, tcsh) </strong></p>
+        <p>If you are a C-shell (csh, tcsh) user you must execute the following 
+          command prior to running any VAPOR utilities: </p>
+      <pre>
+              source <em>vapor_home</em>/bin/vapor-setup.csh
+      </pre>
+      <p>where <em>vapor_home</em> is the root of the installation directory 
+        for VAPOR. </p>
+      <p><strong>Bourne shell derivative users (ksh, bash, sh) </strong></p>
+      <p>If you are a Bourne shell (sh, bash, ksh) user you must execute the 
+        following command prior to running any VAPOR utilities: </p>
+      <pre>
+              . <em>vapor_home</em>/bin/vapor-setup.sh
+      </pre>
+      <p>where <em>vapor_home</em> is the root of the installation directory 
+        for VAPOR. Note the &quot;.&quot; is the bourne shell command for 
+        sourcing a file. </p></td>
+  </tr>
+</table>
+
+<h3>VAPOR Source Code Installation Instructions for Windows</h3>
+
+<p>Note that currently, on Windows, only the Microsoft Visual Studio build is 
+   supported.  Also, this builds a 32-bit image; VAPOR has not yet been ported 
+   to 64-bit Windows.  Send e-mail to vapor@ucar.edu if you have questions or 
+   problems with the Windows source build.</p>
+<table width="716" height="74" border="1" bgcolor="#FFFF00">
+  <tr>
+
+    <td><p><strong>Note: it is strongly recommended that the <a href="http://docs.vapor.ucar.edu/page/vapor-download">binary installation</a> be used if at all possible. Building from source can be difficult and time consuming.</strong></p></td>
+  </tr>
+</table>
+<p>Microsoft Visual C++ .NET 2003 or later is required.</p>
+<p>Windows versions of the following libraries and header files must be 
+   installed.
+</p>
+<ul>
+  <li>NetCDF (version 3.6.0) from <a href="http://www.unidata.ucar.edu/software/netcdf">
+         http://www.unidata.ucar.edu/software/netcdf </a></li>
+  <li>Expat version 1.95.6 from <a href="http://expat.sourceforge.net">
+      http://expat.sourceforge.net</a></li>
+  <li>QT (3.3.8b for vapor &lt;= 1.5.2 or 4.6.1  for vapor &gt;= 2.0)  from <a href="http://qt.nokia.com/">
+      http://qt.nokia.com/</a></li>
+  <li>LibTIFF version 3.8 or newer from <a href="http://www.libtiff.org">http://www.libtiff.org</a></li>
+  <li>LibGeoTiff version 1.2.5 or newer from <a href="http://trac.osgeo.org/geotiff">http://trac.osgeo.org/geotiff</a></li>
+  <li>PROJ version 4.6.1 or newer from <a href="http://trac.osgeo.org/proj">http://trac.osgeo.org/proj</a></li>
+  <li>Optionally: IDL version 6.2 from <a href="http://www.ittvis.com/ProductServices/IDL.aspx"> 
+      http://www.ittvis.com/ProductServices/IDL.aspx</a> is needed if you want 
+      to do IDL import/export</li>
+</ul>
+
+<p>Note: LibTiff, LibGeotiff, and PROJ are statically linked on windows. The versions of the libraries and header files that were used to build VAPOR 1.5 are available on the VAPOR website as <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/proj4_win32.zip">proj4_win32.zip</a> (containing proj libraries and headers) and <a href="ftp://ftp.ucar.edu/vapor/3rd-party-src/tiff_win32.zip">tiff_win32.zip</a> (containing headers and libraries for both tiff and geotiff).</p>
+<p>The VAPOR source download file is the same for Windows and Linux.   On Windows, 
+   it&rsquo;s necessary to have the programs &quot;gunzip&quot; and 
+   &quot;tar&quot; on the Windows machine.  These programs can be obtained 
+   from the http://www.cygwin.com website.  To convert the source download 
+   file  to the full source code, first run 'gunzip vapor-1.4.0-src.tar.gz' 
+   and then run 'tar -xf vapor-1.3.2-src.tar'
+</p>
+
+<p>Set the following environment variables:</p>
+
+<ul>
+  <li>QTDIR : directory where debug version of QT is installed</li>
+  <li>QTRELDIR : directory where release version of QT is installed</li>
+  <li>EXPAT_INC_PATH, EXPAT_LIB_PATH : paths to Expat headers and libraries</li>
+  <li>NETCDF_INC_PATH, NETCDF_LIB_PATH :  paths to NetCDF headers and 
+      libraries</li>
+  <li>TIFF_INC_PATH, TIFF_LIB_PATH: paths to TIFF headers and libraries</li>
+  <li>GTIFF_INC_PATH, GTIFF_LIB_PATH: paths to GeoTiff headers and libraries</li>
+  <li>PROJ_INC_PATH, PROJ_LIB_PATH: paths to PROJ headers and libraries</li>
+</ul>
+
+<p>Load the Visual C++ solution file from its directory in the source tree 
+   (make/win32/common/common.sln ) into visual C++, and build the entire 
+   solution.
+</p>
+
+<p>Note:  In order to build the Windows installer project, it will be necessary
+   to specify the paths (on your local machine) to many of the files that are 
+   included in the installation, such as the QT library dll.  The windows installer 
+  does not use environment variables to determine the libraries to install.</p>
+
+
+</div></div></div>  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+          </div>
+          <div class="feed_icons">
+                      </div>
+
+        </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+            <div id="rightcol" class="sidebar">
+            <div class="region region-sidebar-second">
+    <div id="block-nodeblock-22858" class="block block-nodeblock">
+
+    <h2>Download button</h2>
+  
+  <div class="content">
+    <div id="node-22858" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p style="margin: 0;"><a class="button" style="width: 100%; padding: 20px 0;" href="https://www.vapor.ucar.edu/internal/downloads">Download Vapor</a></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#rightcol -->
+    
+  
+    </div> <!-- /center-wrapper -->
+  
+  
+  
+      <div class="footernav">
+        <div class="region region-footer">
+    <div id="block-nodeblock-22831" class="block block-nodeblock">
+
+    <h2>VAPOR Sponsors</h2>
+  
+  <div class="content">
+    <div id="node-22831" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3 style="text-align: center; color: #fff; margin-bottom: 40px; font-size: 20px;">SPONSORS</h3>
+<p><img src="https://www.vapor.ucar.edu/sites/default/files/users/geinosky/vapor-sponsors.png" alt="VAPOR sponsors" width="980" height="132" /></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <!-- OrgNavFooter Script -->
+<script>
+
+// CUSTOM VARIABLES
+var contactLink = "/contact";     // enter your Contact/Feedback link or mailto: link
+var hideOrgNav = false;        // hide the entire OrgNav from view
+var hideFooter = false;          // hide the entire OrgFooter from view
+var hideNSF = false;               // hide the NSF disclaimer
+var footerColor = '#666';       // hex color of the footer font including the #
+
+// DO NOT EDIT BELOW THIS POINT
+var jsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+if(typeof jQuery === "undefined"){
+  document.write("<scr"+"ipt src='"+jsHost+"ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'></scr"+"ipt>");
+}
+document.write("<scr"+"ipt src='https://orgnav.ucar.edu/orgnav.js' type='text/javascript'></scr"+"ipt>");
+</script>
+<noscript><iframe frameborder="0" width="100%" src="https://orgnav.ucar.edu/noscript.html"></iframe></noscript>
+<!-- END OrgNavFooter Script -->  </div>
+</div>
+<div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div id="loginlink" align="center">
+<a href="https://www.vapor.ucar.edu/user">Login</a>
+</div>  </div>
+</div>
+  </div>
+    </div> <!-- /#footernav -->
+  
+  </div><!-- /#container -->
+</div> <!-- /#wrap -->
+<!-- /layout -->
+
+  <script type="text/javascript" src="../sites/default/files/js/js_KpbuXFbunBaGjtuvRkOuscNXQlFkv4Fjgh1fiknomL8.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4903.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+</body>
+</html>

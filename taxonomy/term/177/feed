@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.vapor.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>VAPOR | Computational Information Systems Laboratory - General Discussion</title>
+ <link>https://www.vapor.ucar.edu/taxonomy/term/177</link>
+ <description>Here you can discuss every aspect of VAPOR.
+</description>
+ <language>en</language>
+<item>
+ <title>ncdfvdfcreate excluding vars</title>
+ <link>https://www.vapor.ucar.edu/forum/ncdfvdfcreate-excluding-vars</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;I&#039;m trying to convert an netCDF file to vdf. My variable (b) varies in x,y,z, and t. When I use  &quot;ncdfvdfcreate -dims 64x64x1 -vars b -vars3d b -numts 10 -timedims t -timevars t -extents -1:-1:0:1:1:1 test.nc test.vdf&quot; I get this output:
+
+Created VDF file:
+        Num time steps : 10
+        3D Variable names : 
+        2DXY Variable names : 
+        2DXZ Variable names : 
+        2DYZ Variable names : 
+        Excluded 3D Variable names : b 
+        Excluded 2D Variable names : 
+        Coordinate extents : -1 -1 0 1 1 1
+
+I&#039;m not sure this is a problem, but when I then use  &quot;ncdf2vdf -vars b -numts 10 -timedims t test.nc test.vdf&quot;, I get an error:
+Invalid variable type
+Failed to open VDC variable &quot;b&quot; at time step...
+
+Any help would be appreciated!&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 05 Jun 2018 20:03:08 +0000</pubDate>
+ <dc:creator>nanders4_665536</dc:creator>
+ <guid isPermaLink="false">29728 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/ncdfvdfcreate-excluding-vars#comments</comments>
+</item>
+<item>
+ <title>Displaying multiple data sets at the same time (Version 2.5)</title>
+ <link>https://www.vapor.ucar.edu/forum/displaying-multiple-data-sets-same-time-version-25</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi there,
+
+I have 4 different vdf files that I would like to display at the same time, as I want to see the points at which they intersect. Is there anyway in VAPOR 2.5.0 to perform DVR on all these data sets at the same time?
+
+Thanks for any help&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 09 Feb 2018 16:10:57 +0000</pubDate>
+ <dc:creator>shouston22_664881</dc:creator>
+ <guid isPermaLink="false">29694 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/displaying-multiple-data-sets-same-time-version-25#comments</comments>
+</item>
+<item>
+ <title>hdf5 fille coversion to vdf file</title>
+ <link>https://www.vapor.ucar.edu/forum/hdf5-fille-coversion-vdf-file</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Is there any way to convert .h5 to .vdf file without converting it to binary first?&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 25 Jan 2018 09:09:23 +0000</pubDate>
+ <dc:creator>devshreemandal_664714</dc:creator>
+ <guid isPermaLink="false">29689 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/hdf5-fille-coversion-vdf-file#comments</comments>
+</item>
+<item>
+ <title>Adding User defined images</title>
+ <link>https://www.vapor.ucar.edu/forum/adding-user-defined-images</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;I am trying to add a underlying map image. Any idea on how to get a esri GIS map image into Vapor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 07 Nov 2017 20:33:18 +0000</pubDate>
+ <dc:creator>bryan_664294</dc:creator>
+ <guid isPermaLink="false">29668 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/adding-user-defined-images#comments</comments>
+</item>
+<item>
+ <title>Loading VDF in Python</title>
+ <link>https://www.vapor.ucar.edu/forum/loading-vdf-python</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Can I load a VDF in Python independent of the python editor in vaporgui? 
+
+I&#039;d like to write a data analysis python script that I can run in batch. However, I don&#039;t see any way to load the VDF outside the GUI.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 07 Sep 2017 20:48:38 +0000</pubDate>
+ <dc:creator>kenny.gruchalla</dc:creator>
+ <guid isPermaLink="false">29662 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/loading-vdf-python#comments</comments>
+</item>
+<item>
+ <title>Saved Sessions Dependency on Different Systems</title>
+ <link>https://www.vapor.ucar.edu/forum/saved-sessions-dependency-different-systems</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi everyone,
+
+I created some sessions of VAPOR on my laptop (4GB RAM, 64-bit, Windows 10, Intel i5 processor). I copied the same sessions along with data and tried loading it on a different system (8GB RAM, 64-bit, Windows 8.1, i5 processor) and it worked without any issues. 
+
+When I tried to do the same on another machine of similar configuration as that of the second one, it gave the following error: Failed to initialize udunits: Error parsing unit specification. 
+
+Is there any dependency w.r.t libraries for saved sessions to work on different systems ?
+
+Thanks in advance,
+Arun.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 08 Aug 2017 12:46:10 +0000</pubDate>
+ <dc:creator>dwivedi.arunkumar_658316</dc:creator>
+ <guid isPermaLink="false">29658 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/saved-sessions-dependency-different-systems#comments</comments>
+</item>
+<item>
+ <title>ROMS/ vdf-vdc/ problem with layered grid</title>
+ <link>https://www.vapor.ucar.edu/forum/roms-vdf-vdc-problem-layered-grid</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi&lt;/p&gt;
+&lt;p&gt;I&amp;#039;m using romsvdfcreate to create a vdf and populate a vdc from three roms output files (wc12_ccsra31_his_cycle_avg_29227.nc wc12_ccsra31_his_cycle_avg_29231.nc wc12_ccsra31_his_cycle_avg_29235.nc) and a grid file (UCSC_grid.nc) using:&lt;/p&gt;
+&lt;p&gt;/usr/share/vapor-2.5.0/bin/romsvdfcreate wc12_ccsra31_his_cycle_avg_29227.nc wc12_ccsra31_his_cycle_avg_29231.nc wc12_ccsra31_his_cycle_avg_29235.nc /data/datasets/grids/UCSC_grid.nc /home/smcc/dynamic_data/projects/projects2017/visualization/vapor/roms.vdf&lt;/p&gt;
+&lt;p&gt;When I load the vdf into vaporgui, the coordinate space looks just like a line rather than a box of some sort. I cannot seem to stretch the dimensions into a box, which suggests to me that I have a problem with the layered grid in my vdf and vdc. The vdc does contain a subdirectory called ELEVATION and another called h. &lt;/p&gt;
+&lt;p&gt;Any suggestion as to how to proceed?&lt;/p&gt;
+&lt;p&gt;Best fishes&lt;br /&gt;
+Sam&lt;br /&gt;
+--&lt;br /&gt;
+Sam McClatchie,&lt;br /&gt;
+Supervisory oceanographer,&lt;br /&gt;
+NOAA lead for the CalCOFI program&lt;br /&gt;
+Southwest Fisheries Science Center, NOAA,&lt;br /&gt;
+8901 La Jolla Shores Dr.&lt;br /&gt;
+La Jolla, CA 92037-1509, U.S.A.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 15 Mar 2017 22:00:11 +0000</pubDate>
+ <dc:creator>sam.mcclatchie</dc:creator>
+ <guid isPermaLink="false">29614 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/roms-vdf-vdc-problem-layered-grid#comments</comments>
+</item>
+<item>
+ <title>specifying variable dimensions with ncdfvdfcreate</title>
+ <link>https://www.vapor.ucar.edu/forum/specifying-variable-dimensions-ncdfvdfcreate</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hello&lt;/p&gt;
+&lt;p&gt;I am using ncdfvdfcreate instead of romsvdfcreate to create a vdf and populate a vdc because I do not have a grid file for the ROMS netcdf files that I am using.&lt;/p&gt;
+&lt;p&gt;To create a vdf I am using:&lt;br /&gt;
+# ======================================&lt;br /&gt;
+# create the vdf file using ncdfvdfcreate&lt;br /&gt;
+# specify both the variables and the dimensions of those variables&lt;/p&gt;
+&lt;p&gt;/usr/share/vapor-2.5.0/bin/ncdfvdfcreate -timedims ocean_time -timevars ocean_time -vars temp:salt -dims s_rho:xi_rho:eta_rho wc12_ccsra31_his_cycle_avg_29227.nc wc12_ccsra31_his_cycle_avg_29231.nc wc12_ccsra31_his_cycle_avg_29235.nc /data/Dropbox/dynamic_data/projects/projects2017/visualization/vapor/roms.vdf&lt;/p&gt;
+&lt;p&gt;# populate the vdc file using the vdf file just created/ works&lt;/p&gt;
+&lt;p&gt;/usr/share/vapor-2.5.0/bin/ncdf2vdf  wc12_ccsra31_his_cycle_avg_29227.nc wc12_ccsra31_his_cycle_avg_29231.nc wc12_ccsra31_his_cycle_avg_29235.nc /data/Dropbox/dynamic_data/projects/projects2017/visualization/vapor/roms.vdf&lt;br /&gt;
+=======================================&lt;/p&gt;
+&lt;p&gt;I am trying to explicitly specify the dimensions of the 2 variables I have chosen because otherwise the dimensions are being assigned by the first 3-D variable in the input file, which results in my chosen variables being excluded because they have different dimensions.&lt;/p&gt;
+&lt;p&gt;Running the ncdfvdfcreate with the options specified returns this error:&lt;br /&gt;
+Type converter for option &amp;quot;-dims&amp;quot; failed to convert argument &amp;quot;s_rho:xi_rho:eta_rho&amp;quot;&lt;/p&gt;
+&lt;p&gt;I think I have ordered the dimensions from fasted to slowest varying, but maybe I have the listing specified incorrectly? The documentation says:&lt;/p&gt;
+&lt;p&gt;-dims &amp;lt;dimensions&amp;gt;&lt;br /&gt;
+Specifies the spatial dimensions of all 3D variables to be considered. The default is to use the dimensions of the first 3D variable encountered in the NetCDF files. The format of dimensions is NXxNYxNZ, where NX is the fastest varying dimension, NY the next fastest, and NZ the slowest.&lt;/p&gt;
+&lt;p&gt;Is the separator an &amp;#039;x&amp;#039; or a &amp;#039;:&amp;#039;? &amp;#039;x&amp;#039; does not seem to work.&lt;/p&gt;
+&lt;p&gt;====================&lt;br /&gt;
+Here is the ncl_filedump of my input file:&lt;/p&gt;
+&lt;p&gt; Copyright (C) 1995-2015 - All Rights Reserved&lt;br /&gt;
+ University Corporation for Atmospheric Research&lt;br /&gt;
+ NCAR Command Language Version 6.3.0&lt;br /&gt;
+ The use of this software is governed by a License Agreement.&lt;br /&gt;
+ See &lt;a href=&quot;http://www.ncl.ucar.edu/&quot;&gt;http://www.ncl.ucar.edu/&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Variable: f&lt;br /&gt;
+Type: file&lt;br /&gt;
+filename:	wc12_ccsra31_his_cycle_avg_29227&lt;br /&gt;
+path:	wc12_ccsra31_his_cycle_avg_29227.nc&lt;br /&gt;
+   file global attributes:&lt;br /&gt;
+      file : wc12_ccsra31_fwd_001.nc&lt;br /&gt;
+      format : netCDF-3 classic file&lt;br /&gt;
+      Conventions : CF-1.4&lt;br /&gt;
+      type : ROMS/TOMS history file&lt;br /&gt;
+      title : California Current System, 1/10 degree reanalysis&lt;br /&gt;
+      state_vector : zeta, ubar, vbar, u, v, temp, salt, sustr, svstr, shflux, ssflux&lt;br /&gt;
+      rst_file : wc12_ccsra31_rst.nc&lt;br /&gt;
+      his_file : wc12_ccsra31_fwd_001.nc&lt;br /&gt;
+      avg_base : wc12_ccsra31_avg&lt;br /&gt;
+      dia_file : wc12_ccsra31_dia.nc&lt;br /&gt;
+      grd_file : GRID/wc12_grd.nc.0&lt;br /&gt;
+      ini_file : ini.nc&lt;br /&gt;
+      itl_file : itl.nc&lt;br /&gt;
+      nrm_file : nrmI.nc&lt;br /&gt;
+      tlf_file : wc12_ccsra31_tlf.nc&lt;br /&gt;
+      obs_file : obs.nc&lt;br /&gt;
+      frc_file_01 : FORCING/ERA40/wind.era40.1980-2002.WC.nc&lt;br /&gt;
+      frc_file_02 : FORCING/ERA40/pair.era40.1980-2002.WC.nc&lt;br /&gt;
+      frc_file_03 : FORCING/ERA40/tair.era40.1980-2002.WC.nc&lt;br /&gt;
+      frc_file_04 : FORCING/ERA40/qair.era40.1980-2002.WC.nc&lt;br /&gt;
+      frc_file_05 : FORCING/ERA40/rain.era40.1980-2002.WC.nc&lt;br /&gt;
+      frc_file_06 : FORCING/ERA40/lwrad_down.era40.1980-2002.WC.nc&lt;br /&gt;
+      frc_file_07 : FORCING/ERA40/swrad.era40.1980-2002.WC.nc&lt;br /&gt;
+      bry_file : OBC/wc12_bry_soda_1958-2008_AMM.nc&lt;br /&gt;
+      fwd_file : wc12_ccsra31_fwd_000.nc&lt;br /&gt;
+      script_file : ocean.in&lt;br /&gt;
+      svn_url : &lt;a href=&quot;https://www.myroms.org/svn/src/tags/roms-3.4&quot;&gt;https://www.myroms.org/svn/src/tags/roms-3.4&lt;/a&gt;&lt;br /&gt;
+      svn_rev : 564M&lt;br /&gt;
+      code_dir : /net/head/export/257/amm/ROMS/ROMS_3.4&lt;br /&gt;
+      header_dir : /home/amm/WC12_CCSRA31/W4DPSAS&lt;br /&gt;
+      header_file : wc12_ccsra.h&lt;br /&gt;
+      os : Linux&lt;br /&gt;
+      cpu : x86_64&lt;br /&gt;
+      compiler_system : pgi&lt;br /&gt;
+      compiler_command : /usr/mpi/pgi/openmpi-1.2.8/bin/mpif90&lt;br /&gt;
+      compiler_flags :  -O3 -Mfree&lt;br /&gt;
+      tiling : 016x008&lt;br /&gt;
+      history : Tue May 28 12:26:39 2013: ncra /home/mjacox/WC12_CCSRA31/wc12_ccsra31_his_29227.nc /proj/cae_enstrophy/reanalysis/WC12_CCSRA31/wc12_ccsra31_his_cycle_avg_29227.nc&lt;br /&gt;
+ROMS/TOMS, Version 3.4, Wednesday - February 1, 2012 -  5:38:50 PM&lt;br /&gt;
+      ana_file : ROMS/Functionals/ana_btflux.h, /home/amm/WC12_CCSRA31/W4DPSAS/Functionals/ana_hmixcoef.h&lt;br /&gt;
+      CPP_options : WC12_CCSRA, ADJOINT, ADJUST_BOUNDARY, ADJUST_STFLUX, ADJUST_WSTRESS, ANA_BSFLUX, ANA_BTFLUX, ASSUMED_SHAPE, AVERAGES, BULK_FLUXES, CURVGRID, DIAGNOSTICS_TS, DIAGNOSTICS_UV, DJ_GRADPS, DOUBLE_PRECISION, EASTERN_WALL, EMINUSP, FORWARD_MIXING, FORWARD_READ, FORWARD_WRITE, !FULL_GRID, GLS_MIXING, IMPLICIT_VCONV, IMPULSE, KANTHA_CLAYSON, LONGWAVE_OUT, MASKING, MIX_GEO_TS, MIX_S_UV, MPI, NL_BULK_FLUXES, NONLINEAR, NONLIN_EOS, NORTH_FSCHAPMAN, NORTH_M2FLATHER, NORTH_M3CLAMPED, NORTH_TCLAMPED, N2S2_HORAVG, OBSERVATIONS, OUT_DOUBLE, POWER_LAW, PROFILE, K_GSCHEME, !RST_SINGLE, SALINITY, SOLAR_SOURCE, SOLVE3D, SOUTH_FSCHAPMAN, SOUTH_M2FLATHER, SOUTH_M3CLAMPED, SOUTH_TCLAMPED, SPLINES, SPONGE, TANGENT, TS_U3HADVECTION, TS_U3HADVECTION_TL, TS_C4VADVECTION, TS_C4VADVECTION_TL, TS_DIF2, UV_ADV, UV_COR, UV_U3HADVECTION, UV_C4VADVECTION, UV_LDRAG, UV_VIS2, VCONVOLUTION, W4DPSAS, WEAK_CONSTRAINT, WEST_FSCHAPMAN, WEST_M2FLATHER, WEST_M3CLAMPED, WEST_TCLAMPED&lt;br /&gt;
+      nco_openmp_thread_number : 1&lt;br /&gt;
+   dimensions:&lt;br /&gt;
+      ncl_scalar = 1&lt;br /&gt;
+      xi_rho = 186&lt;br /&gt;
+      xi_u = 185&lt;br /&gt;
+      xi_v = 186&lt;br /&gt;
+      xi_psi = 185&lt;br /&gt;
+      eta_rho = 181&lt;br /&gt;
+      eta_u = 181&lt;br /&gt;
+      eta_v = 180&lt;br /&gt;
+      eta_psi = 180&lt;br /&gt;
+      IorJ = 186&lt;br /&gt;
+      s_rho = 42&lt;br /&gt;
+      s_w = 43&lt;br /&gt;
+      tracer = 2&lt;br /&gt;
+      boundary = 4&lt;br /&gt;
+      Nstate = 11&lt;br /&gt;
+      obc_adjust = 9&lt;br /&gt;
+      ocean_time = 1  // unlimited&lt;br /&gt;
+      Nuser = 25&lt;br /&gt;
+   variables:&lt;br /&gt;
+      integer ntimes ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of long time-steps&lt;/p&gt;
+&lt;p&gt;      integer ndtfast ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of short time-steps&lt;/p&gt;
+&lt;p&gt;      double dt ( ncl_scalar )&lt;br /&gt;
+         long_name :	size of long time-steps&lt;br /&gt;
+         units :	second&lt;/p&gt;
+&lt;p&gt;      double dtfast ( ncl_scalar )&lt;br /&gt;
+         long_name :	size of short time-steps&lt;br /&gt;
+         units :	second&lt;/p&gt;
+&lt;p&gt;      double dstart ( ncl_scalar )&lt;br /&gt;
+         long_name :	time stamp assigned to model initilization&lt;br /&gt;
+         units :	days since 1900-01-01 00:00:00&lt;/p&gt;
+&lt;p&gt;      integer nHIS ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between history records&lt;/p&gt;
+&lt;p&gt;      integer ndefHIS ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between the creation of history files&lt;/p&gt;
+&lt;p&gt;      integer nRST ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between restart records&lt;br /&gt;
+         cycle :	only latest two records are maintained&lt;/p&gt;
+&lt;p&gt;      integer ntsAVG ( ncl_scalar )&lt;br /&gt;
+         long_name :	starting time-step for accumulation of time-averaged fields&lt;/p&gt;
+&lt;p&gt;      integer nAVG ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between time-averaged records&lt;/p&gt;
+&lt;p&gt;      integer ndefAVG ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between the creation of average files&lt;/p&gt;
+&lt;p&gt;      integer nADJ ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between adjoint history records&lt;/p&gt;
+&lt;p&gt;      integer ndefADJ ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between the creation of adjoint files&lt;/p&gt;
+&lt;p&gt;      integer nTLM ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between tangent history records&lt;/p&gt;
+&lt;p&gt;      integer ndefTLM ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between the creation of tanget files&lt;/p&gt;
+&lt;p&gt;      integer nOBC ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between 4DVAR open boundary adjustment&lt;/p&gt;
+&lt;p&gt;      integer nSFF ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between 4DVAR surface forcing adjustment&lt;/p&gt;
+&lt;p&gt;      integer ntsDIA ( ncl_scalar )&lt;br /&gt;
+         long_name :	starting time-step for accumulation of diagnostic fields&lt;/p&gt;
+&lt;p&gt;      integer nDIA ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between diagnostic records&lt;/p&gt;
+&lt;p&gt;      integer ndefDIA ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of time-steps between the creation of diagnostic files&lt;/p&gt;
+&lt;p&gt;      integer Nouter ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of minimization outer loops&lt;/p&gt;
+&lt;p&gt;      integer Ninner ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of minimization inner loops&lt;/p&gt;
+&lt;p&gt;      double Falpha ( ncl_scalar )&lt;br /&gt;
+         long_name :	Power-law shape barotropic filter parameter&lt;/p&gt;
+&lt;p&gt;      double Fbeta ( ncl_scalar )&lt;br /&gt;
+         long_name :	Power-law shape barotropic filter parameter&lt;/p&gt;
+&lt;p&gt;      double Fgamma ( ncl_scalar )&lt;br /&gt;
+         long_name :	Power-law shape barotropic filter parameter&lt;/p&gt;
+&lt;p&gt;      double nl_tnu2 ( tracer )&lt;br /&gt;
+         long_name :	nonlinear model Laplacian mixing coefficient for tracers&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double ad_tnu2 ( tracer )&lt;br /&gt;
+         long_name :	adjoint model Laplacian mixing coefficient for tracers&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double tl_tnu2 ( tracer )&lt;br /&gt;
+         long_name :	tangent linear model Laplacian mixing coefficient for tracers&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double nl_visc2 ( ncl_scalar )&lt;br /&gt;
+         long_name :	nonlinear model Laplacian mixing coefficient for momentum&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double ad_visc2 ( ncl_scalar )&lt;br /&gt;
+         long_name :	adjoint model Laplacian mixing coefficient for momentum&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double tl_visc2 ( ncl_scalar )&lt;br /&gt;
+         long_name :	tangent linear model Laplacian mixing coefficient for momentum&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double Akt_bak ( tracer )&lt;br /&gt;
+         long_name :	background vertical mixing coefficient for tracers&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double Akv_bak ( ncl_scalar )&lt;br /&gt;
+         long_name :	background vertical mixing coefficient for momentum&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double Akk_bak ( ncl_scalar )&lt;br /&gt;
+         long_name :	background vertical mixing coefficient for turbulent energy&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double Akp_bak ( ncl_scalar )&lt;br /&gt;
+         long_name :	background vertical mixing coefficient for length scale&lt;br /&gt;
+         units :	meter2 second-1&lt;/p&gt;
+&lt;p&gt;      double ad_Akt_fac ( tracer )&lt;br /&gt;
+         long_name :	adjoint model basic state vertical mixing scale for tracers&lt;/p&gt;
+&lt;p&gt;      double tl_Akt_fac ( tracer )&lt;br /&gt;
+         long_name :	tangent linear model basic state vertical mixing scale for tracers&lt;/p&gt;
+&lt;p&gt;      double ad_Akv_fac ( ncl_scalar )&lt;br /&gt;
+         long_name :	adjoint model basic state vertical mixing scale for momentum&lt;/p&gt;
+&lt;p&gt;      double tl_Akv_fac ( ncl_scalar )&lt;br /&gt;
+         long_name :	tangent linear model basic state vertical mixing scale for momentum&lt;/p&gt;
+&lt;p&gt;      double rdrg ( ncl_scalar )&lt;br /&gt;
+         long_name :	linear drag coefficient&lt;br /&gt;
+         units :	meter second-1&lt;/p&gt;
+&lt;p&gt;      double rdrg2 ( ncl_scalar )&lt;br /&gt;
+         long_name :	quadratic drag coefficient&lt;/p&gt;
+&lt;p&gt;      double Zob ( ncl_scalar )&lt;br /&gt;
+         long_name :	bottom roughness&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double Zos ( ncl_scalar )&lt;br /&gt;
+         long_name :	surface roughness&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double gls_p ( ncl_scalar )&lt;br /&gt;
+         long_name :	stability exponent&lt;/p&gt;
+&lt;p&gt;      double gls_m ( ncl_scalar )&lt;br /&gt;
+         long_name :	turbulent kinetic energy exponent&lt;/p&gt;
+&lt;p&gt;      double gls_n ( ncl_scalar )&lt;br /&gt;
+         long_name :	turbulent length scale exponent&lt;/p&gt;
+&lt;p&gt;      double gls_cmu0 ( ncl_scalar )&lt;br /&gt;
+         long_name :	stability coefficient&lt;/p&gt;
+&lt;p&gt;      double gls_c1 ( ncl_scalar )&lt;br /&gt;
+         long_name :	shear production coefficient&lt;/p&gt;
+&lt;p&gt;      double gls_c2 ( ncl_scalar )&lt;br /&gt;
+         long_name :	dissipation coefficient&lt;/p&gt;
+&lt;p&gt;      double gls_c3m ( ncl_scalar )&lt;br /&gt;
+         long_name :	buoyancy production coefficient (minus)&lt;/p&gt;
+&lt;p&gt;      double gls_c3p ( ncl_scalar )&lt;br /&gt;
+         long_name :	buoyancy production coefficient (plus)&lt;/p&gt;
+&lt;p&gt;      double gls_sigk ( ncl_scalar )&lt;br /&gt;
+         long_name :	constant Schmidt number for TKE&lt;/p&gt;
+&lt;p&gt;      double gls_sigp ( ncl_scalar )&lt;br /&gt;
+         long_name :	constant Schmidt number for PSI&lt;/p&gt;
+&lt;p&gt;      double gls_Kmin ( ncl_scalar )&lt;br /&gt;
+         long_name :	minimum value of specific turbulent kinetic energy&lt;/p&gt;
+&lt;p&gt;      double gls_Pmin ( ncl_scalar )&lt;br /&gt;
+         long_name :	minimum Value of dissipation&lt;/p&gt;
+&lt;p&gt;      double Charnok_alpha ( ncl_scalar )&lt;br /&gt;
+         long_name :	Charnok factor for surface roughness&lt;/p&gt;
+&lt;p&gt;      double Zos_hsig_alpha ( ncl_scalar )&lt;br /&gt;
+         long_name :	wave amplitude factor for surface roughness&lt;/p&gt;
+&lt;p&gt;      double sz_alpha ( ncl_scalar )&lt;br /&gt;
+         long_name :	surface flux from wave dissipation&lt;/p&gt;
+&lt;p&gt;      double CrgBan_cw ( ncl_scalar )&lt;br /&gt;
+         long_name :	surface flux due to Craig and Banner wave breaking&lt;/p&gt;
+&lt;p&gt;      double Znudg ( ncl_scalar )&lt;br /&gt;
+         long_name :	free-surface nudging/relaxation inverse time scale&lt;br /&gt;
+         units :	day-1&lt;/p&gt;
+&lt;p&gt;      double M2nudg ( ncl_scalar )&lt;br /&gt;
+         long_name :	2D momentum nudging/relaxation inverse time scale&lt;br /&gt;
+         units :	day-1&lt;/p&gt;
+&lt;p&gt;      double M3nudg ( ncl_scalar )&lt;br /&gt;
+         long_name :	3D momentum nudging/relaxation inverse time scale&lt;br /&gt;
+         units :	day-1&lt;/p&gt;
+&lt;p&gt;      double Tnudg ( tracer )&lt;br /&gt;
+         long_name :	Tracers nudging/relaxation inverse time scale&lt;br /&gt;
+         units :	day-1&lt;/p&gt;
+&lt;p&gt;      double rho0 ( ncl_scalar )&lt;br /&gt;
+         long_name :	mean density used in Boussinesq approximation&lt;br /&gt;
+         units :	kilogram meter-3&lt;/p&gt;
+&lt;p&gt;      double R0 ( ncl_scalar )&lt;br /&gt;
+         long_name :	background density used in linear equation of state&lt;br /&gt;
+         units :	kilogram meter-3&lt;/p&gt;
+&lt;p&gt;      double Tcoef ( ncl_scalar )&lt;br /&gt;
+         long_name :	thermal expansion coefficient&lt;br /&gt;
+         units :	Celsius-1&lt;/p&gt;
+&lt;p&gt;      double Scoef ( ncl_scalar )&lt;br /&gt;
+         long_name :	Saline contraction coefficient&lt;/p&gt;
+&lt;p&gt;      double gamma2 ( ncl_scalar )&lt;br /&gt;
+         long_name :	slipperiness parameter&lt;/p&gt;
+&lt;p&gt;      integer Lstflux ( tracer )&lt;br /&gt;
+         long_name :	surface tracer fluxes adjustment switch&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	.FALSE. .TRUE.&lt;/p&gt;
+&lt;p&gt;      integer Lobc ( Nstate, boundary )&lt;br /&gt;
+         long_name :	open boundary conditions adjustment switch&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	.FALSE. .TRUE.&lt;/p&gt;
+&lt;p&gt;      integer LhessianEV ( ncl_scalar )&lt;br /&gt;
+         long_name :	switch to compute Hessian eigenvectors&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	.FALSE. .TRUE.&lt;/p&gt;
+&lt;p&gt;      integer LhotStart ( ncl_scalar )&lt;br /&gt;
+         long_name :	switch for hot start of subsequent outer loops&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	.FALSE. .TRUE.&lt;/p&gt;
+&lt;p&gt;      integer Lprecond ( ncl_scalar )&lt;br /&gt;
+         long_name :	switch for conjugate gradient preconditioning&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	.FALSE. .TRUE.&lt;/p&gt;
+&lt;p&gt;      integer Lritz ( ncl_scalar )&lt;br /&gt;
+         long_name :	switch for Ritz limited-memory preconditioning&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	.FALSE. .TRUE.&lt;/p&gt;
+&lt;p&gt;      double GradErr ( ncl_scalar )&lt;br /&gt;
+         long_name :	Upper bound on relative error of the gradient&lt;/p&gt;
+&lt;p&gt;      double HevecErr ( ncl_scalar )&lt;br /&gt;
+         long_name :	Accuracy required for Hessian eigenvectors&lt;/p&gt;
+&lt;p&gt;      integer Nmethod ( ncl_scalar )&lt;br /&gt;
+         long_name :	background error covariance normalization method&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	exact randomization&lt;/p&gt;
+&lt;p&gt;      integer Rscheme ( ncl_scalar )&lt;br /&gt;
+         long_name :	Random number generation scheme&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	intrisic_randon_number Gaussian_distributed_deviates&lt;/p&gt;
+&lt;p&gt;      integer Nrandom ( ncl_scalar )&lt;br /&gt;
+         long_name :	number of randomization iterations&lt;/p&gt;
+&lt;p&gt;      double Hgamma ( ncl_scalar )&lt;br /&gt;
+         long_name :	initial conditions error covariance horizontal convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double HgammaM ( ncl_scalar )&lt;br /&gt;
+         long_name :	model error covariance horizontal convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double HgammaB ( ncl_scalar )&lt;br /&gt;
+         long_name :	open boundary conditions error covariance horizontal convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double HgammaF ( ncl_scalar )&lt;br /&gt;
+         long_name :	surface forcing error covariance horizontal convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double Vgamma ( ncl_scalar )&lt;br /&gt;
+         long_name :	initial conditions error covariance vertical convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double VgammaM ( ncl_scalar )&lt;br /&gt;
+         long_name :	model error covariance vertical convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double VgammaB ( ncl_scalar )&lt;br /&gt;
+         long_name :	open boundary conditions error covariance vertical convolution time-step stability factor&lt;/p&gt;
+&lt;p&gt;      double Hdecay ( Nstate )&lt;br /&gt;
+         long_name :	initial conditions error covariance horizontal decorrelation scale&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double Vdecay ( Nstate )&lt;br /&gt;
+         long_name :	initial conditions error covariance vertical decorrelation scale&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double HdecayM ( Nstate )&lt;br /&gt;
+         long_name :	model error covariance horizontal decorrelation scale&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double VdecayM ( Nstate )&lt;br /&gt;
+         long_name :	model error covariance vertical decorrelation scale&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double HdecayB ( boundary, Nstate )&lt;br /&gt;
+         long_name :	open boundary conditions error covariance horizontal decorrelation scale&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double VdecayB ( boundary, Nstate )&lt;br /&gt;
+         long_name :	open boundary conditions error covariance vertical decorrelation scale&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      integer spherical ( ncl_scalar )&lt;br /&gt;
+         long_name :	grid type logical switch&lt;br /&gt;
+         flag_values :	( 0, 1 )&lt;br /&gt;
+         flag_meanings :	Cartesian spherical&lt;/p&gt;
+&lt;p&gt;      double xl ( ncl_scalar )&lt;br /&gt;
+         long_name :	domain length in the XI-direction&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double el ( ncl_scalar )&lt;br /&gt;
+         long_name :	domain length in the ETA-direction&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      integer Vtransform ( ncl_scalar )&lt;br /&gt;
+         long_name :	vertical terrain-following transformation equation&lt;/p&gt;
+&lt;p&gt;      integer Vstretching ( ncl_scalar )&lt;br /&gt;
+         long_name :	vertical terrain-following stretching function&lt;/p&gt;
+&lt;p&gt;      double theta_s ( ncl_scalar )&lt;br /&gt;
+         long_name :	S-coordinate surface control parameter&lt;/p&gt;
+&lt;p&gt;      double theta_b ( ncl_scalar )&lt;br /&gt;
+         long_name :	S-coordinate bottom control parameter&lt;/p&gt;
+&lt;p&gt;      double Tcline ( ncl_scalar )&lt;br /&gt;
+         long_name :	S-coordinate surface/bottom layer width&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double hc ( ncl_scalar )&lt;br /&gt;
+         long_name :	S-coordinate parameter, critical depth&lt;br /&gt;
+         units :	meter&lt;/p&gt;
+&lt;p&gt;      double s_rho ( s_rho )&lt;br /&gt;
+         long_name :	S-coordinate at RHO-points&lt;br /&gt;
+         valid_min :	  -1&lt;br /&gt;
+         valid_max :	   0&lt;br /&gt;
+         positive :	up&lt;br /&gt;
+         standard_name :	ocean_s_coordinate_g1&lt;br /&gt;
+         formula_terms :	s: s_rho C: Cs_r eta: zeta depth: h depth_c: hc&lt;br /&gt;
+         field :	s_rho, scalar&lt;/p&gt;
+&lt;p&gt;      double s_w ( s_w )&lt;br /&gt;
+         long_name :	S-coordinate at W-points&lt;br /&gt;
+         valid_min :	  -1&lt;br /&gt;
+         valid_max :	   0&lt;br /&gt;
+         positive :	up&lt;br /&gt;
+         standard_name :	ocean_s_coordinate_g1&lt;br /&gt;
+         formula_terms :	s: s_w C: Cs_w eta: zeta depth: h depth_c: hc&lt;br /&gt;
+         field :	s_w, scalar&lt;/p&gt;
+&lt;p&gt;      double Cs_r ( s_rho )&lt;br /&gt;
+         long_name :	S-coordinate stretching curves at RHO-points&lt;br /&gt;
+         valid_min :	  -1&lt;br /&gt;
+         valid_max :	   0&lt;br /&gt;
+         field :	Cs_r, scalar&lt;/p&gt;
+&lt;p&gt;      double Cs_w ( s_w )&lt;br /&gt;
+         long_name :	S-coordinate stretching curves at W-points&lt;br /&gt;
+         valid_min :	  -1&lt;br /&gt;
+         valid_max :	   0&lt;br /&gt;
+         field :	Cs_w, scalar&lt;/p&gt;
+&lt;p&gt;      double user ( Nuser )&lt;br /&gt;
+         long_name :	user generic parameters&lt;br /&gt;
+         field :	user, scalar&lt;/p&gt;
+&lt;p&gt;      double h ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	bathymetry at RHO-points&lt;br /&gt;
+         units :	meter&lt;br /&gt;
+         coordinates :	lon_rho lat_rho&lt;br /&gt;
+         field :	bath, scalar&lt;/p&gt;
+&lt;p&gt;      double f ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	Coriolis parameter at RHO-points&lt;br /&gt;
+         units :	second-1&lt;br /&gt;
+         coordinates :	lon_rho lat_rho&lt;br /&gt;
+         field :	coriolis, scalar&lt;/p&gt;
+&lt;p&gt;      double pm ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	curvilinear coordinate metric in XI&lt;br /&gt;
+         units :	meter-1&lt;br /&gt;
+         coordinates :	lon_rho lat_rho&lt;br /&gt;
+         field :	pm, scalar&lt;/p&gt;
+&lt;p&gt;      double pn ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	curvilinear coordinate metric in ETA&lt;br /&gt;
+         units :	meter-1&lt;br /&gt;
+         coordinates :	lon_rho lat_rho&lt;br /&gt;
+         field :	pn, scalar&lt;/p&gt;
+&lt;p&gt;      double lon_rho ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	longitude of RHO-points&lt;br /&gt;
+         units :	degree_east&lt;br /&gt;
+         standard_name :	longitude&lt;br /&gt;
+         field :	lon_rho, scalar&lt;/p&gt;
+&lt;p&gt;      double lat_rho ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	latitude of RHO-points&lt;br /&gt;
+         units :	degree_north&lt;br /&gt;
+         standard_name :	latitude&lt;br /&gt;
+         field :	lat_rho, scalar&lt;/p&gt;
+&lt;p&gt;      double lon_u ( eta_u, xi_u )&lt;br /&gt;
+         long_name :	longitude of U-points&lt;br /&gt;
+         units :	degree_east&lt;br /&gt;
+         standard_name :	longitude&lt;br /&gt;
+         field :	lon_u, scalar&lt;/p&gt;
+&lt;p&gt;      double lat_u ( eta_u, xi_u )&lt;br /&gt;
+         long_name :	latitude of U-points&lt;br /&gt;
+         units :	degree_north&lt;br /&gt;
+         standard_name :	latitude&lt;br /&gt;
+         field :	lat_u, scalar&lt;/p&gt;
+&lt;p&gt;      double lon_v ( eta_v, xi_v )&lt;br /&gt;
+         long_name :	longitude of V-points&lt;br /&gt;
+         units :	degree_east&lt;br /&gt;
+         standard_name :	longitude&lt;br /&gt;
+         field :	lon_v, scalar&lt;/p&gt;
+&lt;p&gt;      double lat_v ( eta_v, xi_v )&lt;br /&gt;
+         long_name :	latitude of V-points&lt;br /&gt;
+         units :	degree_north&lt;br /&gt;
+         standard_name :	latitude&lt;br /&gt;
+         field :	lat_v, scalar&lt;/p&gt;
+&lt;p&gt;      double lon_psi ( eta_psi, xi_psi )&lt;br /&gt;
+         long_name :	longitude of PSI-points&lt;br /&gt;
+         units :	degree_east&lt;br /&gt;
+         standard_name :	longitude&lt;br /&gt;
+         field :	lon_psi, scalar&lt;/p&gt;
+&lt;p&gt;      double lat_psi ( eta_psi, xi_psi )&lt;br /&gt;
+         long_name :	latitude of PSI-points&lt;br /&gt;
+         units :	degree_north&lt;br /&gt;
+         standard_name :	latitude&lt;br /&gt;
+         field :	lat_psi, scalar&lt;/p&gt;
+&lt;p&gt;      double angle ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	angle between XI-axis and EAST&lt;br /&gt;
+         units :	radians&lt;br /&gt;
+         coordinates :	lon_rho lat_rho&lt;br /&gt;
+         field :	angle, scalar&lt;/p&gt;
+&lt;p&gt;      double mask_rho ( eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	mask on RHO-points&lt;br /&gt;
+         flag_values :	(    0,    1 )&lt;br /&gt;
+         flag_meanings :	land water&lt;br /&gt;
+         coordinates :	lon_rho lat_rho&lt;/p&gt;
+&lt;p&gt;      double mask_u ( eta_u, xi_u )&lt;br /&gt;
+         long_name :	mask on U-points&lt;br /&gt;
+         flag_values :	(    0,    1 )&lt;br /&gt;
+         flag_meanings :	land water&lt;br /&gt;
+         coordinates :	lon_u lat_u&lt;/p&gt;
+&lt;p&gt;      double mask_v ( eta_v, xi_v )&lt;br /&gt;
+         long_name :	mask on V-points&lt;br /&gt;
+         flag_values :	(    0,    1 )&lt;br /&gt;
+         flag_meanings :	land water&lt;br /&gt;
+         coordinates :	lon_v lat_v&lt;/p&gt;
+&lt;p&gt;      double mask_psi ( eta_psi, xi_psi )&lt;br /&gt;
+         long_name :	mask on psi-points&lt;br /&gt;
+         flag_values :	(    0,    1 )&lt;br /&gt;
+         flag_meanings :	land water&lt;br /&gt;
+         coordinates :	lon_psi lat_psi&lt;/p&gt;
+&lt;p&gt;      double ocean_time ( ocean_time )&lt;br /&gt;
+         long_name :	time since initialization&lt;br /&gt;
+         units :	seconds since 1900-01-01 00:00:00&lt;br /&gt;
+         calendar :	gregorian&lt;br /&gt;
+         field :	time, scalar, series&lt;/p&gt;
+&lt;p&gt;      double zeta ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	free-surface&lt;br /&gt;
+         units :	meter&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	free-surface, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double zeta_obc ( ocean_time, obc_adjust, boundary, IorJ )&lt;br /&gt;
+         long_name :	free-surface, open boundaries&lt;br /&gt;
+         units :	meter&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	zeta_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double ubar ( ocean_time, eta_u, xi_u )&lt;br /&gt;
+         long_name :	vertically integrated u-momentum component&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_u lat_u ocean_time&lt;br /&gt;
+         field :	ubar-velocity, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double DU_avg1 ( ocean_time, eta_u, xi_u )&lt;br /&gt;
+         long_name :	time averaged u-flux for 2D equations&lt;br /&gt;
+         units :	meter3 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_u lat_u ocean_time&lt;br /&gt;
+         field :	DU_avg1, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double DU_avg2 ( ocean_time, eta_u, xi_u )&lt;br /&gt;
+         long_name :	time averaged u-flux for 3D equations coupling&lt;br /&gt;
+         units :	meter3 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_u lat_u ocean_time&lt;br /&gt;
+         field :	DU_avg2, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double ubar_obc ( ocean_time, obc_adjust, boundary, IorJ )&lt;br /&gt;
+         long_name :	vertically integrated u-momentum component, open boundaries&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	ubar_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double vbar ( ocean_time, eta_v, xi_v )&lt;br /&gt;
+         long_name :	vertically integrated v-momentum component&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_v lat_v ocean_time&lt;br /&gt;
+         field :	vbar-velocity, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double DV_avg1 ( ocean_time, eta_v, xi_v )&lt;br /&gt;
+         long_name :	time averaged v-flux for 2D equations&lt;br /&gt;
+         units :	meter3 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_v lat_v ocean_time&lt;br /&gt;
+         field :	DV_avg1, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double DV_avg2 ( ocean_time, eta_v, xi_v )&lt;br /&gt;
+         long_name :	time averaged v-flux for 3D equations coupling&lt;br /&gt;
+         units :	meter3 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_v lat_v ocean_time&lt;br /&gt;
+         field :	DV_avg2, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double vbar_obc ( ocean_time, obc_adjust, boundary, IorJ )&lt;br /&gt;
+         long_name :	vertically integrated v-momentum component, open boundaries&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	vbar_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double u ( ocean_time, s_rho, eta_u, xi_u )&lt;br /&gt;
+         long_name :	u-momentum component&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_u lat_u s_rho ocean_time&lt;br /&gt;
+         field :	u-velocity, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double u_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )&lt;br /&gt;
+         long_name :	u-momentum component, open boundaries&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	u_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double v ( ocean_time, s_rho, eta_v, xi_v )&lt;br /&gt;
+         long_name :	v-momentum component&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_v lat_v s_rho ocean_time&lt;br /&gt;
+         field :	v-velocity, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double v_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )&lt;br /&gt;
+         long_name :	v-momentum component, open boundaries&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	v_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double w ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	vertical momentum component&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	w-velocity, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double omega ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	S-coordinate vertical momentum component&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	omega, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double temp ( ocean_time, s_rho, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	potential temperature&lt;br /&gt;
+         units :	Celsius&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_rho ocean_time&lt;br /&gt;
+         field :	temperature, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double salt ( ocean_time, s_rho, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	salinity&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_rho ocean_time&lt;br /&gt;
+         field :	salinity, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double temp_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )&lt;br /&gt;
+         long_name :	potential temperature, open boundaries&lt;br /&gt;
+         units :	Celsius&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	temp_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double salt_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )&lt;br /&gt;
+         long_name :	salinity, open boundaries&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         field :	salt_obc, scalar, series&lt;/p&gt;
+&lt;p&gt;      double rho ( ocean_time, s_rho, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	density anomaly&lt;br /&gt;
+         units :	kilogram meter-3&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_rho ocean_time&lt;br /&gt;
+         field :	density, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double AKv ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	vertical viscosity coefficient&lt;br /&gt;
+         units :	meter2 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	AKv, scalar, series&lt;/p&gt;
+&lt;p&gt;      double AKt ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	temperature vertical diffusion coefficient&lt;br /&gt;
+         units :	meter2 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	AKt, scalar, series&lt;/p&gt;
+&lt;p&gt;      double AKs ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	salinity vertical diffusion coefficient&lt;br /&gt;
+         units :	meter2 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	AKs, scalar, series&lt;/p&gt;
+&lt;p&gt;      double tke ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	turbulent kinetic energy&lt;br /&gt;
+         units :	meter2 second-2&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	tke, scalar, series&lt;/p&gt;
+&lt;p&gt;      double AKk ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	Turbulent kinetic energy vertical diffusion coefficient&lt;br /&gt;
+         units :	meter2 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	AKk, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double gls ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	turbulent generic length scale&lt;br /&gt;
+         units :	meter3 second-2&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	gls, scalar, series&lt;/p&gt;
+&lt;p&gt;      double Lscale ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	vertical mixing turbulent length scale&lt;br /&gt;
+         units :	meter&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	Lscale, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double AKp ( ocean_time, s_w, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	Turbulent length scale vertical diffusion coefficient&lt;br /&gt;
+         units :	meter2 second-1&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho s_w ocean_time&lt;br /&gt;
+         field :	AKp, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double shflux ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	surface net heat flux&lt;br /&gt;
+         units :	watt meter-2&lt;br /&gt;
+         negative_value :	upward flux, cooling&lt;br /&gt;
+         positive_value :	downward flux, heating&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	surface heat flux, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double ssflux ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	surface net salt flux, (E-P)*SALT&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         negative_value :	upward flux, freshening (net precipitation)&lt;br /&gt;
+         positive_value :	downward flux, salting (net evaporation)&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	surface net salt flux, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double latent ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	net latent heat flux&lt;br /&gt;
+         units :	watt meter-2&lt;br /&gt;
+         negative_value :	upward flux, cooling&lt;br /&gt;
+         positive_value :	downward flux, heating&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	latent heat flux, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double sensible ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	net sensible heat flux&lt;br /&gt;
+         units :	watt meter-2&lt;br /&gt;
+         negative_value :	upward flux, cooling&lt;br /&gt;
+         positive_value :	downward flux, heating&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	sensible heat flux, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double lwrad ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	net longwave radiation flux&lt;br /&gt;
+         units :	watt meter-2&lt;br /&gt;
+         negative_value :	upward flux, cooling&lt;br /&gt;
+         positive_value :	downward flux, heating&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	longwave radiation, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double EminusP ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	bulk_flux surface net freswater flux, (E-P)&lt;br /&gt;
+         units :	meter second-1&lt;br /&gt;
+         negative_value :	upward flux, freshening (net precipitation)&lt;br /&gt;
+         positive_value :	downward flux, salting (net evaporation)&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	EminusP, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double evaporation ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	evaporation rate&lt;br /&gt;
+         units :	kilogram meter-2 second-1&lt;br /&gt;
+         negative_value :	downward flux, freshening (condensation)&lt;br /&gt;
+         positive_value :	upward flux, salting (evaporation)&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	evaporation, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double rain ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	rain fall rate&lt;br /&gt;
+         units :	kilogram meter-2 second-1&lt;br /&gt;
+         negative_value :	upward flux, salting (NOT POSSIBLE)&lt;br /&gt;
+         positive_value :	downward flux, freshening (precipitation)&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	rain, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double swrad ( ocean_time, eta_rho, xi_rho )&lt;br /&gt;
+         long_name :	solar shortwave radiation flux&lt;br /&gt;
+         units :	watt meter-2&lt;br /&gt;
+         negative_value :	upward flux, cooling&lt;br /&gt;
+         positive_value :	downward flux, heating&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_rho lat_rho ocean_time&lt;br /&gt;
+         field :	shortwave radiation, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double sustr ( ocean_time, eta_u, xi_u )&lt;br /&gt;
+         long_name :	surface u-momentum stress&lt;br /&gt;
+         units :	newton meter-2&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_u lat_u ocean_time&lt;br /&gt;
+         field :	surface u-momentum stress, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;p&gt;      double svstr ( ocean_time, eta_v, xi_v )&lt;br /&gt;
+         long_name :	surface v-momentum stress&lt;br /&gt;
+         units :	newton meter-2&lt;br /&gt;
+         time :	ocean_time&lt;br /&gt;
+         coordinates :	lon_v lat_v ocean_time&lt;br /&gt;
+         field :	surface v-momentum stress, scalar, series&lt;br /&gt;
+         _FillValue :	1e+37&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 13 Mar 2017 17:07:36 +0000</pubDate>
+ <dc:creator>sam.mcclatchie</dc:creator>
+ <guid isPermaLink="false">29611 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/specifying-variable-dimensions-ncdfvdfcreate#comments</comments>
+</item>
+<item>
+ <title>Exposing vdc creation API?</title>
+ <link>https://www.vapor.ucar.edu/forum/exposing-vdc-creation-api</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;To my knowledge, all of the Vapor tools for creating VDC files involve conversion from an intermediate format, such as netCDF. I use a homegrown format that is not one of the supported formats, so I have to create netCDF files as an intermediate step, then use the ncdf2vdf command on these files.&lt;/p&gt;
+&lt;p&gt;I&amp;#039;m wondering whether it&amp;#039;s possible to skip the intermediate step. It would save me lots of time if I were able to call (from C, preferably) the routines that generate the VDC files by passing arrays to them (plus perhaps a structure, or metadata that makes up the VDF file). Is this doable?&lt;/p&gt;
+&lt;p&gt;Leigh&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 20 Jan 2017 19:27:28 +0000</pubDate>
+ <dc:creator>leigh.orf</dc:creator>
+ <guid isPermaLink="false">29602 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/exposing-vdc-creation-api#comments</comments>
+</item>
+<item>
+ <title>Fully unstructured 3D mesh and netcdf</title>
+ <link>https://www.vapor.ucar.edu/forum/fully-unstructured-3d-mesh-and-netcdf</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi!
+
+I&#039;m interested in using VAPOR to visualize transient CFD simulation results of unstructured meshes. The simulation tool is OpenFOAM and the result files are available as vtk data files.&lt;p&gt;
+
+From what I have seen so far, I need to generate netcfd files from my vtk files in order to use them in VAPOR (via ncdf2vdf).&lt;/p&gt;&lt;p&gt;
+
+What I have not found out so far, is if VAPOR can deal with unstructured data at all and if it can, what kind of data is expected in the netcdf file.&lt;/p&gt;&lt;p&gt;
+
+[ With &#039;unstructured&#039; I mean what is described here under &#039;Fully 3D unstructured&#039;: &lt;a href=&quot;https://github.com/ugrid-conventions/ugrid-conventions/blob/master/src/index.md&quot;&gt;https://github.com/ugrid-conventions/ugrid-conventions/blob/master/src/i...&lt;/a&gt; ]&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sun, 08 Jan 2017 22:32:30 +0000</pubDate>
+ <dc:creator>markus.luisser_662443</dc:creator>
+ <guid isPermaLink="false">29596 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/fully-unstructured-3d-mesh-and-netcdf#comments</comments>
+</item>
+</channel>
+</rss>

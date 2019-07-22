@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.vapor.ucar.edu/forum/active/feed?forum=All" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active forum topics</title>
+    <link>https://www.vapor.ucar.edu/forum/active/feed?forum=All</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="https://www.vapor.ucar.edu/forum/active/feed?forum=All&amp;order=comment_count&amp;sort=asc" rel="self" type="application/rss+xml" />
+      <item>
+    <title>netcdf to vdf</title>
+    <link>https://www.vapor.ucar.edu/forum/netcdf-vdf</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi&lt;br /&gt;
+I wanna convert netcdf file format to vdf format, but I have problem doing it. the examples in tutoria can;t help. do you have more examples? Or scripts?&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Sat, 16 Feb 2013 15:43:30 +0000</pubDate>
+ <dc:creator>bbastan</dc:creator>
+ <guid isPermaLink="false">27979 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>geo reference of wrfout</title>
+    <link>https://www.vapor.ucar.edu/forum/geo-reference-wrfout</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi,&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 22 Mar 2013 19:13:51 +0000</pubDate>
+ <dc:creator>clee</dc:creator>
+ <guid isPermaLink="false">27988 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>aaa</title>
+    <link>https://www.vapor.ucar.edu/forum/aaa</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;ss&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Tue, 26 Nov 2013 23:02:45 +0000</pubDate>
+ <dc:creator>duandwazsg</dc:creator>
+ <guid isPermaLink="false">28036 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>I have a few query in regard to the variables.</title>
+    <link>https://www.vapor.ucar.edu/forum/i-have-few-query-regard-variables</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Dear Sir/Madam&lt;br /&gt;
+I am a university student from Taiwan, getting an first-time experience with VAPOR, where I have a few query in regard to the variables.&lt;br /&gt;
+I cannot seem to grasp the understanding of  2D variables(LU_INDEX,MU,MUB.....) and 3D variables (U, V, W,PHB......),hoping you may explain it further in-depth for me.&lt;br /&gt;
+Thank you.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Tue, 17 Dec 2013 13:57:30 +0000</pubDate>
+ <dc:creator>flora28110</dc:creator>
+ <guid isPermaLink="false">28039 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>load a session file</title>
+    <link>https://www.vapor.ucar.edu/forum/load-session-file</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;How could I load a session file, like WRFFigure2.1.vss, in vapor?&lt;br /&gt;
+I tried following ways:&lt;br /&gt;
+  File -&amp;gt; open session -&amp;gt; WRFFigure2.1.vss     (It showed anything)&lt;br /&gt;
+  Data -&amp;gt; load a Dateset ...  &lt;/p&gt;
+&lt;p&gt;Sincerely&lt;br /&gt;
+Ehsan&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Tue, 12 Aug 2014 07:53:51 +0000</pubDate>
+ <dc:creator>ehsantaghizadeh</dc:creator>
+ <guid isPermaLink="false">28087 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Multiple variable selection</title>
+    <link>https://www.vapor.ucar.edu/forum/multiple-variable-selection</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi,&lt;br /&gt;
+I installed vapor 2.3.0. In Georgiacasestudy document has written probe tag with hold &amp;quot;cntrl&amp;quot; we could select three varible U, V, W. However I couldn&amp;#039;t and in &amp;quot;transfer function editor&amp;quot; I just have one of them.!&lt;br /&gt;
+Could any body help me for my problem.&lt;/p&gt;
+&lt;p&gt;Sincerly&lt;br /&gt;
+Ehsan Taghizadeh&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 20 Aug 2014 11:22:55 +0000</pubDate>
+ <dc:creator>ehsantaghizadeh</dc:creator>
+ <guid isPermaLink="false">28090 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Vapor 2.4RC0 bugs</title>
+    <link>https://www.vapor.ucar.edu/forum/vapor-24rc0-bugs</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi 
+
+I&#039;ve download and installed Vapor 2.4 RC0 (Windows 7 64 bit) and I&#039;m getting the following errors:
+
+On openning Vapor:
+
+Code 4017
+Message: No  .efc files found in directory
+Other Message: Could not load Banner Image
+
+Same thing happens when I load a data set. 
+If I try to display a spherical data set I get: 
+
+Code 4017
+Message: Base effect &quot;SphericalDVR&quot; is not loaded
+
+followed by
+
+Code 4005
+Message: Failure to initialize OpenGL renderer....
+
+So, is this version still not working with spherical data sets? Should I go back again to version 2.1?
+
+Regards
+Dário&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Mon, 22 Dec 2014 11:42:34 +0000</pubDate>
+ <dc:creator>dmcp</dc:creator>
+ <guid isPermaLink="false">28141 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Code 2004 problem</title>
+    <link>https://www.vapor.ucar.edu/forum/code-2004-problem-0</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi, I&amp;#039;am dongmin Jang in KISTI. I think that VAPOR  is the great software for visualization, and I have used VAPOR to visualize WRF result on windows system. I converted from WRF out to vdf file on a linux system because the converting was impossible on a windows system due to the big output. The vdf file and data folder on the linux was moved to my windows pc for using VAPOR gui. I tried to load vdf file on the windows system several times, but, I have problem about code : 2004 no data found in VDC. How do I solve this problem?   And, I can not use VAPOR gui on the linux system ?&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 16 Jan 2015 02:31:10 +0000</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">28156 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>error loading shared library</title>
+    <link>https://www.vapor.ucar.edu/forum/error-loading-shared-library</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;
+Hi. I&#039;ve successfully binary installed VAPOR on several Linux (Ubuntu) and Windows 7 systems.  However, I have one Linux Ubuntu system that, when I run vaporgui, displays the following error message: &quot;vaporgui: error while loading shared libraries: libexpat.so.0: failed to map segment from shared object: Cannot allocate memory&quot;.
+&lt;/p&gt;
+&lt;p&gt;
+System specs:
+Ubuntu 14.04 LTS
+3GB RAM (approx 1GB free)
+Intel Core 2 CPU 6320
+NVIDIA Gallium 0.4 on NV4A
+300GB free disk
+&lt;/p&gt;
+&lt;p&gt;
+ulimit -a shows unlimited for (data seg size, file size, max memory size, cpu time, virtual memory, and file locks)
+&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 01 Apr 2015 13:50:27 +0000</pubDate>
+ <dc:creator>mbeauharnois</dc:creator>
+ <guid isPermaLink="false">29067 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>.vdf example file</title>
+    <link>https://www.vapor.ucar.edu/forum/vdf-example-file</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi, I&#039;m learning how to use vapor for research and am trying to understand .vdf format.  Our data is not formatted in any standardized way so no program can convert it for me, so I&#039;m attempting to learn what .vdf is exactly.  
+
+If anyone has advice for how to create a vdf file from an arbitrary raw format or any advice at all I&#039;d appreciate it.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 15 Jul 2015 14:57:32 +0000</pubDate>
+ <dc:creator>ebaum5_657883</dc:creator>
+ <guid isPermaLink="false">29168 at https://www.vapor.ucar.edu</guid>
+  </item>
+  </channel>
+</rss>

@@ -1,0 +1,1113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="../docs/vapor-installation/release-notes.html" />
+<link rel="shortlink" href="28594.html" />
+<link rel="prev" href="../docs/vapor-installation.html" />
+<link rel="up" href="../docs/vapor-installation.html" />
+<link rel="next" href="../docs/vapor-installation/vapor-binary-installation.html" />
+<link rel="shortcut icon" href="../sites/default/themes/troposphere/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Release notes | VAPOR | Computational Information Systems Laboratory</title>
+  <style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/system/system.base.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.menus.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.messages.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.theme.css?pv0ud8");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/book/book.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/comment/comment.css?pv0ud8");
+@import url("../sites/all/modules/date/date_api/date.css%3Fpv0ud8.css");
+@import url("../sites/all/modules/date/date_popup/themes/datepicker.1.7.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/field/theme/field.css?pv0ud8");
+@import url("../sites/default/modules/contrib/google_cse/google_cse.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/node/node.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/search/search.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/user/user.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/forum/forum.css?pv0ud8");
+@import url("../sites/all/modules/views/css/views.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/bootstrap.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/base.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/default.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/compatibility.css%3Fpv0ud8.css");
+</style>
+<link type="text/css" rel="stylesheet" href="28594.html" media="all" />
+<style type="text/css" media="all">
+@import url("../sites/default/themes/atmos/css/fonts.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/layout.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/nice_menus_default.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/style.css%3Fpv0ud8.css");
+@import url("../sites/default/files/color/troposphere-81dde954/colors.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_imgcaption.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_tinymce.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/custom.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/troposphere/css/override.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="print">
+@import url("../sites/default/themes/atmos/css/print.css%3Fpv0ud8.css");
+</style>
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie6.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie7.css?pv0ud8" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="../sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_f_6-OzlFXjayKlsU5sJKLwjz7LFQvdIZDm-Mt6jKwyM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_sR3RTelOZw0SR_bvHhelrkLY8DKYJcs5zvhbaS-zcpk.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-332815-8", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/default/files/js/js_ZxgiY_hLe37tS2x4OLfl0ivRyI_9yEJY0M6vxub3dJI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"troposphere","theme_token":"jL0KD2O7bvtUlvSPppvBbErfP1qoByPQIEw06eXdT3g","js":{"sites\/default\/modules\/contrib\/google_cse\/google_cse_results.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/default\/themes\/atmos\/js\/site.js":1,"sites\/default\/themes\/atmos\/js\/atmos_imgcaption.js":1,"sites\/default\/themes\/troposphere\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"":1,"sites\/default\/themes\/atmos\/css\/fonts.css":1,"sites\/default\/themes\/atmos\/css\/layout.css":1,"sites\/default\/themes\/atmos\/css\/nice_menus_default.css":1,"sites\/default\/themes\/atmos\/css\/style.css":1,"sites\/default\/themes\/troposphere\/css\/colors.css":1,"sites\/default\/themes\/atmos\/css\/atmos_imgcaption.css":1,"sites\/default\/themes\/atmos\/css\/atmos_tinymce.css":1,"sites\/default\/themes\/atmos\/css\/custom.css":1,"sites\/default\/themes\/troposphere\/css\/override.css":1,"sites\/default\/themes\/atmos\/css\/print.css":1,"sites\/default\/themes\/troposphere\/css\/ie.css":1,"sites\/default\/themes\/troposphere\/css\/ie6.css":1,"sites\/default\/themes\/troposphere\/css\/ie7.css":1}},"googleCSE":{"cx":"016712339613867830978:nuqoefb2ivy","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/\/www.google.com\/cse":true,"\/node\/28594":true}});
+//--><!]]>
+</script>
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'rpo4dvf'
+    };
+    var d = false;
+    var tk = document.createElement('script');
+    tk.src = '//use.typekit.net/' + config.kitId + '.js';
+    tk.type = 'text/javascript';
+    tk.async = 'true';
+    tk.onload = tk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (d || rs && rs != 'complete' && rs != 'loaded') return;
+      d = true;
+      try { Typekit.load(config); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tk, s);
+  })();
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-28594 node-type-doc-book featured" >
+  <div id="skip-link">
+    <a href="28594.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!-- TOP NAV -->
+<div id="header-wrap">
+<!-- <div id="navigation"></div> -->
+<div id="header" class="clear-block>">
+          <div id="navigation">
+<div id="featured" class="clear-block">
+      <div class="region region-featured">
+    <div id="block-google-cse-google-cse" class="block block-google-cse">
+
+    <h2>Search</h2>
+  
+  <div class="content">
+    
+
+  <form action="http://www.google.com/cse" method="get" id="google-cse-results-searchbox-form" accept-charset="UTF-8"><div><input type="hidden" name="cx" value="016712339613867830978:nuqoefb2ivy" />
+<input type="hidden" name="cof" value="FORID:0" />
+<div class="form-item form-type-textfield form-item-query">
+  <label for="edit-query">Enter your keywords </label>
+ <input type="text" id="edit-query" name="query" value="" size="40" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-sa" name="op" value="Search" class="form-submit" /><input type="hidden" name="ie" value="utf-8" />
+<input type="hidden" name="form_build_id" value="form-OyHMu0NwGIgSh7D5vPTByQKYioEpIrRzG2qTp1K4hmY" />
+<input type="hidden" name="form_id" value="google_cse_results_searchbox_form" />
+</div></form>
+<div id="google-cse-results">
+  <gcse:searchbox-only gname="google_cse"></gcse:searchbox-only>  <noscript>
+    You must enable JavaScript to view the search results.  </noscript>
+</div>
+  </div>
+</div>
+  </div>
+</div> <!-- /featured --> </div><!-- end navbar -->    
+  <div class="section clearfix align-center-wrapper">   
+<div id="logo-nav-wrapper">
+      <div id="logo-floater">
+      <a href="../index.html" title="Home" rel="home" id="logo">
+        <img src="../sites/default/themes/troposphere/images/vapor-logo-white.png" alt="Home" />
+      </a>
+    </div>
+    <div id="main-nav-wrapper">
+        </div>
+</div>
+
+
+    <div id="name-and-slogan">
+
+      <div id="site-name" class="element-invisible">
+        <strong>
+          <a href="../index.html" title="Home" rel="home"><span>VAPOR | Computational Information Systems Laboratory</span></a>
+        </strong>
+      </div>
+
+<div class="nsf-logo"><img src="../sites/default/themes/troposphere/images/nsf.png"/></div><!-- .slogan -->
+    </div> <!-- /#name-and-slogan -->
+
+
+  </div> <!-- /.section -->
+</div> <!-- /#header -->
+<div id="header-sub-nav">
+  <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="28594.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-bGMUK7SF-iUsYeYA3yigRZcVGYfDBe3FTeXBJNz7PSw" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu">
+
+    
+  <div class="content">
+    <div  class="tb-megamenu tb-megamenu-main-menu">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="icon-reorder"></i>
+    </button>
+    <div class="nav-collapse collapse always-show">
+    <ul  class="tb-megamenu-nav nav level-0 items-6">
+  <li  data-id="6983" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    VAPOR 3          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="6989" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-3-overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6986" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="6998" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/installation.html" class="">
+        
+    Installation          </a>
+  </li>
+
+<li  data-id="6995" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/training.html" class="">
+        
+    Training          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="200" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    VAPOR          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li  data-id="6358" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6340" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../vapor-features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="5830" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../news.html" class="">
+        
+    News          </a>
+  </li>
+
+<li  data-id="6343" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../credits.html" class="">
+        
+    Credits          </a>
+  </li>
+
+<li  data-id="6346" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../citation.html" class="">
+        
+    Citing VAPOR          </a>
+  </li>
+
+<li  data-id="6349" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../publications.html" class="">
+        
+    Publications          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5616" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown active">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    Documentation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="980" style="width: 980px;" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-4" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5760" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/usage.html" class="mega-group-title">
+        
+    Usage          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-8">
+  <li  data-id="6379" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/getting-started-vapor.html" class="">
+        
+    Getting Started          </a>
+  </li>
+
+<li  data-id="6382" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-data-preparation.html" class="">
+        
+    Data Preparation          </a>
+  </li>
+
+<li  data-id="6352" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-tutorials.html" class="">
+        
+    Tutorials          </a>
+  </li>
+
+<li  data-id="6385" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-gui-general-guide.html" class="">
+        
+    VAPOR GUI Guide          </a>
+  </li>
+
+<li  data-id="6388" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-gui-general-guide/vapor-rendering.html" class="">
+        
+    VAPOR GUI Renderer Guide          </a>
+  </li>
+
+<li  data-id="6391" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/data-analysis-vapor.html" class="">
+        
+    Data Analysis          </a>
+  </li>
+
+<li  data-id="6355" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-presentations.html" class="">
+        
+    Presentations          </a>
+  </li>
+
+<li  data-id="6394" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-6" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5763" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/reference-manuals.html" class="mega-group-title">
+        
+    Reference          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li  data-id="6397" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/command-line-interface-reference.html" class="">
+        
+    Command Line Tools          </a>
+  </li>
+
+<li  data-id="6400" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/vapor-idl-extension-reference-manual.html" class="">
+        
+    IDL          </a>
+  </li>
+
+<li  data-id="6403" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/usage-guides.html" class="">
+        
+    Usage Guides          </a>
+  </li>
+
+<li  data-id="6530" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/programming-apis.html" class="">
+        
+    Programming APIs          </a>
+  </li>
+
+<li  data-id="5658" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://sourceforge.net/projects/vapor" class="">
+        
+    SourceForge Project Site          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="6364" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group active">
+  <a href="../docs/vapor-installation.html" class="mega-group-title">
+        
+    Installation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li  data-id="6367" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega active">
+  <a href="../docs/vapor-installation/release-notes.html" class="">
+        
+    Release Notes          </a>
+  </li>
+
+<li  data-id="6370" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-binary-installation.html" class="">
+        
+    Binary Installation          </a>
+  </li>
+
+<li  data-id="6373" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-source-installation.html" class="">
+        
+    Source Installation          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5661" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="left" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-left dropdown">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    Gallery          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-7">
+  <li  data-id="6555" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/weather.html" class="">
+        
+    Weather          </a>
+  </li>
+
+<li  data-id="6561" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/climate.html" class="">
+        
+    Climate          </a>
+  </li>
+
+<li  data-id="6592" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/oceanography.html" class="">
+        
+    Oceanography          </a>
+  </li>
+
+<li  data-id="6595" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/astrophysics.html" class="">
+        
+    Astrophysics          </a>
+  </li>
+
+<li  data-id="6519" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/Turbulence.html" class="">
+        
+    Turbulence          </a>
+  </li>
+
+<li  data-id="6598" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/biology.html" class="">
+        
+    Biology          </a>
+  </li>
+
+<li  data-id="6601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega dropdown-submenu">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    Archive          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-6">
+  <li  data-id="6607" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/ultra-high-res-sandy-videos.html" class="">
+        
+    Ultra-High Res Sandy Videos          </a>
+  </li>
+
+<li  data-id="6604" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/original-sandy-videos.html" class="">
+        
+    Original Sandy Videos          </a>
+  </li>
+
+<li  data-id="6610" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/sandy-images.html" class="">
+        
+    Sandy Images          </a>
+  </li>
+
+<li  data-id="6616" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/kisti-2014.html" class="">
+        
+    KISTI Competition 2014          </a>
+  </li>
+
+<li  data-id="6451" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/toy-workshop-2008.html" class="">
+        
+    Toy Workshop 2008          </a>
+  </li>
+
+<li  data-id="6558" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/miscellaneous.html" class="">
+        
+    Miscellaneous          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="6469" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    Downloads          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-3">
+  <li  data-id="6436" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/binary-distributions" class="">
+        
+    Binary Distributions          </a>
+  </li>
+
+<li  data-id="6439" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../internal/downloads/source-distributions.html" class="">
+        
+    Source Distributions          </a>
+  </li>
+
+<li  data-id="6442" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/example-data" class="">
+        
+    Example Data          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5691" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28594.html#" class="dropdown-toggle">
+        
+    Support          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-12" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="5694" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../forum.html" class="">
+        
+    Forum          </a>
+  </li>
+
+<li  data-id="6406" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+
+<li  data-id="5703" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Report Bugs          </a>
+  </li>
+
+<li  data-id="5601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Contact Us          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+      </div>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div> <!-- /#header-wrap -->
+
+
+
+<div id="wrap">
+  <div id="container" class="clear-block">
+
+    <div id="center-wrapper" class="clear-block">
+
+      
+      
+        <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+
+                <div id="tabs-wrapper" class="clear-block"></div>                
+      
+
+
+  <!-- Some content types intentinally strip $node->title in the node-CONTENT_TYPE.tpl.php file.
+  Views and panels are not content types, so no $node->type, but do have $title.  Check for that first.
+  If there is a $node->type, check to see if $node->title exists -->
+<div id="content-head"><div class="breadcrumbs"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="../index.html">Home</a> » <span title="" class="nolink">Documentation</span> » <a href="../docs/vapor-installation.html">Installation</a></div></div><h1 class="title with-tabs">Release notes</h1></div>          <div id="main-content" class="clear-block">
+            
+              <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-28594" class="node node-doc-book node-full clearfix">
+
+      
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h2>Version 2.6.0 - April 24, 2017</h2>
+<p dir="ltr"><strong>New Features:</strong></p>
+<p dir="ltr"><strong>Line Plotting: </strong>The new Line Plotting utility allows users to generate graphs of their data to help steer their visual analysis.  Multiple variables can be plotted between two points in space, or through time at a single point.  More info <a href="https://www.vapor.ucar.edu/docs/usage/plot-utility">here</a>.</p>
+<p dir="ltr"><strong>Variable Statistics: </strong>A statistics utility has been written to make key metrics in users’ data conveniently accessible.  Currently supported values include variable minimum, maximum, mean, median, and standard deviation.  These values can be calculated across time at a single point, or within a volume.  More info <a href="https://www.vapor.ucar.edu/docs/usage/data-statistics">here</a>.</p>
+<p dir="ltr"><strong>SeedMe Video Encoder: </strong>A video encoding tool based on the online video encoder SeedMe has been incorporated into Vapor to make movie production easier.  Once users have registered an account with SeedMe.org, they will be able to easily generate video content with the screen captures of their data.  More info <a href="https://www.vapor.ucar.edu/docs/usage/seedme-video-encoder">here</a>.</p>
+<p dir="ltr"><strong>Enhanced Colorbar Manipulation: </strong>Support for mouse-based colorbar manipulation has been added.  Users can now control the size and position of their colorbars by clicking and dragging the mouse.</p>
+<p dir="ltr"><strong>Default Colorbar Titles: </strong>An option for a default colorbar title has been added to Vapor’s visualizer-features.  This will give the name of the corresponding variable as the title of each colorbar.</p>
+<p dir="ltr"><strong>Bugs Fixed:</strong></p>
+<p>1426 GRIB importers not working on Windows<br />1422 stats: minimum timestep resets to 1<br />1421 statistics: crash after setting center at 0 in center/size mode<br />1420 statistics: core dump<br />1417 Plot: add variable list changes orders after adding and removal variables<br />1415 SeedMe: should warn file overwriting when user clicks "go"<br />1412 Seedme: consistent button reaction.<br />1411 Plot: Spatial coordinate for time plots should default to the domain midpoint<br />1410 Statistics: Center textEdits do not properly correct size sliders<br />1409 Plot sliders do not move on 8spot<br />1406 Statistics: Max shows inf sometimes<br />1400 Plot: Timestep slider and text box inconsistent<br />1399 line plotting: can't change time step<br />1398 line plotting: state information not retained<br />1397 line plotting: const check box broken<br />1396 core dump after using plot utility<br />1393 GUI false alarm "invalid metadata file" when cancelling an "load data set" operation<br />1392 Plot: save to file doesn't report error on failure<br />1391 Vapor fails an assertion with multiple visualizers<br />1390 Time ordering of WRF data incorrect<br />1388 ROMS converter not applying missing values<br />1383 Vapor crashes on certain GRIB files<br />1380 Windows 10 installer improperly applies environment variables<br />1377 statistics: unable to use derived variables<br />1374 SeedMe: download link gone<br />1373 Statistics: 2nd time open forgets what stats to calculate<br />1371 Statistics extents change when timestep changes<br />1370 Cannot load 8spot3d with Windows 10.<br />1366 SeedMe: First time user screen has overlapping text in OSX 10.8<br />1365 Stats: need to limit digits of numbers to display when short of space<br />1363 Stats: Export Text doesn't check if write successful<br />1359 Statistics: Single point statistics do not appear correct<br />1356 Stats: auto-update not working<br />1355 Plot: default coordinate system should be space not time<br />1350 SeedMe file selection window pop up twice<br />1346 SeedMe: Qt warning messages from FirstTimeDialog<br />1340 SeedMe: Advanced tab doesn't function<br />1336 SeedMe: displays "processing..." even no input image selected<br />1332 Colorbar: Can't display both variable name and user supplied annotation<br />1293 SeedMe Select Images: No way to delete what is selected<br />1291 SeedMe save video overwrites existing file without warning<br />1287 line plotting: Z coordinate should be locked for 2D variables<br />1266 Colorbars rendering as white boxes on Debian<br />1250 ncdfvdfcreate: -zcoordvar variable is not added to -vars for data conversion<br /><br /></p>
+<p> </p>
+<h2> </h2>
+<h2>Version 2.6.0.RC0 - Nov 17, 2016</h2>
+<p dir="ltr"><strong>New Features:</strong></p>
+<p dir="ltr"><strong>Line Plotting: </strong>The new Line Plotting utility allows users to generate graphs of their data to help steer their visual analysis.  Multiple variables can be plotted between two points in space, or through time at a single point.  More info <a href="https://www.vapor.ucar.edu/docs/usage/plot-utility">here</a>.</p>
+<p dir="ltr"><strong>Variable Statistics: </strong>A statistics utility has been written to make key metrics in users’ data conveniently accessible.  Currently supported values include variable minimum, maximum, mean, median, and standard deviation.  These values can be calculated across time at a single point, or within a volume.  More info <a href="https://www.vapor.ucar.edu/docs/usage/data-statistics">here</a>.</p>
+<p dir="ltr"><strong>SeedMe Video Encoder: </strong>A video encoding tool based on the online video encoder SeedMe has been incorporated into Vapor to make movie production easier.  Once users have registered an account with SeedMe.org, they will be able to easily generate video content with the screen captures of their data.  More info <a href="https://www.vapor.ucar.edu/docs/usage/seedme-video-encoder">here</a>.</p>
+<p dir="ltr"><strong>Enhanced Colorbar Manipulation: </strong>Support for mouse-based colorbar manipulation has been added.  Users can now control the size and position of their colorbars by clicking and dragging the mouse.</p>
+<p dir="ltr"><strong>Default Colorbar Titles: </strong>An option for a default colorbar title has been added to Vapor’s visualizer-features.  This will give the name of the corresponding variable as the title of each colorbar.</p>
+<p dir="ltr"><strong>Bugs Fixed:</strong></p>
+<p dir="ltr"><span>#1267: Uninitialized value in idwt</span></p>
+<p dir="ltr"><span>#1261: Can’t import or convert WRF data with no 3D variables</span></p>
+<p dir="ltr"><span>#1259: wrfvdfcreate hangs when converting WRF-FIRE data</span></p>
+<p dir="ltr"><span>#1258: WRF converters report “No Data” when the -vars flag is used</span></p>
+<p dir="ltr"><span>#1257: vaporgui can’t display images with non-georeferenced data</span></p>
+<p dir="ltr"><span>#1256: Vaporgui and vdcwizard hang with idealized wrf data</span></p>
+<p dir="ltr"><span>#1252: Vapor crashes after creating dataset with long y-axis</span></p>
+<p><span id="docs-internal-guid-095b20a9-6e01-6299-64af-141933d7da46"><span>#1251: Python returns some arrays in reverse ordering</span></span></p>
+<h2> </h2>
+<h2>Version 2.5.0 - Feb 9, 2016</h2>
+<p><span style="font-size: 18.666666666666664px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Bugs fixed:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">The following significant bugs were fixed in the current release.</span></p>
+<p> </p>
+<p>#1248 Scipi missing fortran library on OSX 10.10</p>
+<p>#1240 wrf2vdf can't find libvdf.dylib</p>
+<p>#1239 Stereo contexts causing flicker on unsupported displays</p>
+<p>#1238 Undo keyframing disables timestep textbox</p>
+<p>#1237 VDCWizard halts after failing to copy variable</p>
+<p>#1236 Variable name XML error</p>
+<p>#1235 gribvdfcreate timesteps not detected in grib2 file</p>
+<p>#1233 Cannot save .tiff on Linux</p>
+<p>#1230 NaturalEarth imagery not installed on windows</p>
+<p>#1229 Can't build from source - python error</p>
+<p>#1228 Missing or incorrect tooltips and context-sensitive help</p>
+<p>#1224 asciitf2vtf dumps core</p>
+<p>Complete descriptions of these and other bugs are available <a href="https://sourceforge.net/p/vapor/bugs/">here</a>.</p>
+<pre class="dark title"> </pre>
+<h2>Version 2.5.0.RC0 - Nov 23, 2015</h2>
+<p><span style="font-size: 18.666666666666664px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">New Features:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">High-resolution cartographic maps</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">: Vaporgui now supports import and display of arbitrary, multi-resolution cartographic maps that follow the OSGeo Tiled Mapping Service conventions.  Two 2km resolution maps are included in the VAPOR distribution (NASA Big Blue Marble and Natural Earth). 500m Big Blue Marble imagery may be download separately from the VAPOR web site.</span></p>
+<p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Improved cartographic maps for ocean data</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">: To improve the use of Cartographic maps with ocean data all ocean maps include a transparent alpha channel for pixels over ocean regions. The alpha channel can be optionally honored or ignored.</span></p>
+<p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;"><br /></span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">3D Stereo Rendering: </span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Scenes can now be shown in 3D using quad-buffered stereo rendering.  This can be viewed in real-time as users navigate their data in VAPOR, and it can be used to create post-hoc 3D movies.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Color Barbs by Variable:  </span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Barbs can now be colored based on the values of a variable at each barb position, using a color map in the Barbs panel.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Contour lines following terrain:  </span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Contour lines for 2D variables can be offset vertically by a terrain-height variable, to display the contours on the terrain surface.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Contour line labeling options:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Three methods of labeling contour lines in the scene are supported:  Billboard (label displayed in front of the scene), In-Plane (displayed on the plane of the contours), and 3D (positioned in the 3D scene, facing the camera).</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Parallel data conversion scripts:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Python scrips have been written that can run VAPOR’s data conversion routines in parallel on compute clusters.  This can provide a linear speed-up with the number of cores that a user wishes to use for their conversion.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Quadratic interpolation of vertical coordinates:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Users now have the option to do a quadratic interpolation of the vertical coordinate in layered and stretched grid types.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Python documentation:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Additional Python documentation has been provided in the Python variable editor.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">MPAS and ICON support</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">: Prototype data importers have been added to vaporgui for MPAS and ICON model data. Outputs from these models can now be visualized with VAPOR.</span></p>
+<p><span style="font-size: 18.666666666666664px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Supplementary Changes:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Key-framing simplifications:</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;"> When the time step changes between two key frames, by default the key frames will be synchronized with the time steps so that the time step will advance by one each frame.  Also, automatically generated key frames will no longer be included in the list of key frames displayed in the user interface.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Sampling rate support for DVR and Isosurface renderers:</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">  Users can specify a spatial sampling rate for these renderers to improve the image quality when data values are not spatially uniform.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Default 16-bit DVR and Isosurface rendering:</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">  By default, these renderers operate in 16 (instead of 8) bits, improving the default rendering quality.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Keyboard controls:</span><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;"> VAPOR’s orientation can now be manipulated with keyboard arrow keys for rotation (add ‘shift’ for translation) and the +/- keys for zooming in/out.</span></p>
+<p> </p>
+<p><span style="font-size: 18.666666666666664px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">Bugs fixed:</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">The following significant bugs were fixed in the current release.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">1201: Lower accuracy data not used.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">1177: Support user setting of ISO and DVR sampling rate.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">1153: Usability problems with key framing.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">1145: Contour line annotation incorrect.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">1144: Spinning cursor delayed.</span></p>
+<p><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;"><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">For a list of all fixed bugs please visit the </span><a style="text-decoration: none;" href="https://sourceforge.net/p/vapor/bugs/"><span style="font-size: 16px; font-family: Cambria; color: #0000ff; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: underline; vertical-align: baseline;">vapor sourceforge bug list</span></a><span style="font-size: 16px; font-family: Cambria; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">.</span><br /></span></p>
+<h2> </h2>
+<h2>Version 2.4.2 - May 28, 2015</h2>
+<h3>Bugs Fixed:</h3>
+<p>1154 vaporgui error message: libexpat.so.0: failed to map segment from shared object: Cannot allocate memory</p>
+<p>1147 Libraries on Mac installed with @executable_path</p>
+<p>1146 vaporgui problems with libexpat.so on Ubuntu 12.04<br /><br /></p>
+<h2>Version 2.4.0 - March 11, 2015</h2>
+<h3><strong>New Features:</strong></h3>
+<p>This version includes the following new features:</p>
+<p><strong>Support for GRIB data:</strong>  Data in GRIB (GRIdded Binary) format can now be visualized in VAPOR.  Currently this capability has only been tested with GRIMs (Global and Regional Integrated Modeling System) model data, as described in the <a href="http://nml.yonsei.ac.kr/front/common/download.saea?file_seq=138">GRIMs User’s Manual</a>.  This model data can be converted to a VDC using VDCWizard, or converted using two new command-line apps “gribvdfcreate” and “grib2vdf.  GRIB data can also be imported directly into vaporgui, using the Data menu.</p>
+<p><strong>Support for CAM (Community Atmospheric Model): </strong> VAPOR can now visualize CAM model data.  NetCDF output Data files can be converted to a VDC using VDCWizard, or converted using two new command-line apps “camvdfcreate” and “cam2vdf”.  CAM data can also be imported directly into vaporgui using the Data menu.</p>
+<p><strong>Contour lines:</strong>  Vapor now supports displaying contour lines for 2D and 3D variables, using the “Contour” tab in vaporgui.  Contour lines of 2D variables are displayed in a horizontal planar plot.  Contour lines of 3D variables are displayed in a planar slice that can be arbitrarily oriented and positioned in the 3D scene.  Users may specify any number of isovalues and the contour lines can be annotated or colored to indicate the associated isovalue.</p>
+<p><strong>Latitude/Longitude axis annotation: </strong> The horizontal axes of geo-referenced data can now be annotated with latitude and longitude, for most supported map projections.  This option is set in the axis annotation properties in the visualizer features panel.</p>
+<p><strong>Multiple color bars:</strong>  Vaporgui now supports display of up to 6 color bars in the 3D visualizer; one color bar for each renderer that has a transfer function.  A title can be displayed below each color bar.</p>
+<p>In addition, users will note the following changes:</p>
+<p><strong>Windows PATH and PYTHONHOME usage</strong>:  On Windows, VAPOR will no longer set the system PATH or the PYTHONHOME.  Users of the VAPOR command-line apps will need to perform <a href="../docs/vapor-installation/vapor-windows-binary-installation.html">a vapor-setup operation</a> in the current terminal. This will not affect users of vaporgui or VDCWizard.</p>
+<p><strong>Copying box extents.</strong>  The Region panel includes a "Copy Box Extents" option that allows users to copy the box extents from one renderer instance to another.</p>
+<p><strong>Color map by field magnitude:</strong>  The flow line color-mapping by field magnitude option is no longer supported.  Instead, to color lines by flow magnitude, users should define a 3D derived variable equal to field magnitude, and specify this derived variable as the color/opacity mapped entity.</p>
+<h3>Bugs Fixed:</h3>
+<p>The following list includes the more significant bugs that have been fixed in this release.  For more details and a list of all fixed bugs please visit the <a href="https://sourceforge.net/p/vapor/bugs/">vapor sourceforge bug list</a>.</p>
+<p>1142 Can't process MOM/POP/ROMS files with varying time steps</p>
+<p>1140 momvdfcreate generates wrong extents with some POP data</p>
+<p>1131 Core dump during keyframe animation</p>
+<p>1121 VDF translators always output all wavelet coefficients even if not wanted.</p>
+<p>1117 Seed bias = 16 gets strange results</p>
+<p>1106 Zero 2D variable in restored session</p>
+<p>1102 GRIB conversion fails on Mac OSX 10.10 (Yosemite)</p>
+<p>1101 Isosurface crash when reading 2.3 session file</p>
+<p>1098 Many repetitions in image capture sequence</p>
+<p>1024 Silent setting environment variables on Windows</p>
+<h3><strong>Known bugs:</strong> </h3>
+<p>A number of high severity known bugs is listed below.  For more details and a list of all known bugs please visit the <a href="https://sourceforge.net/p/vapor/bugs/">vapor sourceforge bug list</a> .</p>
+<p>1141 VDCWizard crashes on Yosemite after data conversion completed</p>
+<p>1128 User extents do not update on 2D, Image, and Probe tabs.</p>
+<p>1127 TF Domain Bounds and Isocontrol bounds should be obtained on-demand</p>
+<p>1041 NCL geotiff creation fails</p>
+<p>1009 Nudging does not work on Mac</p>
+<p>918 Isosurface missing in ROMS scene</p>
+<h2>Version 2.4.0 Release Candidate 0 – December 15, 2014</h2>
+<h3><strong>New Features:</strong></h3>
+<p><strong>Support for GRIB data:</strong>  Data in GRIB (GRIdded Binary) format can now be visualized in VAPOR.  Currently this capability has only been tested with GRIMs (Global and Regional Integrated Modeling System) model data, as described in the <a href="http://nml.yonsei.ac.kr/front/common/download.saea?file_seq=138">GRIMs User’s Manual</a>.  This model data can be converted to a VDC using VDCWizard, or converted using two new command-line apps “gribvdfcreate” and “grib2vdf.  GRIB data can also be imported directly into vaporgui, using the Data menu.</p>
+<p><strong>Support for CAM (Community Atmospheric Model): </strong> VAPOR can now visualize CAM model data.  NetCDF output Data files can be converted to a VDC using VDCWizard, or converted using two new command-line apps “camvdfcreate” and “cam2vdf”.  CAM data can also be imported directly into vaporgui using the Data menu.</p>
+<p><strong>Contour lines:</strong>  Vapor now supports displaying contour lines for 2D and 3D variables, using the “Contour” tab in vaporgui.  Contour lines of 2D variables are displayed in a horizontal planar plot.  Contour lines of 3D variables are displayed in a planar slice that can be arbitrarily oriented and positioned in the 3D scene.  Users may specify any number of isovalues and the contour lines can be annotated or colored to indicate the associated isovalue.</p>
+<p><strong>Latitude/Longitude axis annotation: </strong> The horizontal axes of geo-referenced data can now be annotated with latitude and longitude, for most supported map projections.  This option is set in the axis annotation properties in the visualizer features panel.</p>
+<p><strong>Multiple color bars:</strong>  Vaporgui now supports display of up to 6 color bars in the 3D visualizer; one color bar for each renderer that has a transfer function.  A title can be displayed below each color bar.</p>
+<h3><strong>Bugs Fixed:</strong></h3>
+<p>The following bugs have been fixed in this release (Full descriptions can be found on the <a href="https://sourceforge.net/p/vapor/bugs/">Sourceforge Web site</a>):</p>
+<p>1069 Memory leak in pathline integration using color mapping</p>
+<p>1058 romsvdfcreate seg faults when no 3D variables are present</p>
+<p>1043 .user_prefs not identified in file save on OSX 10.9</p>
+<p>1040 Implicit time steps do not work</p>
+<p>1036 Session does not save barbs variables</p>
+<p>1035 Inconsistent height values with models at higher elevation</p>
+<p>1032 LD_LIBRARY_PATH usage on Linux</p>
+<p>1030 ncdf2vdf outputs wrong data range for 2D Data</p>
+<p>1028 Memory leaks occurring in ROMS, WRF, and CAM converters.</p>
+<p>1027 vdfcreate truncates domain extents precision</p>
+<p>1026 libpng12 dependency</p>
+<p>1019 crash when copying renderer instances</p>
+<p>1012 assimp library version 3.0 not supported</p>
+<p>1010 Color edit has no effect until another control point clicked</p>
+<p>1005 Cannot read installed images or colormaps on OSX 10.9</p>
+<p>999 wrf2geotiff.ncl is broken</p>
+<h3><strong>Known bugs:</strong> </h3>
+<p>A number of high severity known bugs is listed below.  For more details and a list of all known bugs please visit the <a href="https://sourceforge.net/p/vapor/bugs/">vapor sourceforge bug list</a> .</p>
+<p>1079 Import GRIB file crashes (when fed a bad file).</p>
+<p>1024 Silent setting environment variables on Windows</p>
+<p>1102 GRIB conversion fails on Mac OSX 10.10 (Yosemite)</p>
+<p>1101 Isosurface crash when reading 2.3 session file</p>
+<p>918 Isosurface missing in ROMS scene</p>
+<hr /><h2>Version 2.3.0 - Feb 7, 2014</h2>
+<h3>New Features:</h3>
+<p><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';"><strong>vdcwizard</strong> is a brand new tool in VAPOR, providing GUI for simplified data conversion from foreign data to VAPOR’s VDC data format. Currently, vdcwizard is capable of converting data from ROMS, MOM4, POP, and WRF models to the VDC. For more information see <a href="../docs/vapor-data-preparation/data-conversion-vdcwizard.html">https://www.vapor.ucar.edu/docs/vapor-data-preparation/data-conversion-vdcwizard</a></span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Direct model import</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: <em style="mso-bidi-font-style: normal;">vaporgui</em><span style="mso-spacerun: yes;">  </span>can now read ROMS, MOM4, and POP model outputs directly, without prior conversion to a VAPOR Data Collection. </span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Parallel data translation</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: Support for parallel (threaded) data conversion on Windows has been added (Linux and Mac OS X were previously support), speeding the process of reading and writing VDC data</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">CDO post-processed data support</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: Supported model outputs (e.g<span style="mso-spacerun: yes;">  </span>ROMS, MOM, POP) that have been post-processed with the Climate Data Operators (CDO) can now read by VAPOR.</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">On-line documentation</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: VAPOR’s on-line help has been extended and now references the VAPOR documentation web site.</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Simplified LOD and refinement control</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: The vaporgui user interface now offers a simplified, single-parameter control of the “refinement” level and level-of-detail (LOD).</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Discrete color maps</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: Discrete color maps are available for all Transfer Function editors.</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Flow panel TF</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: The Flow visualizer tab Transfer Function editor has been made consistent with TF editors used in all other visualization tabs.</span></p>
+<p><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';"><strong>Automated release notification</strong>:vaporgui will now alert users when new releases of the VAPOR package become available.</span></p>
+<h3><strong>Bugs fixed</strong></h3>
+<p>A summary of fixed bugs is below. For details see <a href="https://sourceforge.net/p/vapor/bugs">https://sourceforge.net/p/vapor/bugs</a></p>
+<p> </p>
+<p>1002 asset when resizing probe  <br />1001 roms2vdf dumps core when -var option is used       <br />1000 'Barb Length Scale Factor' not being initialzed properly        <br />996 vdcwizard does not allow storage block &gt; 99          <br />992 Text in the vaporgui tabs gets clipped in certain areas    <br />991 Wrong region centering  <br />990 animation stops in the middle   <br />987 vaporgui model renderer ignores color   <br />983 PYTHONVERSION incorrect on Windows  <br />981 lat-lon extents not displayed by wrfvdfcreate or vdcwizard  <br />975 vdcwizard: can't change start time step      <br />970 Python imports not behaving as expected          <br />952 Probe histogram and smoothing incorrect         <br />946 Probe crop too small        <br />923 Animation hangs after session 2 days old        <br />920 Environment Variables in Windows Source Installation</p>
+<p>907 lat-lon projections not support in WRF data    <br />743 core dump when rendering over X11</p>
+<hr /><h2><a name="release_2_3_0_rc0" id="release_2_3_0_rc0"></a>Version 2.3.0.RC0 - Dec 13, 2013</h2>
+<h3>New Features:</h3>
+<p><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';"><strong>vdcwizard</strong> is a brand new tool in VAPOR, providing GUI for simplified data conversion from foreign data to VAPOR’s VDC data format. Currently, vdcwizard is capable of converting data from ROMS, MOM4, POP, and WRF models to the VDC. For more information see <a href="../docs/vapor-data-preparation/data-conversion-vdcwizard.html">https://www.vapor.ucar.edu/docs/vapor-data-preparation/data-conversion-vdcwizard</a></span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Direct model import</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: <em style="mso-bidi-font-style: normal;">vaporgui</em><span style="mso-spacerun: yes;">  </span>can now read ROMS, MOM4, and POP model outputs directly, without prior conversion to a VAPOR Data Collection. </span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Parallel data translation</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: Support for parallel (threaded) data conversion on Windows has been added (Linux and Mac OS X were previously support), speeding the process of reading and writing VDC data</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">CDO post-processed data support</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: Supported model outputs (e.g<span style="mso-spacerun: yes;">  </span>ROMS, MOM, POP) that have been post-processed with the Climate Data Operators (CDO) can now read by VAPOR.</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">On-line documentation</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: VAPOR’s on-line help has been extended and now references the VAPOR documentation web site.</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Simplified LOD and refinement control</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: The vaporgui user interface now offers a simplified, single-parameter control of the “refinement” level and level-of-detail (LOD).</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Discrete color maps</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: Discrete color maps are available for all Transfer Function editors.</span></p>
+<p><strong style="mso-bidi-font-weight: normal;"><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Flow panel TF</span></strong><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">: The Flow visualizer tab Transfer Function editor has been made consistent with TF editors used in all other visualization tabs.</span></p>
+<p><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';"><strong>Automated release notification</strong>:vaporgui will now alert users when new releases of the VAPOR package become available.<br /></span></p>
+<h3><strong>Bugs fixed</strong></h3>
+<p>A summary of fixed bugs is below. For details see <a href="https://sourceforge.net/p/vapor/bugs">https://sourceforge.net/p/vapor/bugs</a></p>
+<p>969 can't delete python variables<br />967 Can't save or load user prefs on Mac<br />963 flow display lists broken<br />962 Error message after saving seeds<br />961 Core dump saving seeds<br />956 vaporgui model tab: instance confusion<br />947 OpenGL errors on Mac<br />934 conversion tools abort with invalide compression ratios<br />928 Vapor crashes on direct data importation<br />927 Mouse scroll whell disrupting visualizer settings<br />922 IDL VDC_VAROPENWRITE broken under 2.2.4<br />921 keyframing doesn't work with "zoom"<br />919 ncdfvdfcreate ignores extents<br />917 incorrect default in romsvdfcreate,momvdfcreate help<br />916 Unsteady timestep display interval change does not force rerender<br />914 keyframing gets confused about time step<br />910 Pre-integrated volume rendering is broken<br />890 ncdfvdfcreate doesn't handle implicit time steps<br />882 Unable to complete image capture sequence rendering<br />739 Users need other python modules to work with Vapor<br />712 Unsteady flow opacity mapping incorrect<br />448 flow lines penetrate terrain</p>
+<hr /><h2><a name="release_2_2_4" id="release_2_2_4"></a></h2>
+<h2>Version 2.2.4</h2>
+<h4>New Features</h4>
+<p><strong>Parallel data translation on Windows</strong>: VDC data translation (reading and writing) has been parallelized (threaded) on Windows platforms. Windows platforms with multiple cores can now take advantage of parallel data translation by VAPOR's command line data translation utilities (e.g. raw2vdf, wrf2vdf, etc.) and vaporgui. Note, parallel data transformation already exists on Mac and Linux platforms.</p>
+<p> </p>
+<h3>Bugs fixed:</h3>
+<p>911     Vertical coordinates incorrect with some MOM and POP data sets<br />906     Derived variables don't work when resume saved session<br />905     Can't display multiple fields with 2D only data sets<br />904     2D visualizer can't load transfer functions if no 3D data are present<br />903     Mixed up variable names from session files<br />897     Program crash due to steady field parameters<br />893     Flow Image capture crash <br />891     TF window does not refresh<br />884     Can't overlay data in   <br />876     IDL broken on Windows</p>
+<p>863     Apply to terrain does not correctly handle missing values<br />861     transparency slider not updated    </p>
+<hr /><h2><a name="release_2_2_2" id="release_2_2_2"></a></h2>
+<h2>Version 2.2.2</h2>
+<h4>New Features</h4>
+<p><strong>command line translators</strong>: New versions of the command line data translators <em>romsvdfcreate</em>, <em>roms2vdf</em>, <em>momvdfcreate</em>, <em>mom2vdf</em>, and <em>ncdf2vdf</em> exist. The new commands provide a much simplified interface for data conversion. An entirely new command, <em>ncdfvdfcreate</em>, was written to facilitate conversion of generic netCDF data sets.</p>
+<p><strong>64bit Windows support</strong>: Binary installers supporting 64bit addressing are now available for Windows platforms.</p>
+<p><strong>vdfcp.pl command</strong>: vdfcp.pl is a command line utility that facilitates copying all, or a selected subset, of a VDC data set from one location to another</p>
+<h4>Bugs Fixed:</h4>
+<p>3613859 Clipping planes too tight<br />3613851 viz features not changeable<br />3613230 Infinite recursion in VariableExists for derived variables<br />3613073 Many errors when time step missing<br />3613069 no elev grid refresh when change height variable<br />3611854 Unwritable default directories<br />3610027 vapor.BOUNDS is wrong<br />3609065 linux installer omits libexpat<br />3608833 tab changes very slow with big data<br />3608754 vector_rotate broken<br />3607921 path handling under windows<br />3607919 spherical volume rendering broken<br />3607074 python conflict<br />3605413 In layered datasets mouse drags show like not layered <br />3605410 square box visibile in isosurface<br />3603624 Data range incorrectly calculated</p>
+<p>3602835 probe orientation is wrong<br />3593358 incorrect derivative operators for WRF, MOM, ROMS</p>
+<hr /><h3><a name="release_2_2_0RC0" id="release_2_2_0RC0"></a></h3>
+<h2>Version 2.2.0</h2>
+<h4>New Features</h4>
+<p><strong>Animation key framing support:</strong> Complex animaitons can now easily be created through <em>key framing</em>: after specificying a small number of viewpoints a smooth animation can be constructed by automatically filling in the frames in between.</p>
+<p><strong>Missing data values</strong>: The VAPOR Data Collection, translation tools, and vaporgui now provide first class support for missing data values: grid points for which no data value is defined are permitted and correctly handled by all VAPOR data operators.</p>
+<p><strong>Stretched grids</strong>: In addition to regular and terrain following grids, VAPOR now supports stretched (rectilinear) grids.</p>
+<p><strong>Ocean data support:</strong> Translators for converting from MOM, POP, and ROMS ocean models to the VAPOR VDC are now available.</p>
+<p><strong>Improved layered grid support:</strong> Layered (terrain following) grids, such as those generated by WRF, are no longer resampled to a uniform grid. vaporgui now operates directly on layered grids, which can significantly improved rendering quality.</p>
+<p><strong>Improved probe rendering quality</strong>: The probe tool now supports optional linear interpolation (previously only nearest neighbor interpolation was supported).</p>
+<p><strong>Display window size user preference</strong>: The visualizer display window width and height may now be specified as a user preference.</p>
+<p> </p>
+<h3>Bugs fixed:</h3>
+<p>3602862     random seeds change often       <br />3602449     Data Cache fills up</p>
+<p>3601808     vdfedit does not insert time-varying extents<br />3601282     assert in romsvdfcreate     <br />3601269     errors generating unsteady seeds<br />3601195     Barb nudge broken<br />3601158     degenerate flow lines from nonrandom rake<br />3601156     Missing values not in 2D derived variable<br />3601111     cvs library version produce not valid vdc<br />3601034     Missing values in probe are not transparent<br />3600297     Error when depth peeling isosurface on NVS5200<br />3600262     keyframe speed wrong in stretched domains<br />3599886     keyframing prevents traditional animation<br />3599505     random seeds not uniform<br />3599023     speckles intermittently in ISO<br />3598663     problems mapping variable onto isosurface<br />3598087     problems with frame capture<br />3597326     Can't enable diagnostic messages<br />3597310     animation max wait is useless<br />3595657     Cruft in unsteady flow<br />3595025     problems after disabling depth peeling<br />3594997     image capture fails with depth peeling<br />3594996     another depth peeling blending problem<br />3594994     depth peeling blending problem<br />3594833     missing values are visualized with renderer, iso, probe ...<br />3594362     no color by variable with unsteady flow<br />3593743     deriv operators fail with short dimensions<br />3593359     Need windows diagnostics<br />3592259     DVR of MOM4 has wrong color map at top refinement<br />3592131     DVR of ROMS displays missing values<br />3590415     2.2.0.RC1 (cvs version) do not compile<br />3590130     Python problems on windows<br />3588020     windows version crashes on exit<br />3579789     ELEVATION variable may contain missing data values<br />3579524     flow bias doesn't work with ocean data<br /><br /></p>
+<h3>Known bugs:</h3>
+<p>A partial list of "high severity" known bugs appears below. For more details and a list of all known bugs please visit the <a href="https://sourceforge.net/p/vapor/bugs/">sourceforge web site</a></p>
+<p> </p>
+<p>3602451     Iso render crashes mac</p>
+<p>3590735     Some POP datasets cannot be converted with mom2vdf<br />3603218     Crash with no error message with low-end intel card</p>
+<p>3602835     probe orientation is wrong          <br />3602726     DVR does not update colors      <br />3602724     WRF results inconsistent with guide  <br />3601015     Windows netcdf 4.2 problem with reading large files<br /><br /></p>
+<hr /><h3><a id="release_2_1_0" name="release_2_1_0"></a></h3>
+<h3>Version 2.1.0</h3>
+<h4>New Features</h4>
+<p>Two new visualization capabilities:</p>
+<ul><li>Display of flow glyphs (e.g. wind barbs) indicating field strength and direction.</li>
+<li>Display of user-provided geometry in the scene. The geometry can be in any of the file formats supported by the Open Asset Import Library (Assimp).</li>
+</ul><p>Several improvements have been made to the VAPOR Python support, including a Python module that calculates several WRF-related derived variables.</p>
+<p>Several of the NCL colormaps most useful to WRF have been provided as transfer functions.</p>
+<p>VAPOR provides a number of built-in global terrain images, enabling users to avoid generation of custom terrain images.</p>
+<p>Support is provided for reading compressed tiff images.<br /><br /> A new loadable shader capability allows advanced users to customize or write their own GPU shaders</p>
+<p>Support is provided for rotated lat-lon (Cassini) transform, as used by WRF-ARW version 3.</p>
+<p>The command-line apps ncdf2vdf and wrf2vdf now support wavelet compression using the VDC2 data representation.</p>
+<p>Users can specify the order and showing or hiding of tabs in the user interface as a user preference.</p>
+<p>The user interface style is now customized to each platform.</p>
+<p>Probe and Flow panels were rearranged for improved usability, with support for hiding and showing subpanels</p>
+<p>The performance of the VDC2 data encoder has been improved on platforms with multiple cores.</p>
+<h4>Bug Fixes</h4>
+<p>Numerous instability problems have been fixed. Other fixed bugs include:</p>
+<p>3341880 unreliable temporal animation</p>
+<p>3300606 Preferences should be forwards compatible</p>
+<p>3392570 VDC2 data not machine portable</p>
+<p>3447289 Python variables don’t use lowered resolution</p>
+<p>3290522 Wrong data bounds with derived variables</p>
+<p>Known Bugs and Workarounds:</p>
+<p>2210024: Unsteady flow integration results are incorrect if the domain is moving in time.</p>
+<p>1903402: Transparency does not work correctly when displaying multiple partially transparent surfaces in the same scene.</p>
+<p>3123643: The VAPOR IDL API does not work with VDC2 data. Users should use Python to calculate derived variables on VDC2 data.</p>
+<p>3308059: Existing derived variables do not recalculate when the vertical reinterpolation rate changes.</p>
+<p>A full list of known bugs and feature requests can be found on the SourceForge VAPOR project <a href="https://sourceforge.net/p/vapor/bugs">web site</a></p>
+<hr /><h3>Version 2.0.2</h3>
+<h4>New Features</h4>
+<p><em><strong>VAPOR’s spin animation</strong></em> <em>is now an option that is set in the visualizer features panel. By default, spin animation is turned off.</em></p>
+<p><em><strong>A new Python method</strong>,</em> vapor.GetFullVDCDims(refinement)<em>, enables Python programs to find the dimensions of the current VDC.</em></p>
+<p><em><strong>The Python finite-difference derivative operator</strong></em>, deriv_findiff()<em>,</em> <em>now has its dimension ordering in agreement with the VAPOR user coordinates. </em></p>
+<h4> </h4>
+<h4><em>Bug Fixes:</em></h4>
+<p><em>This release fixes several bugs: </em></p>
+<p class="style1">3131758: python memory leak was fixed</p>
+<p><em>3131860: region extents no longer jump when slider is released<br /></em></p>
+<p><em>3132554, 3136874: various problems with the use of local/global parameters were fixed<br /></em></p>
+<p><em>3150390: data bounds are now evaluated lazily<br /></em></p>
+<p><em>3181360: multiple isosurfaces no longer cause a core dump<br /></em></p>
+<p><em>3151444: multiple animating windows are now synchronized<br /></em></p>
+<p><em>3124772, 3126751: When changes are made to a Python startup script, the previously cached derived variable data is now re-calculated.<br /></em></p>
+<p><em>3113074: At the end of an animation sequence, the front tab now updates to display the data for the final time step.<br /></em></p>
+<p><em>3117797: Only the currently available compression levels are indicated in the gui. When lower compression is not available, a higher compression may be used (if specified in user preferences).<br /></em></p>
+<p><em>3158384: The encoded significance map used by VDC2 data contained incomplete information. Note: VDC2 data generated by VAPOR 2.0.2 and later will not be readable by pre 2.0.2 releases.</em></p>
+<p><strong><em>Known Bugs and Workarounds</em></strong>:</p>
+<p><em>2210024: Unsteady flow integration results are incorrect if the domain is moving in time. <br /></em></p>
+<p><em>1903402: Transparency does not work correctly when displaying multiple partially transparent surfaces in the same scene. <br /></em></p>
+<p><em>3123881: Jpeg image files cannot be applied to the terrain in the Visualizer Feature panel. Users should use the Image panel, which supports applying Tiff images to the terrain.<br /></em></p>
+<p><em>3123643: The VAPOR IDL API does not work with VDC2 data. Users should use Python to calculate derived variables on VDC2 data.<br /><br /> 3199940 When using a nonrandom rake that extends below the terrain, a crash can result. This can be prevented by setting flow field variables to small nonzero values below the terrain (in the visualizer features panel)<br /></em></p>
+<p><em>3199770 On windows when converting very large WRF output files, wrf2vdf can crash, if the number of timesteps times the number of variables in one file is greater than 10000. This crash can be avoided by converting a subset of the variables at one time.</em></p>
+<p><em>The WRF Cassini projection is not supported. Results will be displayed in user's coordinate system (meters).</em></p>
+<p><em>A full list of known bugs and feature requests can be found on the SourceForge VAPOR project web site: </em></p>
+<hr /><h3>Version 2.0.0</h3>
+<h4>New Features</h4>
+<p><em><strong>Python support for calculating derived variables:</strong> VAPOR provides a built-in Python calculation engine, enabling users to define and visualize new variables interactively during data analysis. Simple Python expressions or larger programs can be used to derive new variables from existing variables. VAPOR data is handled as Numpy (numerical python) arrays. The derived variables can be visualized like other variables in the VDC.<br /></em></p>
+<p><em><strong>Support for data compression:</strong> VAPOR now supports an improved biorthogonal-wavelet based data model with support for data compression as well as refinement level control. This model is called VDC2 for second-generation Vapor Data Collection. The VDC2 model is designed to improve performance on extremely large datasets. Data that is converted to a VDC2 model can be retrieved at a user-specified compression level and refinement level. Compression ratios up to 500:1 can be used with minimal image degradation, enabling rapid viewing of massive datasets by reducing the I/O requirement.<br /></em></p>
+<p><em><strong>Direct import of WRF-ARW output files:</strong> Vapor now supports direct importing of wrfout files, bypassing the VAPOR data conversion step. This is especially useful to get a quick visualization of small WRF- ARW datasets.<br /></em></p>
+<p><em><strong>New UI implementation:</strong> VAPOR has updated the user interface to Qt version 4.6. Users will notice a somewhat changed appearance (especially on Mac), but the functionality of the UI should not be significantly different.<br /></em></p>
+<p><em><strong>Faster rendering of flow lines:</strong> VAPOR’s flow line rendering has been accelerated, so that display of many thousands of flow lines can now be performed interactively.<br /></em></p>
+<p><em><strong>Native Mac OSX support for both 32 and 64 bit systems:</strong> VAPOR version 2.0.0 now runs as a native Mac application. There is a 64-bit as well as a 32-bit version. The user interface is similar to other Mac apps, and does not rely on X11 any more.<br /></em></p>
+<p><em>The VAPOR IDL API now uses IDL version 7. </em></p>
+<p> </p>
+<p><em>VAPOR now provides limited support for display of semi-transparent surfaces. Multiple two-dimensional semi-transparent surfaces (Probe, 2DData, and Image) will correctly display in a scene provided: </em></p>
+<h4><em>Bug Fixes</em></h4>
+<p><em>This release fixes several bugs:</em></p>
+<p><em>2877268: Typing in a new region size no longer changes its position.</em></p>
+<p><em>2912903: Improved rendering of isosurfaces with volume rendering. Opaque isosurfaces are properly rendered with a DVR in the same visualizer.</em></p>
+<p><em>2961337: The text in the color scale no longer gets cropped on Linux platforms.</em></p>
+<p><em>2989430: The elevation of a 2D surface can now be typed into the gui (with both Image and 2D renderers) and the specified elevation is correctly used. </em></p>
+<p>2991491: DVR pre-integration can now be used in the same window as a color scale.</p>
+<p>A complete list of bugs fixed by this release may be found on the SourceForge VAPOR project <a href="https://sourceforge.net/p/vapor/bugs">web site</a></p>
+<h4>Known Bugs and Workarounds</h4>
+<p>Unsteady flow integration results are incorrect if the domain is moving in time.</p>
+<p>Transparency does not work correctly when displaying multiple partially transparent surfaces in the same scene.</p>
+<p>Jpeg image files cannot be applied to the terrain in the Visualizer Feature panel. Users should use the Image panel, which supports applying Tiff images to the terrain.</p>
+<p>VDC merge crashes if there are Python-derived variables in the current VDC.</p>
+<p>The VAPOR IDL API does not work with VDC2 data. Users should use Python to calculate derived variables on VDC2 data.</p>
+<p>At the end of an animation sequence, the front tab does not update to display the data for the final time step. Users should click the “stop” button to see the correct settings and images in the front tab.</p>
+<p>A full list of known bugs can be found on the SourceForge VAPOR project <a href="https://sourceforge.net/p/vapor/bugs">web site</a>.</p>
+<p> </p></div></div></div>  <div id="book-navigation-28189" class="book-navigation">
+    
+        <div class="page-links clearfix">
+              <a href="../docs/vapor-installation.html" class="page-previous" title="Go to previous page">‹ VAPOR Installation</a>
+                    <a href="../docs/vapor-installation.html" class="page-up" title="Go to parent page">up</a>
+                    <a href="../docs/vapor-installation/vapor-binary-installation.html" class="page-next" title="Go to next page">VAPOR Binary Installation ›</a>
+          </div>
+    
+  </div>
+  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+          </div>
+          <div class="feed_icons">
+                      </div>
+
+        </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+            <div id="rightcol" class="sidebar">
+            <div class="region region-sidebar-second">
+    <div id="block-book-navigation" class="block block-book">
+
+    <h2><a href="../docs/vapor-installation.html" class="book-title">VAPOR Installation</a></h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf active-trail"><a href="../docs/vapor-installation/release-notes.html" class="active-trail active">Release notes</a></li>
+<li class="collapsed"><a href="../docs/vapor-installation/vapor-binary-installation.html">VAPOR Binary Installation</a></li>
+<li class="last collapsed"><a href="../docs/vapor-installation/vapor-source-installation.html">VAPOR Source Installation</a></li>
+</ul>  </div>
+</div>
+<div id="block-nodeblock-22858" class="block block-nodeblock">
+
+    <h2>Download button</h2>
+  
+  <div class="content">
+    <div id="node-22858" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p style="margin: 0;"><a class="button" style="width: 100%; padding: 20px 0;" href="http://www.vapor.ucar.edu/internal/downloads">Download Vapor</a></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#rightcol -->
+    
+  
+    </div> <!-- /center-wrapper -->
+  
+  
+  
+      <div class="footernav">
+        <div class="region region-footer">
+    <div id="block-nodeblock-22831" class="block block-nodeblock">
+
+    <h2>VAPOR Sponsors</h2>
+  
+  <div class="content">
+    <div id="node-22831" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3 style="text-align: center; color: #fff; margin-bottom: 40px; font-size: 20px;">SPONSORS</h3>
+<p><img src="../sites/default/files/users/geinosky/vapor-sponsors.png" alt="VAPOR sponsors" width="980" height="132" /></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <!-- OrgNavFooter Script -->
+<script>
+
+// CUSTOM VARIABLES
+var contactLink = "/contact";     // enter your Contact/Feedback link or mailto: link
+var hideOrgNav = false;        // hide the entire OrgNav from view
+var hideFooter = false;          // hide the entire OrgFooter from view
+var hideNSF = false;               // hide the NSF disclaimer
+var footerColor = '#666';       // hex color of the footer font including the #
+
+// DO NOT EDIT BELOW THIS POINT
+var jsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+if(typeof jQuery === "undefined"){
+  document.write("<scr"+"ipt src='"+jsHost+"ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'></scr"+"ipt>");
+}
+document.write("<scr"+"ipt src='https://orgnav.ucar.edu/orgnav.js' type='text/javascript'></scr"+"ipt>");
+</script>
+<noscript><iframe frameborder="0" width="100%" src="https://orgnav.ucar.edu/noscript.html"></iframe></noscript>
+<!-- END OrgNavFooter Script -->  </div>
+</div>
+<div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div id="loginlink" align="center">
+<a href="../user.html">Login</a>
+</div>  </div>
+</div>
+  </div>
+    </div> <!-- /#footernav -->
+  
+  </div><!-- /#container -->
+</div> <!-- /#wrap -->
+<!-- /layout -->
+
+  <script type="text/javascript" src="../sites/default/files/js/js_KpbuXFbunBaGjtuvRkOuscNXQlFkv4Fjgh1fiknomL8.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4903.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,1584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="specifying-variable-dimensions-ncdfvdfcreate.html" />
+<link rel="shortlink" href="../node/29611.html" />
+<link rel="shortcut icon" href="../sites/default/themes/troposphere/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>specifying variable dimensions with ncdfvdfcreate | VAPOR | Computational Information Systems Laboratory</title>
+  <style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/system/system.base.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.menus.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.messages.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.theme.css?pv0ud8");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/book/book.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/comment/comment.css?pv0ud8");
+@import url("../sites/all/modules/date/date_api/date.css%3Fpv0ud8.css");
+@import url("../sites/all/modules/date/date_popup/themes/datepicker.1.7.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/field/theme/field.css?pv0ud8");
+@import url("../sites/default/modules/contrib/google_cse/google_cse.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/node/node.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/search/search.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/user/user.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/forum/forum.css?pv0ud8");
+@import url("../sites/all/modules/views/css/views.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/naked/advanced-forum.naked.structure.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/naked_stacked/advanced-forum.naked_stacked.structure.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/silver_bells/advanced-forum.silver_bells.style.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/naked/advanced-forum.naked.images.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/silver_bells/advanced-forum.silver_bells.images.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/bootstrap.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/base.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/default.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/compatibility.css%3Fpv0ud8.css");
+</style>
+<link type="text/css" rel="stylesheet" href="specifying-variable-dimensions-ncdfvdfcreate.html" media="all" />
+<style type="text/css" media="all">
+@import url("../sites/default/themes/atmos/css/fonts.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/layout.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/nice_menus_default.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/style.css%3Fpv0ud8.css");
+@import url("../sites/default/files/color/troposphere-81dde954/colors.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_imgcaption.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_tinymce.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/custom.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/troposphere/css/override.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="print">
+@import url("../sites/default/themes/atmos/css/print.css%3Fpv0ud8.css");
+</style>
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie6.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie7.css?pv0ud8" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="../sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_f_6-OzlFXjayKlsU5sJKLwjz7LFQvdIZDm-Mt6jKwyM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_sR3RTelOZw0SR_bvHhelrkLY8DKYJcs5zvhbaS-zcpk.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-332815-8", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/default/files/js/js_ZxgiY_hLe37tS2x4OLfl0ivRyI_9yEJY0M6vxub3dJI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"troposphere","theme_token":"98NyHcYcoJsKvLTIdZ_dJoNcVp8R3PD0j8WOB92ZJLY","js":{"sites\/default\/modules\/contrib\/google_cse\/google_cse_results.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/default\/themes\/atmos\/js\/site.js":1,"sites\/default\/themes\/atmos\/js\/atmos_imgcaption.js":1,"sites\/default\/themes\/troposphere\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/naked\/advanced-forum.naked.structure.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/naked_stacked\/advanced-forum.naked_stacked.structure.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/silver_bells\/advanced-forum.silver_bells.style.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/naked\/advanced-forum.naked.images.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/silver_bells\/advanced-forum.silver_bells.images.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"":1,"sites\/default\/themes\/atmos\/css\/fonts.css":1,"sites\/default\/themes\/atmos\/css\/layout.css":1,"sites\/default\/themes\/atmos\/css\/nice_menus_default.css":1,"sites\/default\/themes\/atmos\/css\/style.css":1,"sites\/default\/themes\/troposphere\/css\/colors.css":1,"sites\/default\/themes\/atmos\/css\/atmos_imgcaption.css":1,"sites\/default\/themes\/atmos\/css\/atmos_tinymce.css":1,"sites\/default\/themes\/atmos\/css\/custom.css":1,"sites\/default\/themes\/troposphere\/css\/override.css":1,"sites\/default\/themes\/atmos\/css\/print.css":1,"sites\/default\/themes\/troposphere\/css\/ie.css":1,"sites\/default\/themes\/troposphere\/css\/ie6.css":1,"sites\/default\/themes\/troposphere\/css\/ie7.css":1}},"googleCSE":{"cx":"016712339613867830978:nuqoefb2ivy","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/\/www.google.com\/cse":true,"\/forum\/specifying-variable-dimensions-ncdfvdfcreate":true}});
+//--><!]]>
+</script>
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'rpo4dvf'
+    };
+    var d = false;
+    var tk = document.createElement('script');
+    tk.src = '//use.typekit.net/' + config.kitId + '.js';
+    tk.type = 'text/javascript';
+    tk.async = 'true';
+    tk.onload = tk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (d || rs && rs != 'complete' && rs != 'loaded') return;
+      d = true;
+      try { Typekit.load(config); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tk, s);
+  })();
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-29611 node-type-forum featured" >
+  <div id="skip-link">
+    <a href="specifying-variable-dimensions-ncdfvdfcreate.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!-- TOP NAV -->
+<div id="header-wrap">
+<!-- <div id="navigation"></div> -->
+<div id="header" class="clear-block>">
+          <div id="navigation">
+<div id="featured" class="clear-block">
+      <div class="region region-featured">
+    <div id="block-google-cse-google-cse" class="block block-google-cse">
+
+    <h2>Search</h2>
+  
+  <div class="content">
+    
+
+  <form action="http://www.google.com/cse" method="get" id="google-cse-results-searchbox-form" accept-charset="UTF-8"><div><input type="hidden" name="cx" value="016712339613867830978:nuqoefb2ivy" />
+<input type="hidden" name="cof" value="FORID:0" />
+<div class="form-item form-type-textfield form-item-query">
+  <label for="edit-query">Enter your keywords </label>
+ <input type="text" id="edit-query" name="query" value="" size="40" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-sa" name="op" value="Search" class="form-submit" /><input type="hidden" name="ie" value="utf-8" />
+<input type="hidden" name="form_build_id" value="form-_k8HwY2Ye6q7r3QaLLJAXwbZ38wrsMGZE3-yN3Cts3M" />
+<input type="hidden" name="form_id" value="google_cse_results_searchbox_form" />
+</div></form>
+<div id="google-cse-results">
+  <gcse:searchbox-only gname="google_cse"></gcse:searchbox-only>  <noscript>
+    You must enable JavaScript to view the search results.  </noscript>
+</div>
+  </div>
+</div>
+  </div>
+</div> <!-- /featured --> </div><!-- end navbar -->    
+  <div class="section clearfix align-center-wrapper">   
+<div id="logo-nav-wrapper">
+      <div id="logo-floater">
+      <a href="../index.html" title="Home" rel="home" id="logo">
+        <img src="../sites/default/themes/troposphere/images/vapor-logo-white.png" alt="Home" />
+      </a>
+    </div>
+    <div id="main-nav-wrapper">
+        </div>
+</div>
+
+
+    <div id="name-and-slogan">
+
+      <div id="site-name" class="element-invisible">
+        <strong>
+          <a href="../index.html" title="Home" rel="home"><span>VAPOR | Computational Information Systems Laboratory</span></a>
+        </strong>
+      </div>
+
+<div class="nsf-logo"><img src="../sites/default/themes/troposphere/images/nsf.png"/></div><!-- .slogan -->
+    </div> <!-- /#name-and-slogan -->
+
+
+  </div> <!-- /.section -->
+</div> <!-- /#header -->
+<div id="header-sub-nav">
+  <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="specifying-variable-dimensions-ncdfvdfcreate.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-Ohc989iwjWcjPG9GhwNK7QM8F0f2yiGHa3k92WXDmbc" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu">
+
+    
+  <div class="content">
+    <div  class="tb-megamenu tb-megamenu-main-menu">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="icon-reorder"></i>
+    </button>
+    <div class="nav-collapse collapse always-show">
+    <ul  class="tb-megamenu-nav nav level-0 items-6">
+  <li  data-id="6983" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    VAPOR 3          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="6989" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-3-overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6986" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="6998" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/installation.html" class="">
+        
+    Installation          </a>
+  </li>
+
+<li  data-id="6995" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/training.html" class="">
+        
+    Training          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="200" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    VAPOR          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li  data-id="6358" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6340" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../vapor-features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="5830" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../news.html" class="">
+        
+    News          </a>
+  </li>
+
+<li  data-id="6343" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../credits.html" class="">
+        
+    Credits          </a>
+  </li>
+
+<li  data-id="6346" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../citation.html" class="">
+        
+    Citing VAPOR          </a>
+  </li>
+
+<li  data-id="6349" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../publications.html" class="">
+        
+    Publications          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5616" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    Documentation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="980" style="width: 980px;" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-4" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5760" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/usage.html" class="mega-group-title">
+        
+    Usage          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-8">
+  <li  data-id="6379" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/getting-started-vapor.html" class="">
+        
+    Getting Started          </a>
+  </li>
+
+<li  data-id="6382" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-data-preparation.html" class="">
+        
+    Data Preparation          </a>
+  </li>
+
+<li  data-id="6352" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-tutorials.html" class="">
+        
+    Tutorials          </a>
+  </li>
+
+<li  data-id="6385" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-gui-general-guide.html" class="">
+        
+    VAPOR GUI Guide          </a>
+  </li>
+
+<li  data-id="6388" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-gui-general-guide/vapor-rendering.html" class="">
+        
+    VAPOR GUI Renderer Guide          </a>
+  </li>
+
+<li  data-id="6391" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/data-analysis-vapor.html" class="">
+        
+    Data Analysis          </a>
+  </li>
+
+<li  data-id="6355" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-presentations.html" class="">
+        
+    Presentations          </a>
+  </li>
+
+<li  data-id="6394" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-6" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5763" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/reference-manuals.html" class="mega-group-title">
+        
+    Reference          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li  data-id="6397" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/command-line-interface-reference.html" class="">
+        
+    Command Line Tools          </a>
+  </li>
+
+<li  data-id="6400" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/vapor-idl-extension-reference-manual.html" class="">
+        
+    IDL          </a>
+  </li>
+
+<li  data-id="6403" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/usage-guides.html" class="">
+        
+    Usage Guides          </a>
+  </li>
+
+<li  data-id="6530" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/programming-apis.html" class="">
+        
+    Programming APIs          </a>
+  </li>
+
+<li  data-id="5658" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://sourceforge.net/projects/vapor" class="">
+        
+    SourceForge Project Site          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="6364" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/vapor-installation.html" class="mega-group-title">
+        
+    Installation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li  data-id="6367" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/release-notes.html" class="">
+        
+    Release Notes          </a>
+  </li>
+
+<li  data-id="6370" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-binary-installation.html" class="">
+        
+    Binary Installation          </a>
+  </li>
+
+<li  data-id="6373" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-source-installation.html" class="">
+        
+    Source Installation          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5661" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="left" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-left dropdown">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    Gallery          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-7">
+  <li  data-id="6555" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/weather.html" class="">
+        
+    Weather          </a>
+  </li>
+
+<li  data-id="6561" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/climate.html" class="">
+        
+    Climate          </a>
+  </li>
+
+<li  data-id="6592" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/oceanography.html" class="">
+        
+    Oceanography          </a>
+  </li>
+
+<li  data-id="6595" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/astrophysics.html" class="">
+        
+    Astrophysics          </a>
+  </li>
+
+<li  data-id="6519" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/Turbulence.html" class="">
+        
+    Turbulence          </a>
+  </li>
+
+<li  data-id="6598" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/biology.html" class="">
+        
+    Biology          </a>
+  </li>
+
+<li  data-id="6601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega dropdown-submenu">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    Archive          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-6">
+  <li  data-id="6607" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/ultra-high-res-sandy-videos.html" class="">
+        
+    Ultra-High Res Sandy Videos          </a>
+  </li>
+
+<li  data-id="6604" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/original-sandy-videos.html" class="">
+        
+    Original Sandy Videos          </a>
+  </li>
+
+<li  data-id="6610" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/sandy-images.html" class="">
+        
+    Sandy Images          </a>
+  </li>
+
+<li  data-id="6616" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/kisti-2014.html" class="">
+        
+    KISTI Competition 2014          </a>
+  </li>
+
+<li  data-id="6451" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/toy-workshop-2008.html" class="">
+        
+    Toy Workshop 2008          </a>
+  </li>
+
+<li  data-id="6558" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/miscellaneous.html" class="">
+        
+    Miscellaneous          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="6469" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    Downloads          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-3">
+  <li  data-id="6436" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/binary-distributions" class="">
+        
+    Binary Distributions          </a>
+  </li>
+
+<li  data-id="6439" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../internal/downloads/source-distributions.html" class="">
+        
+    Source Distributions          </a>
+  </li>
+
+<li  data-id="6442" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/example-data" class="">
+        
+    Example Data          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5691" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="specifying-variable-dimensions-ncdfvdfcreate.html#" class="dropdown-toggle">
+        
+    Support          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-12" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="5694" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../forum.html" class="">
+        
+    Forum          </a>
+  </li>
+
+<li  data-id="6406" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+
+<li  data-id="5703" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Report Bugs          </a>
+  </li>
+
+<li  data-id="5601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Contact Us          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+      </div>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div> <!-- /#header-wrap -->
+
+
+
+<div id="wrap">
+  <div id="container" class="clear-block">
+
+    <div id="center-wrapper" class="clear-block">
+
+      
+      
+        <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+
+                <div id="tabs-wrapper" class="clear-block"></div>                
+      
+
+
+  <!-- Some content types intentinally strip $node->title in the node-CONTENT_TYPE.tpl.php file.
+  Views and panels are not content types, so no $node->type, but do have $title.  Check for that first.
+  If there is a $node->type, check to see if $node->title exists -->
+<div id="content-head"><div class="breadcrumbs"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="../index.html">Home</a> » <a href="../forum.html">Forums</a> » <a href="186.html">Discussion</a> » <a href="177.html">General Discussion</a></div></div><h1 class="title with-tabs">specifying variable dimensions with ncdfvdfcreate</h1></div>          <div id="main-content" class="clear-block">
+            
+              <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+  
+<div id="forum-topic-header" class="forum-topic-header clearfix">
+	
+  <div class="topic-post-count">
+  1 post / 0 new  </div>
+
+      <div class="topic-reply-link">
+    <a href="../user/login%3Fdestination=node%252F29611%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F29611%2523comment-form.html">register</a> to post comments    </div>
+  
+  
+  
+
+  <a id="forum-topic-top"></a>
+</div>
+
+<div id="post-29611" class="forum-post clearfix en posted-by-632552 node-full" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      March 13, 2017 - 11:07am
+                </div>
+    
+    
+        
+    <span class="forum-post-number"><a href="specifying-variable-dimensions-ncdfvdfcreate.html" class="active">#1</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">sam.mcclatchie</span>  <div class="user-picture">
+    <img src="../sites/default/files/styles/thumbnail/public/pictures/picture-632552-1492708227.png%3Fitok=su8pfbDg" alt="sam.mcclatchie&#039;s picture" title="sam.mcclatchie&#039;s picture" />  </div>
+</div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+              <div class="forum-post-title">
+          specifying variable dimensions with ncdfvdfcreate        </div>
+      
+      <div class="forum-post-content">
+        <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hello</p>
+<p>I am using ncdfvdfcreate instead of romsvdfcreate to create a vdf and populate a vdc because I do not have a grid file for the ROMS netcdf files that I am using.</p>
+<p>To create a vdf I am using:<br />
+# ======================================<br />
+# create the vdf file using ncdfvdfcreate<br />
+# specify both the variables and the dimensions of those variables</p>
+<p>/usr/share/vapor-2.5.0/bin/ncdfvdfcreate -timedims ocean_time -timevars ocean_time -vars temp:salt -dims s_rho:xi_rho:eta_rho wc12_ccsra31_his_cycle_avg_29227.nc wc12_ccsra31_his_cycle_avg_29231.nc wc12_ccsra31_his_cycle_avg_29235.nc /data/Dropbox/dynamic_data/projects/projects2017/visualization/vapor/roms.vdf</p>
+<p># populate the vdc file using the vdf file just created/ works</p>
+<p>/usr/share/vapor-2.5.0/bin/ncdf2vdf  wc12_ccsra31_his_cycle_avg_29227.nc wc12_ccsra31_his_cycle_avg_29231.nc wc12_ccsra31_his_cycle_avg_29235.nc /data/Dropbox/dynamic_data/projects/projects2017/visualization/vapor/roms.vdf<br />
+=======================================</p>
+<p>I am trying to explicitly specify the dimensions of the 2 variables I have chosen because otherwise the dimensions are being assigned by the first 3-D variable in the input file, which results in my chosen variables being excluded because they have different dimensions.</p>
+<p>Running the ncdfvdfcreate with the options specified returns this error:<br />
+Type converter for option &quot;-dims&quot; failed to convert argument &quot;s_rho:xi_rho:eta_rho&quot;</p>
+<p>I think I have ordered the dimensions from fasted to slowest varying, but maybe I have the listing specified incorrectly? The documentation says:</p>
+<p>-dims &lt;dimensions&gt;<br />
+Specifies the spatial dimensions of all 3D variables to be considered. The default is to use the dimensions of the first 3D variable encountered in the NetCDF files. The format of dimensions is NXxNYxNZ, where NX is the fastest varying dimension, NY the next fastest, and NZ the slowest.</p>
+<p>Is the separator an &#039;x&#039; or a &#039;:&#039;? &#039;x&#039; does not seem to work.</p>
+<p>====================<br />
+Here is the ncl_filedump of my input file:</p>
+<p> Copyright (C) 1995-2015 - All Rights Reserved<br />
+ University Corporation for Atmospheric Research<br />
+ NCAR Command Language Version 6.3.0<br />
+ The use of this software is governed by a License Agreement.<br />
+ See <a href="http://www.ncl.ucar.edu/">http://www.ncl.ucar.edu/</a> for more details.</p>
+<p>Variable: f<br />
+Type: file<br />
+filename:	wc12_ccsra31_his_cycle_avg_29227<br />
+path:	wc12_ccsra31_his_cycle_avg_29227.nc<br />
+   file global attributes:<br />
+      file : wc12_ccsra31_fwd_001.nc<br />
+      format : netCDF-3 classic file<br />
+      Conventions : CF-1.4<br />
+      type : ROMS/TOMS history file<br />
+      title : California Current System, 1/10 degree reanalysis<br />
+      state_vector : zeta, ubar, vbar, u, v, temp, salt, sustr, svstr, shflux, ssflux<br />
+      rst_file : wc12_ccsra31_rst.nc<br />
+      his_file : wc12_ccsra31_fwd_001.nc<br />
+      avg_base : wc12_ccsra31_avg<br />
+      dia_file : wc12_ccsra31_dia.nc<br />
+      grd_file : GRID/wc12_grd.nc.0<br />
+      ini_file : ini.nc<br />
+      itl_file : itl.nc<br />
+      nrm_file : nrmI.nc<br />
+      tlf_file : wc12_ccsra31_tlf.nc<br />
+      obs_file : obs.nc<br />
+      frc_file_01 : FORCING/ERA40/wind.era40.1980-2002.WC.nc<br />
+      frc_file_02 : FORCING/ERA40/pair.era40.1980-2002.WC.nc<br />
+      frc_file_03 : FORCING/ERA40/tair.era40.1980-2002.WC.nc<br />
+      frc_file_04 : FORCING/ERA40/qair.era40.1980-2002.WC.nc<br />
+      frc_file_05 : FORCING/ERA40/rain.era40.1980-2002.WC.nc<br />
+      frc_file_06 : FORCING/ERA40/lwrad_down.era40.1980-2002.WC.nc<br />
+      frc_file_07 : FORCING/ERA40/swrad.era40.1980-2002.WC.nc<br />
+      bry_file : OBC/wc12_bry_soda_1958-2008_AMM.nc<br />
+      fwd_file : wc12_ccsra31_fwd_000.nc<br />
+      script_file : ocean.in<br />
+      svn_url : <a href="https://www.myroms.org/svn/src/tags/roms-3.4">https://www.myroms.org/svn/src/tags/roms-3.4</a><br />
+      svn_rev : 564M<br />
+      code_dir : /net/head/export/257/amm/ROMS/ROMS_3.4<br />
+      header_dir : /home/amm/WC12_CCSRA31/W4DPSAS<br />
+      header_file : wc12_ccsra.h<br />
+      os : Linux<br />
+      cpu : x86_64<br />
+      compiler_system : pgi<br />
+      compiler_command : /usr/mpi/pgi/openmpi-1.2.8/bin/mpif90<br />
+      compiler_flags :  -O3 -Mfree<br />
+      tiling : 016x008<br />
+      history : Tue May 28 12:26:39 2013: ncra /home/mjacox/WC12_CCSRA31/wc12_ccsra31_his_29227.nc /proj/cae_enstrophy/reanalysis/WC12_CCSRA31/wc12_ccsra31_his_cycle_avg_29227.nc<br />
+ROMS/TOMS, Version 3.4, Wednesday - February 1, 2012 -  5:38:50 PM<br />
+      ana_file : ROMS/Functionals/ana_btflux.h, /home/amm/WC12_CCSRA31/W4DPSAS/Functionals/ana_hmixcoef.h<br />
+      CPP_options : WC12_CCSRA, ADJOINT, ADJUST_BOUNDARY, ADJUST_STFLUX, ADJUST_WSTRESS, ANA_BSFLUX, ANA_BTFLUX, ASSUMED_SHAPE, AVERAGES, BULK_FLUXES, CURVGRID, DIAGNOSTICS_TS, DIAGNOSTICS_UV, DJ_GRADPS, DOUBLE_PRECISION, EASTERN_WALL, EMINUSP, FORWARD_MIXING, FORWARD_READ, FORWARD_WRITE, !FULL_GRID, GLS_MIXING, IMPLICIT_VCONV, IMPULSE, KANTHA_CLAYSON, LONGWAVE_OUT, MASKING, MIX_GEO_TS, MIX_S_UV, MPI, NL_BULK_FLUXES, NONLINEAR, NONLIN_EOS, NORTH_FSCHAPMAN, NORTH_M2FLATHER, NORTH_M3CLAMPED, NORTH_TCLAMPED, N2S2_HORAVG, OBSERVATIONS, OUT_DOUBLE, POWER_LAW, PROFILE, K_GSCHEME, !RST_SINGLE, SALINITY, SOLAR_SOURCE, SOLVE3D, SOUTH_FSCHAPMAN, SOUTH_M2FLATHER, SOUTH_M3CLAMPED, SOUTH_TCLAMPED, SPLINES, SPONGE, TANGENT, TS_U3HADVECTION, TS_U3HADVECTION_TL, TS_C4VADVECTION, TS_C4VADVECTION_TL, TS_DIF2, UV_ADV, UV_COR, UV_U3HADVECTION, UV_C4VADVECTION, UV_LDRAG, UV_VIS2, VCONVOLUTION, W4DPSAS, WEAK_CONSTRAINT, WEST_FSCHAPMAN, WEST_M2FLATHER, WEST_M3CLAMPED, WEST_TCLAMPED<br />
+      nco_openmp_thread_number : 1<br />
+   dimensions:<br />
+      ncl_scalar = 1<br />
+      xi_rho = 186<br />
+      xi_u = 185<br />
+      xi_v = 186<br />
+      xi_psi = 185<br />
+      eta_rho = 181<br />
+      eta_u = 181<br />
+      eta_v = 180<br />
+      eta_psi = 180<br />
+      IorJ = 186<br />
+      s_rho = 42<br />
+      s_w = 43<br />
+      tracer = 2<br />
+      boundary = 4<br />
+      Nstate = 11<br />
+      obc_adjust = 9<br />
+      ocean_time = 1  // unlimited<br />
+      Nuser = 25<br />
+   variables:<br />
+      integer ntimes ( ncl_scalar )<br />
+         long_name :	number of long time-steps</p>
+<p>      integer ndtfast ( ncl_scalar )<br />
+         long_name :	number of short time-steps</p>
+<p>      double dt ( ncl_scalar )<br />
+         long_name :	size of long time-steps<br />
+         units :	second</p>
+<p>      double dtfast ( ncl_scalar )<br />
+         long_name :	size of short time-steps<br />
+         units :	second</p>
+<p>      double dstart ( ncl_scalar )<br />
+         long_name :	time stamp assigned to model initilization<br />
+         units :	days since 1900-01-01 00:00:00</p>
+<p>      integer nHIS ( ncl_scalar )<br />
+         long_name :	number of time-steps between history records</p>
+<p>      integer ndefHIS ( ncl_scalar )<br />
+         long_name :	number of time-steps between the creation of history files</p>
+<p>      integer nRST ( ncl_scalar )<br />
+         long_name :	number of time-steps between restart records<br />
+         cycle :	only latest two records are maintained</p>
+<p>      integer ntsAVG ( ncl_scalar )<br />
+         long_name :	starting time-step for accumulation of time-averaged fields</p>
+<p>      integer nAVG ( ncl_scalar )<br />
+         long_name :	number of time-steps between time-averaged records</p>
+<p>      integer ndefAVG ( ncl_scalar )<br />
+         long_name :	number of time-steps between the creation of average files</p>
+<p>      integer nADJ ( ncl_scalar )<br />
+         long_name :	number of time-steps between adjoint history records</p>
+<p>      integer ndefADJ ( ncl_scalar )<br />
+         long_name :	number of time-steps between the creation of adjoint files</p>
+<p>      integer nTLM ( ncl_scalar )<br />
+         long_name :	number of time-steps between tangent history records</p>
+<p>      integer ndefTLM ( ncl_scalar )<br />
+         long_name :	number of time-steps between the creation of tanget files</p>
+<p>      integer nOBC ( ncl_scalar )<br />
+         long_name :	number of time-steps between 4DVAR open boundary adjustment</p>
+<p>      integer nSFF ( ncl_scalar )<br />
+         long_name :	number of time-steps between 4DVAR surface forcing adjustment</p>
+<p>      integer ntsDIA ( ncl_scalar )<br />
+         long_name :	starting time-step for accumulation of diagnostic fields</p>
+<p>      integer nDIA ( ncl_scalar )<br />
+         long_name :	number of time-steps between diagnostic records</p>
+<p>      integer ndefDIA ( ncl_scalar )<br />
+         long_name :	number of time-steps between the creation of diagnostic files</p>
+<p>      integer Nouter ( ncl_scalar )<br />
+         long_name :	number of minimization outer loops</p>
+<p>      integer Ninner ( ncl_scalar )<br />
+         long_name :	number of minimization inner loops</p>
+<p>      double Falpha ( ncl_scalar )<br />
+         long_name :	Power-law shape barotropic filter parameter</p>
+<p>      double Fbeta ( ncl_scalar )<br />
+         long_name :	Power-law shape barotropic filter parameter</p>
+<p>      double Fgamma ( ncl_scalar )<br />
+         long_name :	Power-law shape barotropic filter parameter</p>
+<p>      double nl_tnu2 ( tracer )<br />
+         long_name :	nonlinear model Laplacian mixing coefficient for tracers<br />
+         units :	meter2 second-1</p>
+<p>      double ad_tnu2 ( tracer )<br />
+         long_name :	adjoint model Laplacian mixing coefficient for tracers<br />
+         units :	meter2 second-1</p>
+<p>      double tl_tnu2 ( tracer )<br />
+         long_name :	tangent linear model Laplacian mixing coefficient for tracers<br />
+         units :	meter2 second-1</p>
+<p>      double nl_visc2 ( ncl_scalar )<br />
+         long_name :	nonlinear model Laplacian mixing coefficient for momentum<br />
+         units :	meter2 second-1</p>
+<p>      double ad_visc2 ( ncl_scalar )<br />
+         long_name :	adjoint model Laplacian mixing coefficient for momentum<br />
+         units :	meter2 second-1</p>
+<p>      double tl_visc2 ( ncl_scalar )<br />
+         long_name :	tangent linear model Laplacian mixing coefficient for momentum<br />
+         units :	meter2 second-1</p>
+<p>      double Akt_bak ( tracer )<br />
+         long_name :	background vertical mixing coefficient for tracers<br />
+         units :	meter2 second-1</p>
+<p>      double Akv_bak ( ncl_scalar )<br />
+         long_name :	background vertical mixing coefficient for momentum<br />
+         units :	meter2 second-1</p>
+<p>      double Akk_bak ( ncl_scalar )<br />
+         long_name :	background vertical mixing coefficient for turbulent energy<br />
+         units :	meter2 second-1</p>
+<p>      double Akp_bak ( ncl_scalar )<br />
+         long_name :	background vertical mixing coefficient for length scale<br />
+         units :	meter2 second-1</p>
+<p>      double ad_Akt_fac ( tracer )<br />
+         long_name :	adjoint model basic state vertical mixing scale for tracers</p>
+<p>      double tl_Akt_fac ( tracer )<br />
+         long_name :	tangent linear model basic state vertical mixing scale for tracers</p>
+<p>      double ad_Akv_fac ( ncl_scalar )<br />
+         long_name :	adjoint model basic state vertical mixing scale for momentum</p>
+<p>      double tl_Akv_fac ( ncl_scalar )<br />
+         long_name :	tangent linear model basic state vertical mixing scale for momentum</p>
+<p>      double rdrg ( ncl_scalar )<br />
+         long_name :	linear drag coefficient<br />
+         units :	meter second-1</p>
+<p>      double rdrg2 ( ncl_scalar )<br />
+         long_name :	quadratic drag coefficient</p>
+<p>      double Zob ( ncl_scalar )<br />
+         long_name :	bottom roughness<br />
+         units :	meter</p>
+<p>      double Zos ( ncl_scalar )<br />
+         long_name :	surface roughness<br />
+         units :	meter</p>
+<p>      double gls_p ( ncl_scalar )<br />
+         long_name :	stability exponent</p>
+<p>      double gls_m ( ncl_scalar )<br />
+         long_name :	turbulent kinetic energy exponent</p>
+<p>      double gls_n ( ncl_scalar )<br />
+         long_name :	turbulent length scale exponent</p>
+<p>      double gls_cmu0 ( ncl_scalar )<br />
+         long_name :	stability coefficient</p>
+<p>      double gls_c1 ( ncl_scalar )<br />
+         long_name :	shear production coefficient</p>
+<p>      double gls_c2 ( ncl_scalar )<br />
+         long_name :	dissipation coefficient</p>
+<p>      double gls_c3m ( ncl_scalar )<br />
+         long_name :	buoyancy production coefficient (minus)</p>
+<p>      double gls_c3p ( ncl_scalar )<br />
+         long_name :	buoyancy production coefficient (plus)</p>
+<p>      double gls_sigk ( ncl_scalar )<br />
+         long_name :	constant Schmidt number for TKE</p>
+<p>      double gls_sigp ( ncl_scalar )<br />
+         long_name :	constant Schmidt number for PSI</p>
+<p>      double gls_Kmin ( ncl_scalar )<br />
+         long_name :	minimum value of specific turbulent kinetic energy</p>
+<p>      double gls_Pmin ( ncl_scalar )<br />
+         long_name :	minimum Value of dissipation</p>
+<p>      double Charnok_alpha ( ncl_scalar )<br />
+         long_name :	Charnok factor for surface roughness</p>
+<p>      double Zos_hsig_alpha ( ncl_scalar )<br />
+         long_name :	wave amplitude factor for surface roughness</p>
+<p>      double sz_alpha ( ncl_scalar )<br />
+         long_name :	surface flux from wave dissipation</p>
+<p>      double CrgBan_cw ( ncl_scalar )<br />
+         long_name :	surface flux due to Craig and Banner wave breaking</p>
+<p>      double Znudg ( ncl_scalar )<br />
+         long_name :	free-surface nudging/relaxation inverse time scale<br />
+         units :	day-1</p>
+<p>      double M2nudg ( ncl_scalar )<br />
+         long_name :	2D momentum nudging/relaxation inverse time scale<br />
+         units :	day-1</p>
+<p>      double M3nudg ( ncl_scalar )<br />
+         long_name :	3D momentum nudging/relaxation inverse time scale<br />
+         units :	day-1</p>
+<p>      double Tnudg ( tracer )<br />
+         long_name :	Tracers nudging/relaxation inverse time scale<br />
+         units :	day-1</p>
+<p>      double rho0 ( ncl_scalar )<br />
+         long_name :	mean density used in Boussinesq approximation<br />
+         units :	kilogram meter-3</p>
+<p>      double R0 ( ncl_scalar )<br />
+         long_name :	background density used in linear equation of state<br />
+         units :	kilogram meter-3</p>
+<p>      double Tcoef ( ncl_scalar )<br />
+         long_name :	thermal expansion coefficient<br />
+         units :	Celsius-1</p>
+<p>      double Scoef ( ncl_scalar )<br />
+         long_name :	Saline contraction coefficient</p>
+<p>      double gamma2 ( ncl_scalar )<br />
+         long_name :	slipperiness parameter</p>
+<p>      integer Lstflux ( tracer )<br />
+         long_name :	surface tracer fluxes adjustment switch<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	.FALSE. .TRUE.</p>
+<p>      integer Lobc ( Nstate, boundary )<br />
+         long_name :	open boundary conditions adjustment switch<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	.FALSE. .TRUE.</p>
+<p>      integer LhessianEV ( ncl_scalar )<br />
+         long_name :	switch to compute Hessian eigenvectors<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	.FALSE. .TRUE.</p>
+<p>      integer LhotStart ( ncl_scalar )<br />
+         long_name :	switch for hot start of subsequent outer loops<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	.FALSE. .TRUE.</p>
+<p>      integer Lprecond ( ncl_scalar )<br />
+         long_name :	switch for conjugate gradient preconditioning<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	.FALSE. .TRUE.</p>
+<p>      integer Lritz ( ncl_scalar )<br />
+         long_name :	switch for Ritz limited-memory preconditioning<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	.FALSE. .TRUE.</p>
+<p>      double GradErr ( ncl_scalar )<br />
+         long_name :	Upper bound on relative error of the gradient</p>
+<p>      double HevecErr ( ncl_scalar )<br />
+         long_name :	Accuracy required for Hessian eigenvectors</p>
+<p>      integer Nmethod ( ncl_scalar )<br />
+         long_name :	background error covariance normalization method<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	exact randomization</p>
+<p>      integer Rscheme ( ncl_scalar )<br />
+         long_name :	Random number generation scheme<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	intrisic_randon_number Gaussian_distributed_deviates</p>
+<p>      integer Nrandom ( ncl_scalar )<br />
+         long_name :	number of randomization iterations</p>
+<p>      double Hgamma ( ncl_scalar )<br />
+         long_name :	initial conditions error covariance horizontal convolution time-step stability factor</p>
+<p>      double HgammaM ( ncl_scalar )<br />
+         long_name :	model error covariance horizontal convolution time-step stability factor</p>
+<p>      double HgammaB ( ncl_scalar )<br />
+         long_name :	open boundary conditions error covariance horizontal convolution time-step stability factor</p>
+<p>      double HgammaF ( ncl_scalar )<br />
+         long_name :	surface forcing error covariance horizontal convolution time-step stability factor</p>
+<p>      double Vgamma ( ncl_scalar )<br />
+         long_name :	initial conditions error covariance vertical convolution time-step stability factor</p>
+<p>      double VgammaM ( ncl_scalar )<br />
+         long_name :	model error covariance vertical convolution time-step stability factor</p>
+<p>      double VgammaB ( ncl_scalar )<br />
+         long_name :	open boundary conditions error covariance vertical convolution time-step stability factor</p>
+<p>      double Hdecay ( Nstate )<br />
+         long_name :	initial conditions error covariance horizontal decorrelation scale<br />
+         units :	meter</p>
+<p>      double Vdecay ( Nstate )<br />
+         long_name :	initial conditions error covariance vertical decorrelation scale<br />
+         units :	meter</p>
+<p>      double HdecayM ( Nstate )<br />
+         long_name :	model error covariance horizontal decorrelation scale<br />
+         units :	meter</p>
+<p>      double VdecayM ( Nstate )<br />
+         long_name :	model error covariance vertical decorrelation scale<br />
+         units :	meter</p>
+<p>      double HdecayB ( boundary, Nstate )<br />
+         long_name :	open boundary conditions error covariance horizontal decorrelation scale<br />
+         units :	meter</p>
+<p>      double VdecayB ( boundary, Nstate )<br />
+         long_name :	open boundary conditions error covariance vertical decorrelation scale<br />
+         units :	meter</p>
+<p>      integer spherical ( ncl_scalar )<br />
+         long_name :	grid type logical switch<br />
+         flag_values :	( 0, 1 )<br />
+         flag_meanings :	Cartesian spherical</p>
+<p>      double xl ( ncl_scalar )<br />
+         long_name :	domain length in the XI-direction<br />
+         units :	meter</p>
+<p>      double el ( ncl_scalar )<br />
+         long_name :	domain length in the ETA-direction<br />
+         units :	meter</p>
+<p>      integer Vtransform ( ncl_scalar )<br />
+         long_name :	vertical terrain-following transformation equation</p>
+<p>      integer Vstretching ( ncl_scalar )<br />
+         long_name :	vertical terrain-following stretching function</p>
+<p>      double theta_s ( ncl_scalar )<br />
+         long_name :	S-coordinate surface control parameter</p>
+<p>      double theta_b ( ncl_scalar )<br />
+         long_name :	S-coordinate bottom control parameter</p>
+<p>      double Tcline ( ncl_scalar )<br />
+         long_name :	S-coordinate surface/bottom layer width<br />
+         units :	meter</p>
+<p>      double hc ( ncl_scalar )<br />
+         long_name :	S-coordinate parameter, critical depth<br />
+         units :	meter</p>
+<p>      double s_rho ( s_rho )<br />
+         long_name :	S-coordinate at RHO-points<br />
+         valid_min :	  -1<br />
+         valid_max :	   0<br />
+         positive :	up<br />
+         standard_name :	ocean_s_coordinate_g1<br />
+         formula_terms :	s: s_rho C: Cs_r eta: zeta depth: h depth_c: hc<br />
+         field :	s_rho, scalar</p>
+<p>      double s_w ( s_w )<br />
+         long_name :	S-coordinate at W-points<br />
+         valid_min :	  -1<br />
+         valid_max :	   0<br />
+         positive :	up<br />
+         standard_name :	ocean_s_coordinate_g1<br />
+         formula_terms :	s: s_w C: Cs_w eta: zeta depth: h depth_c: hc<br />
+         field :	s_w, scalar</p>
+<p>      double Cs_r ( s_rho )<br />
+         long_name :	S-coordinate stretching curves at RHO-points<br />
+         valid_min :	  -1<br />
+         valid_max :	   0<br />
+         field :	Cs_r, scalar</p>
+<p>      double Cs_w ( s_w )<br />
+         long_name :	S-coordinate stretching curves at W-points<br />
+         valid_min :	  -1<br />
+         valid_max :	   0<br />
+         field :	Cs_w, scalar</p>
+<p>      double user ( Nuser )<br />
+         long_name :	user generic parameters<br />
+         field :	user, scalar</p>
+<p>      double h ( eta_rho, xi_rho )<br />
+         long_name :	bathymetry at RHO-points<br />
+         units :	meter<br />
+         coordinates :	lon_rho lat_rho<br />
+         field :	bath, scalar</p>
+<p>      double f ( eta_rho, xi_rho )<br />
+         long_name :	Coriolis parameter at RHO-points<br />
+         units :	second-1<br />
+         coordinates :	lon_rho lat_rho<br />
+         field :	coriolis, scalar</p>
+<p>      double pm ( eta_rho, xi_rho )<br />
+         long_name :	curvilinear coordinate metric in XI<br />
+         units :	meter-1<br />
+         coordinates :	lon_rho lat_rho<br />
+         field :	pm, scalar</p>
+<p>      double pn ( eta_rho, xi_rho )<br />
+         long_name :	curvilinear coordinate metric in ETA<br />
+         units :	meter-1<br />
+         coordinates :	lon_rho lat_rho<br />
+         field :	pn, scalar</p>
+<p>      double lon_rho ( eta_rho, xi_rho )<br />
+         long_name :	longitude of RHO-points<br />
+         units :	degree_east<br />
+         standard_name :	longitude<br />
+         field :	lon_rho, scalar</p>
+<p>      double lat_rho ( eta_rho, xi_rho )<br />
+         long_name :	latitude of RHO-points<br />
+         units :	degree_north<br />
+         standard_name :	latitude<br />
+         field :	lat_rho, scalar</p>
+<p>      double lon_u ( eta_u, xi_u )<br />
+         long_name :	longitude of U-points<br />
+         units :	degree_east<br />
+         standard_name :	longitude<br />
+         field :	lon_u, scalar</p>
+<p>      double lat_u ( eta_u, xi_u )<br />
+         long_name :	latitude of U-points<br />
+         units :	degree_north<br />
+         standard_name :	latitude<br />
+         field :	lat_u, scalar</p>
+<p>      double lon_v ( eta_v, xi_v )<br />
+         long_name :	longitude of V-points<br />
+         units :	degree_east<br />
+         standard_name :	longitude<br />
+         field :	lon_v, scalar</p>
+<p>      double lat_v ( eta_v, xi_v )<br />
+         long_name :	latitude of V-points<br />
+         units :	degree_north<br />
+         standard_name :	latitude<br />
+         field :	lat_v, scalar</p>
+<p>      double lon_psi ( eta_psi, xi_psi )<br />
+         long_name :	longitude of PSI-points<br />
+         units :	degree_east<br />
+         standard_name :	longitude<br />
+         field :	lon_psi, scalar</p>
+<p>      double lat_psi ( eta_psi, xi_psi )<br />
+         long_name :	latitude of PSI-points<br />
+         units :	degree_north<br />
+         standard_name :	latitude<br />
+         field :	lat_psi, scalar</p>
+<p>      double angle ( eta_rho, xi_rho )<br />
+         long_name :	angle between XI-axis and EAST<br />
+         units :	radians<br />
+         coordinates :	lon_rho lat_rho<br />
+         field :	angle, scalar</p>
+<p>      double mask_rho ( eta_rho, xi_rho )<br />
+         long_name :	mask on RHO-points<br />
+         flag_values :	(    0,    1 )<br />
+         flag_meanings :	land water<br />
+         coordinates :	lon_rho lat_rho</p>
+<p>      double mask_u ( eta_u, xi_u )<br />
+         long_name :	mask on U-points<br />
+         flag_values :	(    0,    1 )<br />
+         flag_meanings :	land water<br />
+         coordinates :	lon_u lat_u</p>
+<p>      double mask_v ( eta_v, xi_v )<br />
+         long_name :	mask on V-points<br />
+         flag_values :	(    0,    1 )<br />
+         flag_meanings :	land water<br />
+         coordinates :	lon_v lat_v</p>
+<p>      double mask_psi ( eta_psi, xi_psi )<br />
+         long_name :	mask on psi-points<br />
+         flag_values :	(    0,    1 )<br />
+         flag_meanings :	land water<br />
+         coordinates :	lon_psi lat_psi</p>
+<p>      double ocean_time ( ocean_time )<br />
+         long_name :	time since initialization<br />
+         units :	seconds since 1900-01-01 00:00:00<br />
+         calendar :	gregorian<br />
+         field :	time, scalar, series</p>
+<p>      double zeta ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	free-surface<br />
+         units :	meter<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	free-surface, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double zeta_obc ( ocean_time, obc_adjust, boundary, IorJ )<br />
+         long_name :	free-surface, open boundaries<br />
+         units :	meter<br />
+         time :	ocean_time<br />
+         field :	zeta_obc, scalar, series</p>
+<p>      double ubar ( ocean_time, eta_u, xi_u )<br />
+         long_name :	vertically integrated u-momentum component<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_u lat_u ocean_time<br />
+         field :	ubar-velocity, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double DU_avg1 ( ocean_time, eta_u, xi_u )<br />
+         long_name :	time averaged u-flux for 2D equations<br />
+         units :	meter3 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_u lat_u ocean_time<br />
+         field :	DU_avg1, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double DU_avg2 ( ocean_time, eta_u, xi_u )<br />
+         long_name :	time averaged u-flux for 3D equations coupling<br />
+         units :	meter3 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_u lat_u ocean_time<br />
+         field :	DU_avg2, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double ubar_obc ( ocean_time, obc_adjust, boundary, IorJ )<br />
+         long_name :	vertically integrated u-momentum component, open boundaries<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         field :	ubar_obc, scalar, series</p>
+<p>      double vbar ( ocean_time, eta_v, xi_v )<br />
+         long_name :	vertically integrated v-momentum component<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_v lat_v ocean_time<br />
+         field :	vbar-velocity, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double DV_avg1 ( ocean_time, eta_v, xi_v )<br />
+         long_name :	time averaged v-flux for 2D equations<br />
+         units :	meter3 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_v lat_v ocean_time<br />
+         field :	DV_avg1, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double DV_avg2 ( ocean_time, eta_v, xi_v )<br />
+         long_name :	time averaged v-flux for 3D equations coupling<br />
+         units :	meter3 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_v lat_v ocean_time<br />
+         field :	DV_avg2, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double vbar_obc ( ocean_time, obc_adjust, boundary, IorJ )<br />
+         long_name :	vertically integrated v-momentum component, open boundaries<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         field :	vbar_obc, scalar, series</p>
+<p>      double u ( ocean_time, s_rho, eta_u, xi_u )<br />
+         long_name :	u-momentum component<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_u lat_u s_rho ocean_time<br />
+         field :	u-velocity, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double u_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )<br />
+         long_name :	u-momentum component, open boundaries<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         field :	u_obc, scalar, series</p>
+<p>      double v ( ocean_time, s_rho, eta_v, xi_v )<br />
+         long_name :	v-momentum component<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_v lat_v s_rho ocean_time<br />
+         field :	v-velocity, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double v_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )<br />
+         long_name :	v-momentum component, open boundaries<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         field :	v_obc, scalar, series</p>
+<p>      double w ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	vertical momentum component<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	w-velocity, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double omega ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	S-coordinate vertical momentum component<br />
+         units :	meter second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	omega, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double temp ( ocean_time, s_rho, eta_rho, xi_rho )<br />
+         long_name :	potential temperature<br />
+         units :	Celsius<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_rho ocean_time<br />
+         field :	temperature, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double salt ( ocean_time, s_rho, eta_rho, xi_rho )<br />
+         long_name :	salinity<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_rho ocean_time<br />
+         field :	salinity, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double temp_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )<br />
+         long_name :	potential temperature, open boundaries<br />
+         units :	Celsius<br />
+         time :	ocean_time<br />
+         field :	temp_obc, scalar, series</p>
+<p>      double salt_obc ( ocean_time, obc_adjust, boundary, s_rho, IorJ )<br />
+         long_name :	salinity, open boundaries<br />
+         time :	ocean_time<br />
+         field :	salt_obc, scalar, series</p>
+<p>      double rho ( ocean_time, s_rho, eta_rho, xi_rho )<br />
+         long_name :	density anomaly<br />
+         units :	kilogram meter-3<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_rho ocean_time<br />
+         field :	density, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double AKv ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	vertical viscosity coefficient<br />
+         units :	meter2 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	AKv, scalar, series</p>
+<p>      double AKt ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	temperature vertical diffusion coefficient<br />
+         units :	meter2 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	AKt, scalar, series</p>
+<p>      double AKs ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	salinity vertical diffusion coefficient<br />
+         units :	meter2 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	AKs, scalar, series</p>
+<p>      double tke ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	turbulent kinetic energy<br />
+         units :	meter2 second-2<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	tke, scalar, series</p>
+<p>      double AKk ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	Turbulent kinetic energy vertical diffusion coefficient<br />
+         units :	meter2 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	AKk, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double gls ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	turbulent generic length scale<br />
+         units :	meter3 second-2<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	gls, scalar, series</p>
+<p>      double Lscale ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	vertical mixing turbulent length scale<br />
+         units :	meter<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	Lscale, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double AKp ( ocean_time, s_w, eta_rho, xi_rho )<br />
+         long_name :	Turbulent length scale vertical diffusion coefficient<br />
+         units :	meter2 second-1<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho s_w ocean_time<br />
+         field :	AKp, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double shflux ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	surface net heat flux<br />
+         units :	watt meter-2<br />
+         negative_value :	upward flux, cooling<br />
+         positive_value :	downward flux, heating<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	surface heat flux, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double ssflux ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	surface net salt flux, (E-P)*SALT<br />
+         units :	meter second-1<br />
+         negative_value :	upward flux, freshening (net precipitation)<br />
+         positive_value :	downward flux, salting (net evaporation)<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	surface net salt flux, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double latent ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	net latent heat flux<br />
+         units :	watt meter-2<br />
+         negative_value :	upward flux, cooling<br />
+         positive_value :	downward flux, heating<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	latent heat flux, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double sensible ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	net sensible heat flux<br />
+         units :	watt meter-2<br />
+         negative_value :	upward flux, cooling<br />
+         positive_value :	downward flux, heating<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	sensible heat flux, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double lwrad ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	net longwave radiation flux<br />
+         units :	watt meter-2<br />
+         negative_value :	upward flux, cooling<br />
+         positive_value :	downward flux, heating<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	longwave radiation, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double EminusP ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	bulk_flux surface net freswater flux, (E-P)<br />
+         units :	meter second-1<br />
+         negative_value :	upward flux, freshening (net precipitation)<br />
+         positive_value :	downward flux, salting (net evaporation)<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	EminusP, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double evaporation ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	evaporation rate<br />
+         units :	kilogram meter-2 second-1<br />
+         negative_value :	downward flux, freshening (condensation)<br />
+         positive_value :	upward flux, salting (evaporation)<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	evaporation, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double rain ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	rain fall rate<br />
+         units :	kilogram meter-2 second-1<br />
+         negative_value :	upward flux, salting (NOT POSSIBLE)<br />
+         positive_value :	downward flux, freshening (precipitation)<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	rain, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double swrad ( ocean_time, eta_rho, xi_rho )<br />
+         long_name :	solar shortwave radiation flux<br />
+         units :	watt meter-2<br />
+         negative_value :	upward flux, cooling<br />
+         positive_value :	downward flux, heating<br />
+         time :	ocean_time<br />
+         coordinates :	lon_rho lat_rho ocean_time<br />
+         field :	shortwave radiation, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double sustr ( ocean_time, eta_u, xi_u )<br />
+         long_name :	surface u-momentum stress<br />
+         units :	newton meter-2<br />
+         time :	ocean_time<br />
+         coordinates :	lon_u lat_u ocean_time<br />
+         field :	surface u-momentum stress, scalar, series<br />
+         _FillValue :	1e+37</p>
+<p>      double svstr ( ocean_time, eta_v, xi_v )<br />
+         long_name :	surface v-momentum stress<br />
+         units :	newton meter-2<br />
+         time :	ocean_time<br />
+         coordinates :	lon_v lat_v ocean_time<br />
+         field :	surface v-momentum stress, scalar, series<br />
+         _FillValue :	1e+37</p>
+</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="specifying-variable-dimensions-ncdfvdfcreate.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F29611%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F29611%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+  </div>
+</div>
+  </div>
+          </div>
+          <div class="feed_icons">
+                      </div>
+
+        </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+            <div id="rightcol" class="sidebar">
+            <div class="region region-sidebar-second">
+    <div id="block-nodeblock-22858" class="block block-nodeblock">
+
+    <h2>Download button</h2>
+  
+  <div class="content">
+    <div id="node-22858" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p style="margin: 0;"><a class="button" style="width: 100%; padding: 20px 0;" href="http://www.vapor.ucar.edu/internal/downloads">Download Vapor</a></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#rightcol -->
+    
+  
+    </div> <!-- /center-wrapper -->
+  
+  
+  
+      <div class="footernav">
+        <div class="region region-footer">
+    <div id="block-nodeblock-22831" class="block block-nodeblock">
+
+    <h2>VAPOR Sponsors</h2>
+  
+  <div class="content">
+    <div id="node-22831" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3 style="text-align: center; color: #fff; margin-bottom: 40px; font-size: 20px;">SPONSORS</h3>
+<p><img src="../sites/default/files/users/geinosky/vapor-sponsors.png" alt="VAPOR sponsors" width="980" height="132" /></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <!-- OrgNavFooter Script -->
+<script>
+
+// CUSTOM VARIABLES
+var contactLink = "/contact";     // enter your Contact/Feedback link or mailto: link
+var hideOrgNav = false;        // hide the entire OrgNav from view
+var hideFooter = false;          // hide the entire OrgFooter from view
+var hideNSF = false;               // hide the NSF disclaimer
+var footerColor = '#666';       // hex color of the footer font including the #
+
+// DO NOT EDIT BELOW THIS POINT
+var jsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+if(typeof jQuery === "undefined"){
+  document.write("<scr"+"ipt src='"+jsHost+"ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'></scr"+"ipt>");
+}
+document.write("<scr"+"ipt src='https://orgnav.ucar.edu/orgnav.js' type='text/javascript'></scr"+"ipt>");
+</script>
+<noscript><iframe frameborder="0" width="100%" src="https://orgnav.ucar.edu/noscript.html"></iframe></noscript>
+<!-- END OrgNavFooter Script -->  </div>
+</div>
+<div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div id="loginlink" align="center">
+<a href="../user.html">Login</a>
+</div>  </div>
+</div>
+  </div>
+    </div> <!-- /#footernav -->
+  
+  </div><!-- /#container -->
+</div> <!-- /#wrap -->
+<!-- /layout -->
+
+  <script type="text/javascript" src="../sites/default/files/js/js_KpbuXFbunBaGjtuvRkOuscNXQlFkv4Fjgh1fiknomL8.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4903.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+</body>
+</html>

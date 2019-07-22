@@ -1,0 +1,955 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="../docs/vapor-data-preparation/populating-vdc.html" />
+<link rel="shortlink" href="28609.html" />
+<link rel="prev" href="../docs/vapor-data-preparation/creating-vdf-file.html" />
+<link rel="up" href="../docs/usage/vapor-data-preparation.html" />
+<link rel="next" href="../docs/usage/data-conversion-vdcwizard.html" />
+<link rel="shortcut icon" href="../sites/default/themes/troposphere/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Populating a VDC | VAPOR | Computational Information Systems Laboratory</title>
+  <style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/system/system.base.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.menus.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.messages.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.theme.css?pv0ud8");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/book/book.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/comment/comment.css?pv0ud8");
+@import url("../sites/all/modules/date/date_api/date.css%3Fpv0ud8.css");
+@import url("../sites/all/modules/date/date_popup/themes/datepicker.1.7.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/field/theme/field.css?pv0ud8");
+@import url("../sites/default/modules/contrib/google_cse/google_cse.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/node/node.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/search/search.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/user/user.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/forum/forum.css?pv0ud8");
+@import url("../sites/all/modules/views/css/views.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/bootstrap.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/base.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/default.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/compatibility.css%3Fpv0ud8.css");
+</style>
+<link type="text/css" rel="stylesheet" href="28609.html" media="all" />
+<style type="text/css" media="all">
+@import url("../sites/default/themes/atmos/css/fonts.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/layout.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/nice_menus_default.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/style.css%3Fpv0ud8.css");
+@import url("../sites/default/files/color/troposphere-81dde954/colors.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_imgcaption.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_tinymce.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/custom.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/troposphere/css/override.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="print">
+@import url("../sites/default/themes/atmos/css/print.css%3Fpv0ud8.css");
+</style>
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie6.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie7.css?pv0ud8" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="../sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_f_6-OzlFXjayKlsU5sJKLwjz7LFQvdIZDm-Mt6jKwyM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_sR3RTelOZw0SR_bvHhelrkLY8DKYJcs5zvhbaS-zcpk.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-332815-8", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/default/files/js/js_ZxgiY_hLe37tS2x4OLfl0ivRyI_9yEJY0M6vxub3dJI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"troposphere","theme_token":"JKxLhzrupOKu2khh-v2VunnUNLgVugHrYmVvJWZmZpc","js":{"sites\/default\/modules\/contrib\/google_cse\/google_cse_results.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/default\/themes\/atmos\/js\/site.js":1,"sites\/default\/themes\/atmos\/js\/atmos_imgcaption.js":1,"sites\/default\/themes\/troposphere\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"":1,"sites\/default\/themes\/atmos\/css\/fonts.css":1,"sites\/default\/themes\/atmos\/css\/layout.css":1,"sites\/default\/themes\/atmos\/css\/nice_menus_default.css":1,"sites\/default\/themes\/atmos\/css\/style.css":1,"sites\/default\/themes\/troposphere\/css\/colors.css":1,"sites\/default\/themes\/atmos\/css\/atmos_imgcaption.css":1,"sites\/default\/themes\/atmos\/css\/atmos_tinymce.css":1,"sites\/default\/themes\/atmos\/css\/custom.css":1,"sites\/default\/themes\/troposphere\/css\/override.css":1,"sites\/default\/themes\/atmos\/css\/print.css":1,"sites\/default\/themes\/troposphere\/css\/ie.css":1,"sites\/default\/themes\/troposphere\/css\/ie6.css":1,"sites\/default\/themes\/troposphere\/css\/ie7.css":1}},"googleCSE":{"cx":"016712339613867830978:nuqoefb2ivy","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/\/www.google.com\/cse":true,"\/node\/28609":true}});
+//--><!]]>
+</script>
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'rpo4dvf'
+    };
+    var d = false;
+    var tk = document.createElement('script');
+    tk.src = '//use.typekit.net/' + config.kitId + '.js';
+    tk.type = 'text/javascript';
+    tk.async = 'true';
+    tk.onload = tk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (d || rs && rs != 'complete' && rs != 'loaded') return;
+      d = true;
+      try { Typekit.load(config); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tk, s);
+  })();
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-28609 node-type-doc-book featured _TID" >
+  <div id="skip-link">
+    <a href="28609.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!-- TOP NAV -->
+<div id="header-wrap">
+<!-- <div id="navigation"></div> -->
+<div id="header" class="clear-block>">
+          <div id="navigation">
+<div id="featured" class="clear-block">
+      <div class="region region-featured">
+    <div id="block-google-cse-google-cse" class="block block-google-cse">
+
+    <h2>Search</h2>
+  
+  <div class="content">
+    
+
+  <form action="http://www.google.com/cse" method="get" id="google-cse-results-searchbox-form" accept-charset="UTF-8"><div><input type="hidden" name="cx" value="016712339613867830978:nuqoefb2ivy" />
+<input type="hidden" name="cof" value="FORID:0" />
+<div class="form-item form-type-textfield form-item-query">
+  <label for="edit-query">Enter your keywords </label>
+ <input type="text" id="edit-query" name="query" value="" size="40" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-sa" name="op" value="Search" class="form-submit" /><input type="hidden" name="ie" value="utf-8" />
+<input type="hidden" name="form_build_id" value="form-k5xmehuBp0YAN-tbGeS4ZJbYieCBV3xUeK7128M9gjo" />
+<input type="hidden" name="form_id" value="google_cse_results_searchbox_form" />
+</div></form>
+<div id="google-cse-results">
+  <gcse:searchbox-only gname="google_cse"></gcse:searchbox-only>  <noscript>
+    You must enable JavaScript to view the search results.  </noscript>
+</div>
+  </div>
+</div>
+  </div>
+</div> <!-- /featured --> </div><!-- end navbar -->    
+  <div class="section clearfix align-center-wrapper">   
+<div id="logo-nav-wrapper">
+      <div id="logo-floater">
+      <a href="../index.html" title="Home" rel="home" id="logo">
+        <img src="../sites/default/themes/troposphere/images/vapor-logo-white.png" alt="Home" />
+      </a>
+    </div>
+    <div id="main-nav-wrapper">
+        </div>
+</div>
+
+
+    <div id="name-and-slogan">
+
+      <div id="site-name" class="element-invisible">
+        <strong>
+          <a href="../index.html" title="Home" rel="home"><span>VAPOR | Computational Information Systems Laboratory</span></a>
+        </strong>
+      </div>
+
+<div class="nsf-logo"><img src="../sites/default/themes/troposphere/images/nsf.png"/></div><!-- .slogan -->
+    </div> <!-- /#name-and-slogan -->
+
+
+  </div> <!-- /.section -->
+</div> <!-- /#header -->
+<div id="header-sub-nav">
+  <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="28609.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-UEJ4TWt8k30M1Ifm5LfOO0-VcxwWQEOOlHAGp6Mr54o" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu">
+
+    
+  <div class="content">
+    <div  class="tb-megamenu tb-megamenu-main-menu">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="icon-reorder"></i>
+    </button>
+    <div class="nav-collapse collapse always-show">
+    <ul  class="tb-megamenu-nav nav level-0 items-6">
+  <li  data-id="6983" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    VAPOR 3          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="6989" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-3-overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6986" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="6998" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/installation.html" class="">
+        
+    Installation          </a>
+  </li>
+
+<li  data-id="6995" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/training.html" class="">
+        
+    Training          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="200" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    VAPOR          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li  data-id="6358" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6340" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../vapor-features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="5830" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../news.html" class="">
+        
+    News          </a>
+  </li>
+
+<li  data-id="6343" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../credits.html" class="">
+        
+    Credits          </a>
+  </li>
+
+<li  data-id="6346" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../citation.html" class="">
+        
+    Citing VAPOR          </a>
+  </li>
+
+<li  data-id="6349" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../publications.html" class="">
+        
+    Publications          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5616" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    Documentation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="980" style="width: 980px;" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-4" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5760" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/usage.html" class="mega-group-title">
+        
+    Usage          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-8">
+  <li  data-id="6379" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/getting-started-vapor.html" class="">
+        
+    Getting Started          </a>
+  </li>
+
+<li  data-id="6382" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-data-preparation.html" class="">
+        
+    Data Preparation          </a>
+  </li>
+
+<li  data-id="6352" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-tutorials.html" class="">
+        
+    Tutorials          </a>
+  </li>
+
+<li  data-id="6385" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-gui-general-guide.html" class="">
+        
+    VAPOR GUI Guide          </a>
+  </li>
+
+<li  data-id="6388" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-gui-general-guide/vapor-rendering.html" class="">
+        
+    VAPOR GUI Renderer Guide          </a>
+  </li>
+
+<li  data-id="6391" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/data-analysis-vapor.html" class="">
+        
+    Data Analysis          </a>
+  </li>
+
+<li  data-id="6355" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-presentations.html" class="">
+        
+    Presentations          </a>
+  </li>
+
+<li  data-id="6394" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-6" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5763" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/reference-manuals.html" class="mega-group-title">
+        
+    Reference          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li  data-id="6397" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/command-line-interface-reference.html" class="">
+        
+    Command Line Tools          </a>
+  </li>
+
+<li  data-id="6400" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/vapor-idl-extension-reference-manual.html" class="">
+        
+    IDL          </a>
+  </li>
+
+<li  data-id="6403" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/usage-guides.html" class="">
+        
+    Usage Guides          </a>
+  </li>
+
+<li  data-id="6530" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/programming-apis.html" class="">
+        
+    Programming APIs          </a>
+  </li>
+
+<li  data-id="5658" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://sourceforge.net/projects/vapor" class="">
+        
+    SourceForge Project Site          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="6364" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/vapor-installation.html" class="mega-group-title">
+        
+    Installation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li  data-id="6367" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/release-notes.html" class="">
+        
+    Release Notes          </a>
+  </li>
+
+<li  data-id="6370" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-binary-installation.html" class="">
+        
+    Binary Installation          </a>
+  </li>
+
+<li  data-id="6373" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-source-installation.html" class="">
+        
+    Source Installation          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5661" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="left" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-left dropdown">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    Gallery          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-7">
+  <li  data-id="6555" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/weather.html" class="">
+        
+    Weather          </a>
+  </li>
+
+<li  data-id="6561" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/climate.html" class="">
+        
+    Climate          </a>
+  </li>
+
+<li  data-id="6592" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/oceanography.html" class="">
+        
+    Oceanography          </a>
+  </li>
+
+<li  data-id="6595" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/astrophysics.html" class="">
+        
+    Astrophysics          </a>
+  </li>
+
+<li  data-id="6519" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/Turbulence.html" class="">
+        
+    Turbulence          </a>
+  </li>
+
+<li  data-id="6598" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/biology.html" class="">
+        
+    Biology          </a>
+  </li>
+
+<li  data-id="6601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega dropdown-submenu">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    Archive          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-6">
+  <li  data-id="6607" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/ultra-high-res-sandy-videos.html" class="">
+        
+    Ultra-High Res Sandy Videos          </a>
+  </li>
+
+<li  data-id="6604" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/original-sandy-videos.html" class="">
+        
+    Original Sandy Videos          </a>
+  </li>
+
+<li  data-id="6610" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/sandy-images.html" class="">
+        
+    Sandy Images          </a>
+  </li>
+
+<li  data-id="6616" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/kisti-2014.html" class="">
+        
+    KISTI Competition 2014          </a>
+  </li>
+
+<li  data-id="6451" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/toy-workshop-2008.html" class="">
+        
+    Toy Workshop 2008          </a>
+  </li>
+
+<li  data-id="6558" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/miscellaneous.html" class="">
+        
+    Miscellaneous          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="6469" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    Downloads          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-3">
+  <li  data-id="6436" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/binary-distributions" class="">
+        
+    Binary Distributions          </a>
+  </li>
+
+<li  data-id="6439" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../internal/downloads/source-distributions.html" class="">
+        
+    Source Distributions          </a>
+  </li>
+
+<li  data-id="6442" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/example-data" class="">
+        
+    Example Data          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5691" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="28609.html#" class="dropdown-toggle">
+        
+    Support          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-12" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="5694" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../forum.html" class="">
+        
+    Forum          </a>
+  </li>
+
+<li  data-id="6406" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+
+<li  data-id="5703" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Report Bugs          </a>
+  </li>
+
+<li  data-id="5601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Contact Us          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+      </div>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div> <!-- /#header-wrap -->
+
+
+
+<div id="wrap">
+  <div id="container" class="clear-block">
+
+    <div id="center-wrapper" class="clear-block">
+
+      
+      
+        <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+
+                <div id="tabs-wrapper" class="clear-block"></div>                
+      
+
+
+  <!-- Some content types intentinally strip $node->title in the node-CONTENT_TYPE.tpl.php file.
+  Views and panels are not content types, so no $node->type, but do have $title.  Check for that first.
+  If there is a $node->type, check to see if $node->title exists -->
+<div id="content-head"><div class="breadcrumbs"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="../index.html">Home</a> » <a href="../docs/usage.html">Usage</a> » <a href="../docs/usage/vapor-data-preparation.html">VAPOR Data Preparation</a></div></div><h1 class="title with-tabs">Populating a VDC</h1></div>          <div id="main-content" class="clear-block">
+            
+              <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-28609" class="node node-doc-book node-full clearfix">
+
+      
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><table style="background-color: #ffff00;" border="0" cellpadding="5"><tbody><tr><td>Note: The capabilities discussed in this document require proper user environment setup. Please see the User Environment Setup discussion appropriate for your platform and installation type in the <a title="VAPOR Installation." href="../docs/vapor-installation/vapor-installation.html">installation documentation</a>.</td>
+</tr></tbody></table><p>After a .vdf metafile has been created with vdfcreate or another utility, the VDC must be populated with variable field data. This document describes process of populating a VDC using command line tools included in the VAPOR package. The choice of which command line tool to use depends on the source of your data, as show in the table below. Additionally, the <a href="https://test7.vapor.cms.ucar.edu/docs/vapor-data-preparation/data-conversion-vdcwizard">VDCWizard</a> GUI may be used to populate VDC. File formats supported by vdcwizard are also shown in the table below.</p>
+<p> </p>
+<table border="0" cellpadding="5"><caption>Tools for populating a VDC</caption>
+<tbody><tr><td><strong>Data file source</strong></td>
+<td><strong>Command line tool</strong></td>
+<td><strong>Supported by vdcwizard</strong></td>
+</tr><tr><td>WRF-ARW</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/wrf2vdf.html">wrf2vdf</a></td>
+<td>yes</td>
+</tr><tr><td>MOM4</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/mom2vdf.html">mom2vdf</a></td>
+<td>yes</td>
+</tr><tr><td>POP</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/mom2vdf.html">mom2vdf</a></td>
+<td>yes</td>
+</tr><tr><td>ROMS</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/roms2vdf.html">roms2vdf</a></td>
+<td>yes</td>
+</tr><tr><td>GRIB</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/grib2vdf.html">grim2vdf</a></td>
+<td>yes</td>
+</tr><tr><td>CAM</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/cam2vdf.html">cam2vdf</a></td>
+<td>yes</td>
+</tr><tr><td>Generic NetCDF files</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/ncdf2vdf.html">ncdf2vdf</a></td>
+<td>no</td>
+</tr><tr><td>raw or other data</td>
+<td><a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/raw2vdf.html">raw2vdf</a></td>
+<td>no</td>
+</tr></tbody></table><p> </p>
+<p> </p>
+<h2>Populating a VDC from WRF-ARW data</h2>
+<p><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Template>Normal.dotm</o:Template>
+  <o:Revision>0</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Pages>1</o:Pages>
+  <o:Words>294</o:Words>
+  <o:Characters>1681</o:Characters>
+  <o:Company>NCAR</o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2064</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG />
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting />
+  <w:PunctuationKerning />
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas />
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables />
+   <w:DontGrowAutofit />
+   <w:DontAutofitConstrainedTables />
+   <w:DontVertAlignInTxbx />
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]--> <!--[if gte mso 10]>
+<mce:style><! 
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+--> <!--[endif]--> <!--StartFragment--></p>
+<p>If your input data arrises from a WRF-ARW simulation and your .vdf file was created with, for example, the command:</p>
+<p style="padding-left: 30px;">wrfvdfcreate wrfout_2005-08-29_00 wrfout_2005-08-29_01 wrfout_2005-08-29_02 mywrfdata.vdf</p>
+<p>You can convert the variables found in the wrfout files to the VDC associated with mywrfdata.vdf using the command:</p>
+<p style="padding-left: 30px;">wrf2vdf mywrfdata.vdf wrfout_2005-08-29_00 wrfout_2005-08-29_01 wrfout_2005-08-29_02</p>
+<p>Note that the wrfvdfcreate command specifies the name of the .vdf file after the names of all the wrfout files, while the wrf2vdf command specifies the .vdf file before the wrfout files.</p>
+<p>The above command would convert all variables that are found in both the wrfout files and the .vdf file. If only a subset of the varibles is desired, the list can be limited with the -<strong>vars</strong> option. For example:</p>
+<p style="padding-left: 30px;">wrf2vdf -vars U:V:W mywrfdata.vdf wrfout_2005-08-29_00</p>
+<p>would convert only the U, V, and W variables from the first wrfout file. Note: this is not stricly true as a small subset of WRF variables are required by any VDC from proper handling of geo-referenced data. These required variables are converted in addition to those specifed by the -<strong>vars</strong> option.</p>
+<p> </p>
+<p class="MsoNormal"><span>You can also convert netCDF files that are not WRF output, as long as they have the same dimensions as those found in the WRF output for which the .<em>vdf</em> file was created.<span> See below.</span></span></p>
+<h2 class="MsoNormal"><span><span>Populating a VDC from MOM4, POP, ROMS, CAM, or GRIB data<br /></span></span></h2>
+<p><span><span>If your data were generated by the MOM4, POP, or ROMS ocean models one of the <strong>mom2vdf</strong> (for MOM4 and POP) or <strong>roms2vdf</strong> commands should be used to populate the VDC. These commands are described in detail in the <a href="../docs/reference-manuals/reference-manuals.html#CLIMANPAGES">reference manual.</a>  </span></span>Converters for GRIB and CAM can be found on the <a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/grib2vdf.html">grib2vdf</a> and <a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/cam2vdf.html">cam2vdf</a> manual pages.</p>
+<h2 class="MsoNormal"><span><span>Populating a VDC from netCDF files</span></span></h2>
+<p><span><span>Data stored in the netCDF file format may also be used to populate a VDC with the <a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/ncdf2vdf.html"><strong>ncdf2vdf</strong></a> command. However, netCDF is a very flexible file format, and not all variables stored in a netCDF file may be formatted in a way that permits their conversion with the <strong>ncdf2vdf</strong> utility. A 2D or 3D variable stored in a netCDF file may only be converted by <strong>ncdf2vdf </strong>if its fastest varying dimensions exactly match the dimensions of the VDC. For example, if the netCDF variables are defined as shown by the output of the netCDF <strong>ncdump</strong> command as: </span></span></p>
+<pre><span><span>netcdf file.nc {<br />dimensions:<br />  Time = UNLIMITED ; // (20 currently)<br />  west_east = 200 ;<br />  south_north = 100 ;<br />  bottom_top = 35 ;<br />variables:<br />  float T(Time, bottom_top, south_north, west_east) ;<br />}<br /></span></span></pre>
+<p><span><span>then assuming the .vdf file had been created with <strong>ncdfvdfcreate</strong> the following <strong>ncdf2vdf</strong> command would convert time step 0 of the input file, file.nc, and store it as time step 0 of the VDC:</span></span></p>
+<p style="padding-left: 30px;"><span><span>ncdf2vdf -timedim Time -ts 0 -vars T  file.nc mydata.vdf<br /></span></span></p>
+<h2><a name="raw2vdf" id="raw2vdf"></a>Populating a VDC with raw2vdf</h2>
+<p>The <a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/raw2vdf.html"><strong>raw2vdf</strong></a> command reads a single varible, at a single time step, from disk, stored as a block of floats (a contiguous, 3D array of unformatted, 32bit, binary floating point values with no header or trailer information), transforms the data into wavelet space, and stores it in a VDC. Assuming the .vdf file was created with the <a href="http://docs.software.ucar.edu/vapor/Documentation/current/doc/commands/html/vdfcreate.html"><strong>vdfcreate</strong></a> command: </p>
+<p style="padding-left: 30px;">vdfcreate –dimension 512x512x512 –numts 100 –level 3 –vars3d t:p mydata.vdf</p>
+<p>then the following command:</p>
+<p style="padding-left: 30px;">raw2vdf -ts 0 –varname vx mydata.vdf rawvx.000.float</p>
+<p>would transform the variable  stored in the file <strong>rawvx.000.float</strong> and write it into the VDC associated with the <strong>mydata.vdf</strong> metafile. The time step and variable name would be 0 and vx, respectively. The volume contained in <strong>rawvx.000.float</strong> must have a resolution of 512^3 as defined in the .<em>vdf</em> file. Furthermore, the volume will undergo three wavelet transformations, resulting in a coarsest resolution of 64^3.</p>
+<p>Subsequent, later time steps can be transformed by incrementing the integer argument to the -ts option. For example:</p>
+<p style="padding-left: 30px;">raw2vdf -ts 1 –varname vx mydata.vdf rawvx.001.float</p>
+<h2><a name="ParallelData" id="ParallelData"></a>Parallel data conversion on compute clusters</h2>
+<p>For exceptionally large data sets, it can save a lot of time to process the VDC contents in parallel.  In VAPOR 2.5, Python scripts have been added to the $(VAPOR_HOME)/share/examples/parallelDataConversion/ directory.  There, users will find scripts that have been tailored to the LSF and SGE batch schedulers; named vaporLSF.py and vaporSGE.py.  These scripts will subdivide the set of input files into a series of processes that will run in parallel for the aformentioned schedulers.</p>
+<p>These scripts can be converted to be used for other schedulers that accept "Array Job" processing.  Further documentation can be found <a href="../sites/default/files/VAPORParallelDataConversion.pdf">here</a>.</p>
+<p><strong>Release availability: version 2.5 and beyond</strong></p>
+<!--EndFragment-->
+<h2>Learning more</h2>
+<p>Complete documentation on the all of the VAPOR command line utilities is available in the <a href="../docs/reference-manuals/reference-manuals.html#CLIMANPAGES">reference manual</a>.</p>
+<p>Invoking either command with the <strong>-help</strong> option will generate a listing of all the available command line options and provide a terse description of their meaning.</p>
+<p>Information on various programatic APIs for converting data to a VDC may be found here [need a link]</p></div></div></div>  <div id="book-navigation-28977" class="book-navigation">
+    
+        <div class="page-links clearfix">
+              <a href="../docs/vapor-data-preparation/creating-vdf-file.html" class="page-previous" title="Go to previous page">‹ Creating a .vdf file</a>
+                    <a href="../docs/usage/vapor-data-preparation.html" class="page-up" title="Go to parent page">up</a>
+                    <a href="../docs/usage/data-conversion-vdcwizard.html" class="page-next" title="Go to next page">Data conversion with VDCWizard ›</a>
+          </div>
+    
+  </div>
+  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+          </div>
+          <div class="feed_icons">
+                      </div>
+
+        </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+            <div id="rightcol" class="sidebar">
+            <div class="region region-sidebar-second">
+    <div id="block-book-navigation" class="block block-book">
+
+    <h2><a href="../docs/usage.html" class="book-title">Usage</a></h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first collapsed"><a href="../docs/usage/getting-started-vapor.html">Getting Started with VAPOR</a></li>
+<li class="collapsed"><a href="../docs/data-analysis-vapor.html">Data Analysis with VAPOR</a></li>
+<li class="expanded active-trail"><a href="../docs/usage/vapor-data-preparation.html" class="active-trail">VAPOR Data Preparation</a><ul class="menu clearfix"><li class="first leaf"><a href="../docs/vapor-data-preparation/overview.html">Overview</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/vapor-data-collection.html">VAPOR Data Collection</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/creating-vdf-file.html">Creating a .vdf file</a></li>
+<li class="leaf active-trail"><a href="../docs/vapor-data-preparation/populating-vdc.html" class="active-trail active">Populating a VDC</a></li>
+<li class="leaf"><a href="../docs/usage/data-conversion-vdcwizard.html">Data conversion with VDCWizard</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/data-written-fortran-io.html">Data written with Fortran IO</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/spherical-data.html">Spherical data</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/auxilliary-data.html">Importing polygonal data</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/layered-datasets.html">Layered datasets</a></li>
+<li class="leaf"><a href="../docs/vapor-data-preparation/stretched-grids.html">Stretched grids</a></li>
+<li class="last collapsed"><a href="../docs/vapor-data-preparation/preparation-georeferenced-images.html">Preparation of Georeferenced images</a></li>
+</ul></li>
+<li class="leaf"><a href="../docs/vapor-faq.html">VAPOR FAQ</a></li>
+<li class="collapsed"><a href="../docs/usage/vapor-gui-general-guide.html">VAPOR GUI General Guide</a></li>
+<li class="last collapsed"><a href="../docs/vapor-gui-general-guide/vapor-rendering.html">Vapor Rendering</a></li>
+</ul>  </div>
+</div>
+<div id="block-nodeblock-22858" class="block block-nodeblock">
+
+    <h2>Download button</h2>
+  
+  <div class="content">
+    <div id="node-22858" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p style="margin: 0;"><a class="button" style="width: 100%; padding: 20px 0;" href="http://www.vapor.ucar.edu/internal/downloads">Download Vapor</a></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#rightcol -->
+    
+  
+    </div> <!-- /center-wrapper -->
+  
+  
+  
+      <div class="footernav">
+        <div class="region region-footer">
+    <div id="block-nodeblock-22831" class="block block-nodeblock">
+
+    <h2>VAPOR Sponsors</h2>
+  
+  <div class="content">
+    <div id="node-22831" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3 style="text-align: center; color: #fff; margin-bottom: 40px; font-size: 20px;">SPONSORS</h3>
+<p><img src="../sites/default/files/users/geinosky/vapor-sponsors.png" alt="VAPOR sponsors" width="980" height="132" /></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <!-- OrgNavFooter Script -->
+<script>
+
+// CUSTOM VARIABLES
+var contactLink = "/contact";     // enter your Contact/Feedback link or mailto: link
+var hideOrgNav = false;        // hide the entire OrgNav from view
+var hideFooter = false;          // hide the entire OrgFooter from view
+var hideNSF = false;               // hide the NSF disclaimer
+var footerColor = '#666';       // hex color of the footer font including the #
+
+// DO NOT EDIT BELOW THIS POINT
+var jsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+if(typeof jQuery === "undefined"){
+  document.write("<scr"+"ipt src='"+jsHost+"ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'></scr"+"ipt>");
+}
+document.write("<scr"+"ipt src='https://orgnav.ucar.edu/orgnav.js' type='text/javascript'></scr"+"ipt>");
+</script>
+<noscript><iframe frameborder="0" width="100%" src="https://orgnav.ucar.edu/noscript.html"></iframe></noscript>
+<!-- END OrgNavFooter Script -->  </div>
+</div>
+<div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div id="loginlink" align="center">
+<a href="../user.html">Login</a>
+</div>  </div>
+</div>
+  </div>
+    </div> <!-- /#footernav -->
+  
+  </div><!-- /#container -->
+</div> <!-- /#wrap -->
+<!-- /layout -->
+
+  <script type="text/javascript" src="../sites/default/files/js/js_KpbuXFbunBaGjtuvRkOuscNXQlFkv4Fjgh1fiknomL8.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4903.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+</body>
+</html>

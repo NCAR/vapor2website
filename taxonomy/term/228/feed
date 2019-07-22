@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.vapor.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>VAPOR | Computational Information Systems Laboratory - KISTI 2014</title>
+ <link>https://www.vapor.ucar.edu/term/gallery/kisti-2014</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Entry 19 - Seasonal ocean temperature variations in the North Pacific using ROMS Model </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-19-seasonal-ocean-temperature-variations-north-pacific-using-roms-model</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/9PwsH93obZ0?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This movie shows seasonal variations of 3-D temperature, which is simulated using ROMS model in the North Pacific for 2010. We utilized Probe, DVR (Direct Volume Rendering) functions and Image technique of VAPOR for this visualization. 3-D ocean temperature is expressed using DVR, which clearly shows that the North and South Equatorial Currents are meandering and propagating from east to west. We captured cross section along the equator using Probe technique in order to examine thermocline and mixed layer changes in equator vicinity. We expressed the section in the front side using Image technique. Now we can examine the seasonal variations of ocean temperature horizontally and vertically. We added land image to express realistic topography.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:59:35 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29121 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-19-seasonal-ocean-temperature-variations-north-pacific-using-roms-model#comments</comments>
+</item>
+<item>
+ <title>Entry 18 - Visualization of air-sea interactions typhoon Bolaven using a WRF-ROMS coupled model </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-18-visualization-air-sea-interactions-typhoon-bolaven-using-wrf-roms</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/S4nikV2nDHw?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Sea surface temperature (SST) is a major factor affecting the intensity of tropical cyclone (TC). The SST is not fixed, but decreasing during the passage of TCs due to a strong vertical mixing and upwelling. The TC-induced sea surface cooling along the track, called as &quot;cold wake&quot;, plays a critical role in reducing the TC intensity. Here, we simulated the cold wake, a product of the air-sea interaction, during typhoon Bolaven in 2012 using a WRF-ROMS coupled model. Initial fields of WRF and ROMS are obtained from GFS and HYCOM global models, respectively. Clouds of Bolaven are expressed using QCLOUD output of WRF and the cold wake is visualized using SST output of ROMS.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:58:53 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29118 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-18-visualization-air-sea-interactions-typhoon-bolaven-using-wrf-roms#comments</comments>
+</item>
+<item>
+ <title>Entry 17 - Simulation for the Planet Boundary Layer’s Evolution </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-17-simulation-planet-boundary-layer%E2%80%99s-evolution</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/MTfuRcT_-F4?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This fiugre is the simulation result for the Planent Boundary Layer(PBL) evolution of by the LES model PALM, which is developed at the Hannover university to determine two factors, which develop PBL, that one is Surface heat flux and another is geostrophic wind which is similar to sheer stress to PBL.&lt;br /&gt;Using the Direct Volume Rendering(DVR) method, which are built in 3D visualizing tool, VAPOR, it is a visualization of the development of turbulence in the PBL and how the temperature spreads by analyzing potential temperature (PT) and vertical velocity (w) of two variables from the data shown in figure PALM results.&lt;br /&gt;Vertical Velocity is expressed by the DVR method and potential temperature is visualized by the isosurface at PT = 304.1 K.&lt;br /&gt;Comparing with the simulation data which is in the paper below, LES simulation value is confirmed as meaningful.&lt;br /&gt;Impovement of the K-Profile Model for the Planentary boundary ayer based on large eddy simulation data - Y. Noh, W. G. Cheon, S. Y. Hong and S. Raasch (2003)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:58:28 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29115 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-17-simulation-planet-boundary-layer%E2%80%99s-evolution#comments</comments>
+</item>
+<item>
+ <title>Entry 16 - Hurricane Katrina Simulation using WRF Model </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-16-hurricane-katrina-simulation-using-wrf-model</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/dW3pErARlYc?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hurricane Katrina (2005) hindcast using WRF model was shown in this movie. We utilized DVR (Direct Volume Rendering), image, flow, 2D technique of VAPOR for visualization of hurricane. This movie aims to show the varying distribution of strong wind (above 17m/s) of hurricane instead of showing cloud, which is widely used in other visualizations. The winds were expressed by both flow tracking and 3-d visualization using U, V, W variables. The terrain of the United States was expressed by 3-d image, georeference and height options. Colors of realistic sea were expressed by modification of sea surface temperature (SST) variable.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:58:05 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29112 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-16-hurricane-katrina-simulation-using-wrf-model#comments</comments>
+</item>
+<item>
+ <title>Entry 15 - development and decay of NAKRI </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-15-development-and-decay-nakri</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/i8WVWkkNlz0?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;We visualize the WRF model simulation result of tropical cyclone &#039;NAKRI&#039; from August 31, 2014 for 3 days. We produce wind speed variable by using U and V. We visualize structure of tropical cyclone with wind speed and the cumulated amount of precipitation is expressed on the sea level. NAKRI make a large amount of precipitation on the south sea and korean peninsula. And we can see the other tropical cyclone HALONG on the south east of figure.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:57:39 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29109 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-15-development-and-decay-nakri#comments</comments>
+</item>
+<item>
+ <title>Entry 13 - 3D visualization of ROMS output for northwestern pacific </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-13-3d-visualization-roms-output-northwestern-pacific</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/7m2waNe647U?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This animation is 3D visualization of ROMS output for northwestern pacific. Shading Temperature use Direct Volume Rendering(DVR) in VAPOR. Cloud Cover and Sea Surface Height of 2d method.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:57:05 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29106 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-13-3d-visualization-roms-output-northwestern-pacific#comments</comments>
+</item>
+<item>
+ <title>Entry 12 - Cyclogenesis and outgoing longwave radiation during sumer in east asia </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-12-cyclogenesis-and-outgoing-longwave-radiation-during-sumer-east-asia</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/Gupz_wf7edQ?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;To analyze the relationship between outgoing longwave radiation (OLR) and cyclogenesis, we visualized the strong typhoon period during Sep 17th through the 28th in 1999.  Using CMIP5 and CanESM2 data sets, it forced as boundary forcing value to WRF for 10 years integration from 1990.  We defined new variable &quot;wind speed&quot; by horizontal, meridional, and vertical wind and visualized in 3-D utilizing the DVR method of VAPOR.  In addition, the appearance of &quot;wind speed&quot; is treated by isosurface appearance method of VAPOR to show the air temperature change in altitude.  OLR was extracted only the value which relate with cyclogenesis and was shown the heat flux transportation from the ocean to atmosphere.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:56:33 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29103 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-12-cyclogenesis-and-outgoing-longwave-radiation-during-sumer-east-asia#comments</comments>
+</item>
+<item>
+ <title>Entry 11 - Temperature, salinity and current distribution on the Korean ambient sea water </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-11-temperature-salinity-and-current-distribution-korean-ambient-sea-water</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/Dq0JGuWDuxc?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This Movie is showing the distribution of the temperature, salinity and current on the Korean ambient sea water for 40 days in summer. The first part is showing salinity variation for 40 days and the second part is showing current variation with the temperature value on the arrow. The salinity is expressed by Direct Volume Rendering with Lighting on function and the arrow is expressed by flow function mapped on the temperature value.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:56:06 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29100 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-11-temperature-salinity-and-current-distribution-korean-ambient-sea-water#comments</comments>
+</item>
+<item>
+ <title>Entry 10 - Visualizing typhoon Haiyan using the numerical model WRF and VAPOR tool </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-10-visualizing-typhoon-haiyan-using-numerical-model-wrf-and-vapor-tool</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/0eKP6JWhdCU?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;In this experiment, we investigated the process of generation and dissipation for 30th typhoon 2013 Haiyan using a three-dimensional visualization tool (VAPOR) and a output simulated by the numerical model WRF. Our result type to submit is a video with mp4 which is for streamline and cloud. We presented 3-dimensional streamline used U and V, W component variable of WRF output using Flow method in VAPOR, and then we drew 3d streamline with surface pressure shaded at lower surface pressure, which is lower than about 1000hPa. These results are easier to understand flows of streamline near the typhoon center than 2d plots. If there is a chance being similar to this project again, we&#039;d like to challenge to applying another typhoon case using more advanced desktop PC and nesting method of WRF model.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:55:33 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29097 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-10-visualizing-typhoon-haiyan-using-numerical-model-wrf-and-vapor-tool#comments</comments>
+</item>
+<item>
+ <title>Entry 09 - strongest heavy snow in 100 years </title>
+ <link>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-09-strongest-heavy-snow-100-years</link>
+ <description>&lt;div class=&quot;field field-name-field-video-embed field-type-video-embed-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;
+&lt;div class=&quot;embedded-video&quot;&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;iframe class=&quot;&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/8u6Hwxb6ogw?width%3D640%26amp%3Bheight%3D360%26amp%3Btheme%3Ddark%26amp%3Bautoplay%3D0%26amp%3Bvq%3Dhd1080%26amp%3Brel%3D0%26amp%3Bshowinfo%3D1%26amp%3Bmodestbranding%3D1%26amp%3Biv_load_policy%3D3%26amp%3Bcontrols%3D1%26amp%3Bautohide%3D2%26amp%3Bwmode%3Dopaque&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This video is visualized result in 3D from WRF(Weather Research Forecasting) model for Heavy snowfall over Young-dong area in February 2014. The cloud had been simulated through Direct Volume Rendering(DVR) by making variable &#039;cloud&#039; with QCLOUD and QICE produced from WRF output file. For focusing atmospheric condition of Youngdong, region had been controled in the cross section. The wind had been shown stream lines and vector from Flow and Barb fuction with three variable U, V, and W.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 10 Apr 2015 17:55:02 +0000</pubDate>
+ <dc:creator>pearse</dc:creator>
+ <guid isPermaLink="false">29094 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/gallery/kisti-2014/entry-09-strongest-heavy-snow-100-years#comments</comments>
+</item>
+</channel>
+</rss>

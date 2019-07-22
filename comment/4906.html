@@ -1,0 +1,2541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html" />
+<link rel="shortlink" href="../node/28120.html" />
+<link rel="shortcut icon" href="../sites/default/themes/troposphere/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>wrf2geotiff.ncl is generating offsets that are way too large | VAPOR | Computational Information Systems Laboratory</title>
+  <style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/system/system.base.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.menus.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.messages.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/system/system.theme.css?pv0ud8");
+</style>
+<style type="text/css" media="all">
+@import url("https://www.vapor.ucar.edu/modules/book/book.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/comment/comment.css?pv0ud8");
+@import url("../sites/all/modules/date/date_api/date.css%3Fpv0ud8.css");
+@import url("../sites/all/modules/date/date_popup/themes/datepicker.1.7.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/field/theme/field.css?pv0ud8");
+@import url("../sites/default/modules/contrib/google_cse/google_cse.css%3Fpv0ud8.css");
+@import url("https://www.vapor.ucar.edu/modules/node/node.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/search/search.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/user/user.css?pv0ud8");
+@import url("https://www.vapor.ucar.edu/modules/forum/forum.css?pv0ud8");
+@import url("../sites/all/modules/views/css/views.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="all">
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/naked/advanced-forum.naked.structure.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/naked_stacked/advanced-forum.naked_stacked.structure.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/silver_bells/advanced-forum.silver_bells.style.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/naked/advanced-forum.naked.images.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/advanced_forum/styles/silver_bells/advanced-forum.silver_bells.images.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/bootstrap.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/base.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/default.css%3Fpv0ud8.css");
+@import url("../sites/default/modules/contrib/tb_megamenu/css/compatibility.css%3Fpv0ud8.css");
+</style>
+<link type="text/css" rel="stylesheet" href="4906.html" media="all" />
+<style type="text/css" media="all">
+@import url("../sites/default/themes/atmos/css/fonts.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/layout.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/nice_menus_default.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/style.css%3Fpv0ud8.css");
+@import url("../sites/default/files/color/troposphere-81dde954/colors.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_imgcaption.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/atmos_tinymce.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/atmos/css/custom.css%3Fpv0ud8.css");
+@import url("../sites/default/themes/troposphere/css/override.css%3Fpv0ud8.css");
+</style>
+<style type="text/css" media="print">
+@import url("../sites/default/themes/atmos/css/print.css%3Fpv0ud8.css");
+</style>
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie6.css?pv0ud8" media="all" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.vapor.ucar.edu/sites/default/themes/troposphere/css/ie7.css?pv0ud8" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="../sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_f_6-OzlFXjayKlsU5sJKLwjz7LFQvdIZDm-Mt6jKwyM.js"></script>
+<script type="text/javascript" src="../sites/default/files/js/js_sR3RTelOZw0SR_bvHhelrkLY8DKYJcs5zvhbaS-zcpk.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-332815-8", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/default/files/js/js_ZxgiY_hLe37tS2x4OLfl0ivRyI_9yEJY0M6vxub3dJI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"troposphere","theme_token":"VA5E0G_PgeShy9lGqmTEs-ET_dIcG-Dp-s-JuY8b3cE","js":{"sites\/default\/modules\/contrib\/google_cse\/google_cse_results.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/default\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/default\/themes\/atmos\/js\/site.js":1,"sites\/default\/themes\/atmos\/js\/atmos_imgcaption.js":1,"sites\/default\/themes\/troposphere\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/default\/modules\/contrib\/google_cse\/google_cse.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/naked\/advanced-forum.naked.structure.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/naked_stacked\/advanced-forum.naked_stacked.structure.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/silver_bells\/advanced-forum.silver_bells.style.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/naked\/advanced-forum.naked.images.css":1,"sites\/default\/modules\/contrib\/advanced_forum\/styles\/silver_bells\/advanced-forum.silver_bells.images.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/default\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"":1,"sites\/default\/themes\/atmos\/css\/fonts.css":1,"sites\/default\/themes\/atmos\/css\/layout.css":1,"sites\/default\/themes\/atmos\/css\/nice_menus_default.css":1,"sites\/default\/themes\/atmos\/css\/style.css":1,"sites\/default\/themes\/troposphere\/css\/colors.css":1,"sites\/default\/themes\/atmos\/css\/atmos_imgcaption.css":1,"sites\/default\/themes\/atmos\/css\/atmos_tinymce.css":1,"sites\/default\/themes\/atmos\/css\/custom.css":1,"sites\/default\/themes\/troposphere\/css\/override.css":1,"sites\/default\/themes\/atmos\/css\/print.css":1,"sites\/default\/themes\/troposphere\/css\/ie.css":1,"sites\/default\/themes\/troposphere\/css\/ie6.css":1,"sites\/default\/themes\/troposphere\/css\/ie7.css":1}},"googleCSE":{"cx":"016712339613867830978:nuqoefb2ivy","language":"","resultsWidth":600,"domain":"www.google.com","showWaterMark":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/\/www.google.com\/cse":true,"\/comment\/4906":true}});
+//--><!]]>
+</script>
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'rpo4dvf'
+    };
+    var d = false;
+    var tk = document.createElement('script');
+    tk.src = '//use.typekit.net/' + config.kitId + '.js';
+    tk.type = 'text/javascript';
+    tk.async = 'true';
+    tk.onload = tk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (d || rs && rs != 'complete' && rs != 'loaded') return;
+      d = true;
+      try { Typekit.load(config); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tk, s);
+  })();
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-28120 node-type-forum featured" >
+  <div id="skip-link">
+    <a href="4906.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!-- TOP NAV -->
+<div id="header-wrap">
+<!-- <div id="navigation"></div> -->
+<div id="header" class="clear-block>">
+          <div id="navigation">
+<div id="featured" class="clear-block">
+      <div class="region region-featured">
+    <div id="block-google-cse-google-cse" class="block block-google-cse">
+
+    <h2>Search</h2>
+  
+  <div class="content">
+    
+
+  <form action="http://www.google.com/cse" method="get" id="google-cse-results-searchbox-form" accept-charset="UTF-8"><div><input type="hidden" name="cx" value="016712339613867830978:nuqoefb2ivy" />
+<input type="hidden" name="cof" value="FORID:0" />
+<div class="form-item form-type-textfield form-item-query">
+  <label for="edit-query">Enter your keywords </label>
+ <input type="text" id="edit-query" name="query" value="" size="40" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-sa" name="op" value="Search" class="form-submit" /><input type="hidden" name="ie" value="utf-8" />
+<input type="hidden" name="form_build_id" value="form-PLJ0iWfD23GiC9sJIhk7mo9J29iwyOtoSIo2aHNVIEU" />
+<input type="hidden" name="form_id" value="google_cse_results_searchbox_form" />
+</div></form>
+<div id="google-cse-results">
+  <gcse:searchbox-only gname="google_cse"></gcse:searchbox-only>  <noscript>
+    You must enable JavaScript to view the search results.  </noscript>
+</div>
+  </div>
+</div>
+  </div>
+</div> <!-- /featured --> </div><!-- end navbar -->    
+  <div class="section clearfix align-center-wrapper">   
+<div id="logo-nav-wrapper">
+      <div id="logo-floater">
+      <a href="../index.html" title="Home" rel="home" id="logo">
+        <img src="../sites/default/themes/troposphere/images/vapor-logo-white.png" alt="Home" />
+      </a>
+    </div>
+    <div id="main-nav-wrapper">
+        </div>
+</div>
+
+
+    <div id="name-and-slogan">
+
+      <div id="site-name" class="element-invisible">
+        <strong>
+          <a href="../index.html" title="Home" rel="home"><span>VAPOR | Computational Information Systems Laboratory</span></a>
+        </strong>
+      </div>
+
+<div class="nsf-logo"><img src="../sites/default/themes/troposphere/images/nsf.png"/></div><!-- .slogan -->
+    </div> <!-- /#name-and-slogan -->
+
+
+  </div> <!-- /.section -->
+</div> <!-- /#header -->
+<div id="header-sub-nav">
+  <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="4906.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-zzvsK8ztQecxiLUrFvdBVxpbQNGjHs0KdOeiKPFYMBY" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu">
+
+    
+  <div class="content">
+    <div  class="tb-megamenu tb-megamenu-main-menu">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="icon-reorder"></i>
+    </button>
+    <div class="nav-collapse collapse always-show">
+    <ul  class="tb-megamenu-nav nav level-0 items-6">
+  <li  data-id="6983" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    VAPOR 3          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="6989" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-3-overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6986" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="6998" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/installation.html" class="">
+        
+    Installation          </a>
+  </li>
+
+<li  data-id="6995" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/training.html" class="">
+        
+    Training          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="200" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    VAPOR          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li  data-id="6358" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../overview.html" class="">
+        
+    Overview          </a>
+  </li>
+
+<li  data-id="6340" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../vapor-features.html" class="">
+        
+    Features          </a>
+  </li>
+
+<li  data-id="5830" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../news.html" class="">
+        
+    News          </a>
+  </li>
+
+<li  data-id="6343" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../credits.html" class="">
+        
+    Credits          </a>
+  </li>
+
+<li  data-id="6346" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../citation.html" class="">
+        
+    Citing VAPOR          </a>
+  </li>
+
+<li  data-id="6349" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../publications.html" class="">
+        
+    Publications          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5616" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    Documentation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="980" style="width: 980px;" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-4" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5760" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/usage.html" class="mega-group-title">
+        
+    Usage          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-8">
+  <li  data-id="6379" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/getting-started-vapor.html" class="">
+        
+    Getting Started          </a>
+  </li>
+
+<li  data-id="6382" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-data-preparation.html" class="">
+        
+    Data Preparation          </a>
+  </li>
+
+<li  data-id="6352" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-tutorials.html" class="">
+        
+    Tutorials          </a>
+  </li>
+
+<li  data-id="6385" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/usage/vapor-gui-general-guide.html" class="">
+        
+    VAPOR GUI Guide          </a>
+  </li>
+
+<li  data-id="6388" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-gui-general-guide/vapor-rendering.html" class="">
+        
+    VAPOR GUI Renderer Guide          </a>
+  </li>
+
+<li  data-id="6391" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/data-analysis-vapor.html" class="">
+        
+    Data Analysis          </a>
+  </li>
+
+<li  data-id="6355" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-presentations.html" class="">
+        
+    Presentations          </a>
+  </li>
+
+<li  data-id="6394" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-6" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="5763" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/reference-manuals.html" class="mega-group-title">
+        
+    Reference          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li  data-id="6397" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/command-line-interface-reference.html" class="">
+        
+    Command Line Tools          </a>
+  </li>
+
+<li  data-id="6400" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/vapor-idl-extension-reference-manual.html" class="">
+        
+    IDL          </a>
+  </li>
+
+<li  data-id="6403" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/usage-guides.html" class="">
+        
+    Usage Guides          </a>
+  </li>
+
+<li  data-id="6530" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/reference-manuals/programming-apis.html" class="">
+        
+    Programming APIs          </a>
+  </li>
+
+<li  data-id="5658" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://sourceforge.net/projects/vapor" class="">
+        
+    SourceForge Project Site          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+
+<div  data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li  data-id="6364" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="../docs/vapor-installation.html" class="mega-group-title">
+        
+    Installation          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li  data-id="6367" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/release-notes.html" class="">
+        
+    Release Notes          </a>
+  </li>
+
+<li  data-id="6370" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-binary-installation.html" class="">
+        
+    Binary Installation          </a>
+  </li>
+
+<li  data-id="6373" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../docs/vapor-installation/vapor-source-installation.html" class="">
+        
+    Source Installation          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5661" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="left" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-left dropdown">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    Gallery          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-7">
+  <li  data-id="6555" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/weather.html" class="">
+        
+    Weather          </a>
+  </li>
+
+<li  data-id="6561" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/climate.html" class="">
+        
+    Climate          </a>
+  </li>
+
+<li  data-id="6592" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/oceanography.html" class="">
+        
+    Oceanography          </a>
+  </li>
+
+<li  data-id="6595" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/astrophysics.html" class="">
+        
+    Astrophysics          </a>
+  </li>
+
+<li  data-id="6519" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/Turbulence.html" class="">
+        
+    Turbulence          </a>
+  </li>
+
+<li  data-id="6598" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../gallery/biology.html" class="">
+        
+    Biology          </a>
+  </li>
+
+<li  data-id="6601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega dropdown-submenu">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    Archive          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-2 items-6">
+  <li  data-id="6607" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/ultra-high-res-sandy-videos.html" class="">
+        
+    Ultra-High Res Sandy Videos          </a>
+  </li>
+
+<li  data-id="6604" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/original-sandy-videos.html" class="">
+        
+    Original Sandy Videos          </a>
+  </li>
+
+<li  data-id="6610" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/sandy-images.html" class="">
+        
+    Sandy Images          </a>
+  </li>
+
+<li  data-id="6616" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../term/gallery/kisti-2014.html" class="">
+        
+    KISTI Competition 2014          </a>
+  </li>
+
+<li  data-id="6451" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/toy-workshop-2008.html" class="">
+        
+    Toy Workshop 2008          </a>
+  </li>
+
+<li  data-id="6558" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="../gallery/miscellaneous.html" class="">
+        
+    Miscellaneous          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="6469" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    Downloads          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-3">
+  <li  data-id="6436" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/binary-distributions" class="">
+        
+    Binary Distributions          </a>
+  </li>
+
+<li  data-id="6439" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../internal/downloads/source-distributions.html" class="">
+        
+    Source Distributions          </a>
+  </li>
+
+<li  data-id="6442" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.vapor.ucar.edu/internal/downloads/example-data" class="">
+        
+    Example Data          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li  data-id="5691" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega dropdown">
+  <a href="4906.html#" class="dropdown-toggle">
+        
+    Support          <span class="caret"></span>
+          </a>
+  <div  data-class="" data-width="" class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div  class="tb-megamenu-row row-fluid">
+  <div  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-12" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li  data-id="5694" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../forum.html" class="">
+        
+    Forum          </a>
+  </li>
+
+<li  data-id="6406" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="../docs/vapor-faq.html" class="">
+        
+    FAQ          </a>
+  </li>
+
+<li  data-id="5703" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Report Bugs          </a>
+  </li>
+
+<li  data-id="5601" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="mailto:vapor@ucar.edu" class="">
+        
+    Contact Us          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+      </div>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div> <!-- /#header-wrap -->
+
+
+
+<div id="wrap">
+  <div id="container" class="clear-block">
+
+    <div id="center-wrapper" class="clear-block">
+
+      
+      
+        <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+
+                <div id="tabs-wrapper" class="clear-block"></div>                
+      
+
+
+  <!-- Some content types intentinally strip $node->title in the node-CONTENT_TYPE.tpl.php file.
+  Views and panels are not content types, so no $node->type, but do have $title.  Check for that first.
+  If there is a $node->type, check to see if $node->title exists -->
+<div id="content-head"><div class="breadcrumbs"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="../index.html">Home</a> » <a href="../forum.html">Forums</a> » <a href="../forum/195.html">Usage</a> » <a href="../forum/198.html">Usage</a></div></div><h1 class="title with-tabs">wrf2geotiff.ncl is generating offsets that are way too large</h1></div>          <div id="main-content" class="clear-block">
+            
+              <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+  
+<div id="forum-topic-header" class="forum-topic-header clearfix">
+	
+  <div class="topic-post-count">
+  18 posts / 0 new  </div>
+
+      <div class="topic-reply-link">
+    <a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments    </div>
+  
+  
+      <div class="last-post-link">
+     <a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-5084" class="af-button-large active"><span>Last post</span></a>    </div>
+  
+
+  <a id="forum-topic-top"></a>
+</div>
+
+<div id="post-28120" class="forum-post clearfix en posted-by-655091 node-full" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 21, 2014 - 5:53pm
+                </div>
+    
+    
+        
+    <span class="forum-post-number"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html" class="active">#1</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+              <div class="forum-post-title">
+          wrf2geotiff.ncl is generating offsets that are way too large        </div>
+      
+      <div class="forum-post-content">
+        <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi,</p>
+<p>I found a block of NCL code online for displaying WRF data and it calls VAPOR&#039;s wrf2geotiff.ncl, but there is a problem with the offsets in the &quot;crop&quot; portion.</p>
+<p>It is generating x and y offsets that seem somewhat strange.  Maybe someone can identify what could be going wrong.  (Note: I am using the binary version of VAPOR for Linux x86_64.  Thought about building from source, but it errored out very early in the compilation so I went with binaries.)</p>
+<p>First I create my PS workstation as required, from my WRF output, consisting of T2, U10, and V10.  </p>
+<p>a=addfile(&quot;./wrfout_d02_2010-08-20_20_00_00.nc&quot;,&quot;r&quot;);<br />
+wks  = gsn_open_wks(&quot;ps&quot;,&quot;steve_plot&quot;)<br />
+plot = wrf_map_overlays(a,wks,(/contour_t,contour_p,vector/),pltres,mpres)</p>
+<p>Looked at the resultant PS using ghostview and it looks fine.</p>
+<p>then:<br />
+wrf2gtiff = wrf2geotiff_open(wks)<br />
+wrf2geotiff_write(wrf2gtiff,a,times(it),wks,plot,True)  (admittedly, I don&#039;t know exactly what this call does yet)</p>
+<p>then:<br />
+ wrf2geotiff_close(wrf2gtiff,wks) --<br />
+   This call generates this call to ImageMagick -<br />
+      convert  -depth 8 -rotate 0 -density 144  -crop 19171.3x19171+9611.25+-29424.9   /tmp/tiffcap3_0001.ps tiff:/tmp/tiffcap3_0001.tiff</p>
+<p>and I get this error: &quot;convert: geometry does not contain image `/tmp/tiffcap3_0001.ps&#039; @ warning/transform.c/CropImage/666.<br />
+convert: TIFF: negative image positions unsupported /tmp/tiffcap3_0001.tiff @ error/tiff.c/WriteTIFFImage/3317&quot;</p>
+<p>Clearly, the problem is that the wrf2geotiff_close() call is generating x and y offsets of 9611.25 and -29424.9, which are both way off image, thus the error.  In fact, if I use ImageMagick&#039;s &quot;identify&quot; on this *.ps file it tells me:</p>
+<p>$ identify  /tmp/tiffcap3_0001.ps<br />
+/tmp/tiffcap3_0001.ps PNG 612x764 612x764+0+0 16-bit sRGB 197KB 0.000u 0:00.000</p>
+<p>Don&#039;t know why it says &quot;PNG&quot;, but it is indicating the image is only 612x764.  </p>
+<p>If anyone can tell me why such gigantic offsets (9611.25, -29424.9) might be determined in the VAPOR NCL code, wrf2geotiff.ncl that would be excellent.  Also, the height and width generated by the VAPOR NCL, (19171x19171 differ by a lot from what ImageMagick is telling me about the PS file).  Maybe wrf2geotiff_write() is doing something I don&#039;t understand?</p>
+<p>TIA for any tips.</p>
+</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<div id="forum-comments" class="comment-wrapper">
+  <a id="comment-4888"></a>
+
+
+<div id="post-4888" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 22, 2014 - 8:48am
+                    
+        
+                  </div>
+    
+    
+        
+    <span class="forum-post-number"><a href="4888.html#comment-4888" class="permalink" rel="bookmark">#2</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">(Note: Forgot to format on my first submit - this is now readable :&gt;)  Hi, I found a block of NCL code online for displaying WRF data and it calls VAPOR's wrf2geotiff.ncl, but there is a problem with the offsets in the "crop" portion of the VAPOR code. It is generating x and y offsets that seem somewhat strange. Maybe someone can identify what could be going wrong. (Note: I am using the binary version of VAPOR for Linux x86_64. Thought about building from source, but it errored out very early in the compilation so I went with binaries.)
+ First I create my PS workstation as required, from my WRF output, consisting of T2, U10, and V10.  a=addfile("./wrfout_d02_2010-08-20_20_00_00.nc","r"); wks = gsn_open_wks("ps","steve_plot")  plot = wrf_map_overlays(a,wks,(/contour_t,contour_p,vector/),pltres,mpres) Looked at the resultant PS using ghostview and it looks fine.  then: wrf2gtiff = wrf2geotiff_open(wks) wrf2geotiff_write(wrf2gtiff,a,times(it),wks,plot,True) (admittedly, I don't know exactly what this call does yet) then: wrf2geotiff_close(wrf2gtiff,wks) -- This call generates this call to ImageMagick -  convert -depth 8 -rotate 0 -density 144 -crop 19171.3x19171+9611.25+-29424.9 /tmp/tiffcap3_0001.ps tiff:/tmp/tiffcap3_0001.tiff and I get this error: "convert: geometry does not contain image `/tmp/tiffcap3_0001.ps' @ warning/transform.c/CropImage/666. convert: TIFF: negative image positions unsupported /tmp/tiffcap3_0001.tiff @ error/tiff.c/WriteTIFFImage/3317" Clearly, the problem is that the wrf2geotiff_close() call is generating x and y offsets of 9611.25 and -29424.9, which are both way off image, thus the error. In fact, if I use ImageMagick's "identify" on this *.ps file it tells me: $ identify /tmp/tiffcap3_0001.ps /tmp/tiffcap3_0001.ps PNG 612x764 612x764+0+0 16-bit sRGB 197KB 0.000u 0:00.000  Don't know why it says "PNG", but it is indicating the image is only 612x764. If anyone can tell me why such gigantic offsets (9611.25, -29424.9) might be determined in the VAPOR NCL code, wrf2geotiff.ncl that would be excellent.  Also, the height and width generated by the VAPOR NCL, (19171x19171 differ by a lot from what ImageMagick is telling me about the PS file). Maybe wrf2geotiff_write() is doing something I don't understand? TIA for any tips.</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4891"></a>
+
+
+<div id="post-4891" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 22, 2014 - 8:32pm
+                    
+        
+                  </div>
+    
+    
+        
+    <span class="forum-post-number"><a href="4891.html#comment-4891" class="permalink" rel="bookmark">#3</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi Steve,</p><p> </p><p>Can you post the output of the command:</p><p> </p><p>ncdump -h wrfout_d02_2010-08-20_20_00_00.nc</p><p> </p><p>thanks - jc</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4894"></a>
+
+
+<div id="post-4894" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 23, 2014 - 3:03pm
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4891" class="active">(Reply to #3)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4894.html#comment-4894" class="permalink" rel="bookmark">#4</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi,</p>
+<p>Here it is --</p>
+<p>netcdf wrfout_d02_2010-08-20_20_00_00 {<br />
+dimensions:<br />
+	Time = UNLIMITED ; // (1 currently)<br />
+	DateStrLen = 19 ;<br />
+	west_east = 120 ;<br />
+	south_north = 120 ;<br />
+	bottom_top = 89 ;<br />
+	bottom_top_stag = 90 ;<br />
+	soil_layers_stag = 4 ;<br />
+	west_east_stag = 121 ;<br />
+	south_north_stag = 121 ;<br />
+variables:<br />
+	char Times(Time, DateStrLen) ;<br />
+	float LU_INDEX(Time, south_north, west_east) ;<br />
+		LU_INDEX:FieldType = 104 ;<br />
+		LU_INDEX:MemoryOrder = &quot;XY &quot; ;<br />
+		LU_INDEX:description = &quot;LAND USE CATEGORY&quot; ;<br />
+		LU_INDEX:units = &quot;&quot; ;<br />
+		LU_INDEX:stagger = &quot;&quot; ;<br />
+		LU_INDEX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float ZNU(Time, bottom_top) ;<br />
+		ZNU:FieldType = 104 ;<br />
+		ZNU:MemoryOrder = &quot;Z  &quot; ;<br />
+		ZNU:description = &quot;eta values on half (mass) levels&quot; ;<br />
+		ZNU:units = &quot;&quot; ;<br />
+		ZNU:stagger = &quot;&quot; ;<br />
+	float ZNW(Time, bottom_top_stag) ;<br />
+		ZNW:FieldType = 104 ;<br />
+		ZNW:MemoryOrder = &quot;Z  &quot; ;<br />
+		ZNW:description = &quot;eta values on full (w) levels&quot; ;<br />
+		ZNW:units = &quot;&quot; ;<br />
+		ZNW:stagger = &quot;Z&quot; ;<br />
+	float ZS(Time, soil_layers_stag) ;<br />
+		ZS:FieldType = 104 ;<br />
+		ZS:MemoryOrder = &quot;Z  &quot; ;<br />
+		ZS:description = &quot;DEPTHS OF CENTERS OF SOIL LAYERS&quot; ;<br />
+		ZS:units = &quot;m&quot; ;<br />
+		ZS:stagger = &quot;Z&quot; ;<br />
+	float DZS(Time, soil_layers_stag) ;<br />
+		DZS:FieldType = 104 ;<br />
+		DZS:MemoryOrder = &quot;Z  &quot; ;<br />
+		DZS:description = &quot;THICKNESSES OF SOIL LAYERS&quot; ;<br />
+		DZS:units = &quot;m&quot; ;<br />
+		DZS:stagger = &quot;Z&quot; ;<br />
+	float U(Time, bottom_top, south_north, west_east_stag) ;<br />
+		U:FieldType = 104 ;<br />
+		U:MemoryOrder = &quot;XYZ&quot; ;<br />
+		U:description = &quot;x-wind component&quot; ;<br />
+		U:units = &quot;m s-1&quot; ;<br />
+		U:stagger = &quot;X&quot; ;<br />
+		U:coordinates = &quot;XLONG_U XLAT_U&quot; ;<br />
+	float V(Time, bottom_top, south_north_stag, west_east) ;<br />
+		V:FieldType = 104 ;<br />
+		V:MemoryOrder = &quot;XYZ&quot; ;<br />
+		V:description = &quot;y-wind component&quot; ;<br />
+		V:units = &quot;m s-1&quot; ;<br />
+		V:stagger = &quot;Y&quot; ;<br />
+		V:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float W(Time, bottom_top_stag, south_north, west_east) ;<br />
+		W:FieldType = 104 ;<br />
+		W:MemoryOrder = &quot;XYZ&quot; ;<br />
+		W:description = &quot;z-wind component&quot; ;<br />
+		W:units = &quot;m s-1&quot; ;<br />
+		W:stagger = &quot;Z&quot; ;<br />
+		W:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float PH(Time, bottom_top_stag, south_north, west_east) ;<br />
+		PH:FieldType = 104 ;<br />
+		PH:MemoryOrder = &quot;XYZ&quot; ;<br />
+		PH:description = &quot;perturbation geopotential&quot; ;<br />
+		PH:units = &quot;m2 s-2&quot; ;<br />
+		PH:stagger = &quot;Z&quot; ;<br />
+		PH:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float PHB(Time, bottom_top_stag, south_north, west_east) ;<br />
+		PHB:FieldType = 104 ;<br />
+		PHB:MemoryOrder = &quot;XYZ&quot; ;<br />
+		PHB:description = &quot;base-state geopotential&quot; ;<br />
+		PHB:units = &quot;m2 s-2&quot; ;<br />
+		PHB:stagger = &quot;Z&quot; ;<br />
+		PHB:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float T(Time, bottom_top, south_north, west_east) ;<br />
+		T:FieldType = 104 ;<br />
+		T:MemoryOrder = &quot;XYZ&quot; ;<br />
+		T:description = &quot;perturbation potential temperature (theta-t0)&quot; ;<br />
+		T:units = &quot;K&quot; ;<br />
+		T:stagger = &quot;&quot; ;<br />
+		T:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float MU(Time, south_north, west_east) ;<br />
+		MU:FieldType = 104 ;<br />
+		MU:MemoryOrder = &quot;XY &quot; ;<br />
+		MU:description = &quot;perturbation dry air mass in column&quot; ;<br />
+		MU:units = &quot;Pa&quot; ;<br />
+		MU:stagger = &quot;&quot; ;<br />
+		MU:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float MUB(Time, south_north, west_east) ;<br />
+		MUB:FieldType = 104 ;<br />
+		MUB:MemoryOrder = &quot;XY &quot; ;<br />
+		MUB:description = &quot;base state dry air mass in column&quot; ;<br />
+		MUB:units = &quot;Pa&quot; ;<br />
+		MUB:stagger = &quot;&quot; ;<br />
+		MUB:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float NEST_POS(Time, south_north, west_east) ;<br />
+		NEST_POS:FieldType = 104 ;<br />
+		NEST_POS:MemoryOrder = &quot;XY &quot; ;<br />
+		NEST_POS:description = &quot;-&quot; ;<br />
+		NEST_POS:units = &quot;-&quot; ;<br />
+		NEST_POS:stagger = &quot;&quot; ;<br />
+		NEST_POS:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float P(Time, bottom_top, south_north, west_east) ;<br />
+		P:FieldType = 104 ;<br />
+		P:MemoryOrder = &quot;XYZ&quot; ;<br />
+		P:description = &quot;perturbation pressure&quot; ;<br />
+		P:units = &quot;Pa&quot; ;<br />
+		P:stagger = &quot;&quot; ;<br />
+		P:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float PB(Time, bottom_top, south_north, west_east) ;<br />
+		PB:FieldType = 104 ;<br />
+		PB:MemoryOrder = &quot;XYZ&quot; ;<br />
+		PB:description = &quot;BASE STATE PRESSURE&quot; ;<br />
+		PB:units = &quot;Pa&quot; ;<br />
+		PB:stagger = &quot;&quot; ;<br />
+		PB:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float FNM(Time, bottom_top) ;<br />
+		FNM:FieldType = 104 ;<br />
+		FNM:MemoryOrder = &quot;Z  &quot; ;<br />
+		FNM:description = &quot;upper weight for vertical stretching&quot; ;<br />
+		FNM:units = &quot;&quot; ;<br />
+		FNM:stagger = &quot;&quot; ;<br />
+	float FNP(Time, bottom_top) ;<br />
+		FNP:FieldType = 104 ;<br />
+		FNP:MemoryOrder = &quot;Z  &quot; ;<br />
+		FNP:description = &quot;lower weight for vertical stretching&quot; ;<br />
+		FNP:units = &quot;&quot; ;<br />
+		FNP:stagger = &quot;&quot; ;<br />
+	float RDNW(Time, bottom_top) ;<br />
+		RDNW:FieldType = 104 ;<br />
+		RDNW:MemoryOrder = &quot;Z  &quot; ;<br />
+		RDNW:description = &quot;inverse d(eta) values between full (w) levels&quot; ;<br />
+		RDNW:units = &quot;&quot; ;<br />
+		RDNW:stagger = &quot;&quot; ;<br />
+	float RDN(Time, bottom_top) ;<br />
+		RDN:FieldType = 104 ;<br />
+		RDN:MemoryOrder = &quot;Z  &quot; ;<br />
+		RDN:description = &quot;inverse d(eta) values between half (mass) levels&quot; ;<br />
+		RDN:units = &quot;&quot; ;<br />
+		RDN:stagger = &quot;&quot; ;<br />
+	float DNW(Time, bottom_top) ;<br />
+		DNW:FieldType = 104 ;<br />
+		DNW:MemoryOrder = &quot;Z  &quot; ;<br />
+		DNW:description = &quot;d(eta) values between full (w) levels&quot; ;<br />
+		DNW:units = &quot;&quot; ;<br />
+		DNW:stagger = &quot;&quot; ;<br />
+	float DN(Time, bottom_top) ;<br />
+		DN:FieldType = 104 ;<br />
+		DN:MemoryOrder = &quot;Z  &quot; ;<br />
+		DN:description = &quot;d(eta) values between half (mass) levels&quot; ;<br />
+		DN:units = &quot;&quot; ;<br />
+		DN:stagger = &quot;&quot; ;<br />
+	float CFN(Time) ;<br />
+		CFN:FieldType = 104 ;<br />
+		CFN:MemoryOrder = &quot;0  &quot; ;<br />
+		CFN:description = &quot;extrapolation constant&quot; ;<br />
+		CFN:units = &quot;&quot; ;<br />
+		CFN:stagger = &quot;&quot; ;<br />
+	float CFN1(Time) ;<br />
+		CFN1:FieldType = 104 ;<br />
+		CFN1:MemoryOrder = &quot;0  &quot; ;<br />
+		CFN1:description = &quot;extrapolation constant&quot; ;<br />
+		CFN1:units = &quot;&quot; ;<br />
+		CFN1:stagger = &quot;&quot; ;<br />
+	float P_HYD(Time, bottom_top, south_north, west_east) ;<br />
+		P_HYD:FieldType = 104 ;<br />
+		P_HYD:MemoryOrder = &quot;XYZ&quot; ;<br />
+		P_HYD:description = &quot;hydrostatic pressure&quot; ;<br />
+		P_HYD:units = &quot;Pa&quot; ;<br />
+		P_HYD:stagger = &quot;&quot; ;<br />
+		P_HYD:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float Q2(Time, south_north, west_east) ;<br />
+		Q2:FieldType = 104 ;<br />
+		Q2:MemoryOrder = &quot;XY &quot; ;<br />
+		Q2:description = &quot;QV at 2 M&quot; ;<br />
+		Q2:units = &quot;kg kg-1&quot; ;<br />
+		Q2:stagger = &quot;&quot; ;<br />
+		Q2:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float T2(Time, south_north, west_east) ;<br />
+		T2:FieldType = 104 ;<br />
+		T2:MemoryOrder = &quot;XY &quot; ;<br />
+		T2:description = &quot;TEMP at 2 M&quot; ;<br />
+		T2:units = &quot;K&quot; ;<br />
+		T2:stagger = &quot;&quot; ;<br />
+		T2:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float TH2(Time, south_north, west_east) ;<br />
+		TH2:FieldType = 104 ;<br />
+		TH2:MemoryOrder = &quot;XY &quot; ;<br />
+		TH2:description = &quot;POT TEMP at 2 M&quot; ;<br />
+		TH2:units = &quot;K&quot; ;<br />
+		TH2:stagger = &quot;&quot; ;<br />
+		TH2:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float PSFC(Time, south_north, west_east) ;<br />
+		PSFC:FieldType = 104 ;<br />
+		PSFC:MemoryOrder = &quot;XY &quot; ;<br />
+		PSFC:description = &quot;SFC PRESSURE&quot; ;<br />
+		PSFC:units = &quot;Pa&quot; ;<br />
+		PSFC:stagger = &quot;&quot; ;<br />
+		PSFC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float U10(Time, south_north, west_east) ;<br />
+		U10:FieldType = 104 ;<br />
+		U10:MemoryOrder = &quot;XY &quot; ;<br />
+		U10:description = &quot;U at 10 M&quot; ;<br />
+		U10:units = &quot;m s-1&quot; ;<br />
+		U10:stagger = &quot;&quot; ;<br />
+		U10:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float V10(Time, south_north, west_east) ;<br />
+		V10:FieldType = 104 ;<br />
+		V10:MemoryOrder = &quot;XY &quot; ;<br />
+		V10:description = &quot;V at 10 M&quot; ;<br />
+		V10:units = &quot;m s-1&quot; ;<br />
+		V10:stagger = &quot;&quot; ;<br />
+		V10:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float RDX(Time) ;<br />
+		RDX:FieldType = 104 ;<br />
+		RDX:MemoryOrder = &quot;0  &quot; ;<br />
+		RDX:description = &quot;INVERSE X GRID LENGTH&quot; ;<br />
+		RDX:units = &quot;&quot; ;<br />
+		RDX:stagger = &quot;&quot; ;<br />
+	float RDY(Time) ;<br />
+		RDY:FieldType = 104 ;<br />
+		RDY:MemoryOrder = &quot;0  &quot; ;<br />
+		RDY:description = &quot;INVERSE Y GRID LENGTH&quot; ;<br />
+		RDY:units = &quot;&quot; ;<br />
+		RDY:stagger = &quot;&quot; ;<br />
+	float RESM(Time) ;<br />
+		RESM:FieldType = 104 ;<br />
+		RESM:MemoryOrder = &quot;0  &quot; ;<br />
+		RESM:description = &quot;TIME WEIGHT CONSTANT FOR SMALL STEPS&quot; ;<br />
+		RESM:units = &quot;&quot; ;<br />
+		RESM:stagger = &quot;&quot; ;<br />
+	float ZETATOP(Time) ;<br />
+		ZETATOP:FieldType = 104 ;<br />
+		ZETATOP:MemoryOrder = &quot;0  &quot; ;<br />
+		ZETATOP:description = &quot;ZETA AT MODEL TOP&quot; ;<br />
+		ZETATOP:units = &quot;&quot; ;<br />
+		ZETATOP:stagger = &quot;&quot; ;<br />
+	float CF1(Time) ;<br />
+		CF1:FieldType = 104 ;<br />
+		CF1:MemoryOrder = &quot;0  &quot; ;<br />
+		CF1:description = &quot;2nd order extrapolation constant&quot; ;<br />
+		CF1:units = &quot;&quot; ;<br />
+		CF1:stagger = &quot;&quot; ;<br />
+	float CF2(Time) ;<br />
+		CF2:FieldType = 104 ;<br />
+		CF2:MemoryOrder = &quot;0  &quot; ;<br />
+		CF2:description = &quot;2nd order extrapolation constant&quot; ;<br />
+		CF2:units = &quot;&quot; ;<br />
+		CF2:stagger = &quot;&quot; ;<br />
+	float CF3(Time) ;<br />
+		CF3:FieldType = 104 ;<br />
+		CF3:MemoryOrder = &quot;0  &quot; ;<br />
+		CF3:description = &quot;2nd order extrapolation constant&quot; ;<br />
+		CF3:units = &quot;&quot; ;<br />
+		CF3:stagger = &quot;&quot; ;<br />
+	int ITIMESTEP(Time) ;<br />
+		ITIMESTEP:FieldType = 106 ;<br />
+		ITIMESTEP:MemoryOrder = &quot;0  &quot; ;<br />
+		ITIMESTEP:description = &quot;&quot; ;<br />
+		ITIMESTEP:units = &quot;&quot; ;<br />
+		ITIMESTEP:stagger = &quot;&quot; ;<br />
+	float XTIME(Time) ;<br />
+		XTIME:FieldType = 104 ;<br />
+		XTIME:MemoryOrder = &quot;0  &quot; ;<br />
+		XTIME:description = &quot;minutes since simulation start&quot; ;<br />
+		XTIME:units = &quot;&quot; ;<br />
+		XTIME:stagger = &quot;&quot; ;<br />
+	float QVAPOR(Time, bottom_top, south_north, west_east) ;<br />
+		QVAPOR:FieldType = 104 ;<br />
+		QVAPOR:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QVAPOR:description = &quot;Water vapor mixing ratio&quot; ;<br />
+		QVAPOR:units = &quot;kg kg-1&quot; ;<br />
+		QVAPOR:stagger = &quot;&quot; ;<br />
+		QVAPOR:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QCLOUD(Time, bottom_top, south_north, west_east) ;<br />
+		QCLOUD:FieldType = 104 ;<br />
+		QCLOUD:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QCLOUD:description = &quot;Cloud water mixing ratio&quot; ;<br />
+		QCLOUD:units = &quot;kg kg-1&quot; ;<br />
+		QCLOUD:stagger = &quot;&quot; ;<br />
+		QCLOUD:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QRAIN(Time, bottom_top, south_north, west_east) ;<br />
+		QRAIN:FieldType = 104 ;<br />
+		QRAIN:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QRAIN:description = &quot;Rain water mixing ratio&quot; ;<br />
+		QRAIN:units = &quot;kg kg-1&quot; ;<br />
+		QRAIN:stagger = &quot;&quot; ;<br />
+		QRAIN:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QICE(Time, bottom_top, south_north, west_east) ;<br />
+		QICE:FieldType = 104 ;<br />
+		QICE:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QICE:description = &quot;Ice mixing ratio&quot; ;<br />
+		QICE:units = &quot;kg kg-1&quot; ;<br />
+		QICE:stagger = &quot;&quot; ;<br />
+		QICE:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QSNOW(Time, bottom_top, south_north, west_east) ;<br />
+		QSNOW:FieldType = 104 ;<br />
+		QSNOW:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QSNOW:description = &quot;Snow mixing ratio&quot; ;<br />
+		QSNOW:units = &quot;kg kg-1&quot; ;<br />
+		QSNOW:stagger = &quot;&quot; ;<br />
+		QSNOW:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QGRAUP(Time, bottom_top, south_north, west_east) ;<br />
+		QGRAUP:FieldType = 104 ;<br />
+		QGRAUP:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QGRAUP:description = &quot;Graupel mixing ratio&quot; ;<br />
+		QGRAUP:units = &quot;kg kg-1&quot; ;<br />
+		QGRAUP:stagger = &quot;&quot; ;<br />
+		QGRAUP:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QNICE(Time, bottom_top, south_north, west_east) ;<br />
+		QNICE:FieldType = 104 ;<br />
+		QNICE:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QNICE:description = &quot;Ice Number concentration&quot; ;<br />
+		QNICE:units = &quot;  kg-1&quot; ;<br />
+		QNICE:stagger = &quot;&quot; ;<br />
+		QNICE:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QNRAIN(Time, bottom_top, south_north, west_east) ;<br />
+		QNRAIN:FieldType = 104 ;<br />
+		QNRAIN:MemoryOrder = &quot;XYZ&quot; ;<br />
+		QNRAIN:description = &quot;Rain Number concentration&quot; ;<br />
+		QNRAIN:units = &quot;  kg(-1)&quot; ;<br />
+		QNRAIN:stagger = &quot;&quot; ;<br />
+		QNRAIN:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float LANDMASK(Time, south_north, west_east) ;<br />
+		LANDMASK:FieldType = 104 ;<br />
+		LANDMASK:MemoryOrder = &quot;XY &quot; ;<br />
+		LANDMASK:description = &quot;LAND MASK (1 FOR LAND, 0 FOR WATER)&quot; ;<br />
+		LANDMASK:units = &quot;&quot; ;<br />
+		LANDMASK:stagger = &quot;&quot; ;<br />
+		LANDMASK:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float TSLB(Time, soil_layers_stag, south_north, west_east) ;<br />
+		TSLB:FieldType = 104 ;<br />
+		TSLB:MemoryOrder = &quot;XYZ&quot; ;<br />
+		TSLB:description = &quot;SOIL TEMPERATURE&quot; ;<br />
+		TSLB:units = &quot;K&quot; ;<br />
+		TSLB:stagger = &quot;Z&quot; ;<br />
+		TSLB:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SMOIS(Time, soil_layers_stag, south_north, west_east) ;<br />
+		SMOIS:FieldType = 104 ;<br />
+		SMOIS:MemoryOrder = &quot;XYZ&quot; ;<br />
+		SMOIS:description = &quot;SOIL MOISTURE&quot; ;<br />
+		SMOIS:units = &quot;m3 m-3&quot; ;<br />
+		SMOIS:stagger = &quot;Z&quot; ;<br />
+		SMOIS:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SH2O(Time, soil_layers_stag, south_north, west_east) ;<br />
+		SH2O:FieldType = 104 ;<br />
+		SH2O:MemoryOrder = &quot;XYZ&quot; ;<br />
+		SH2O:description = &quot;SOIL LIQUID WATER&quot; ;<br />
+		SH2O:units = &quot;m3 m-3&quot; ;<br />
+		SH2O:stagger = &quot;Z&quot; ;<br />
+		SH2O:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SMCREL(Time, soil_layers_stag, south_north, west_east) ;<br />
+		SMCREL:FieldType = 104 ;<br />
+		SMCREL:MemoryOrder = &quot;XYZ&quot; ;<br />
+		SMCREL:description = &quot;RELATIVE SOIL MOISTURE&quot; ;<br />
+		SMCREL:units = &quot;&quot; ;<br />
+		SMCREL:stagger = &quot;Z&quot; ;<br />
+		SMCREL:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SEAICE(Time, south_north, west_east) ;<br />
+		SEAICE:FieldType = 104 ;<br />
+		SEAICE:MemoryOrder = &quot;XY &quot; ;<br />
+		SEAICE:description = &quot;SEA ICE FLAG&quot; ;<br />
+		SEAICE:units = &quot;&quot; ;<br />
+		SEAICE:stagger = &quot;&quot; ;<br />
+		SEAICE:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float XICEM(Time, south_north, west_east) ;<br />
+		XICEM:FieldType = 104 ;<br />
+		XICEM:MemoryOrder = &quot;XY &quot; ;<br />
+		XICEM:description = &quot;SEA ICE FLAG (PREVIOUS STEP)&quot; ;<br />
+		XICEM:units = &quot;&quot; ;<br />
+		XICEM:stagger = &quot;&quot; ;<br />
+		XICEM:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SFROFF(Time, south_north, west_east) ;<br />
+		SFROFF:FieldType = 104 ;<br />
+		SFROFF:MemoryOrder = &quot;XY &quot; ;<br />
+		SFROFF:description = &quot;SURFACE RUNOFF&quot; ;<br />
+		SFROFF:units = &quot;mm&quot; ;<br />
+		SFROFF:stagger = &quot;&quot; ;<br />
+		SFROFF:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float UDROFF(Time, south_north, west_east) ;<br />
+		UDROFF:FieldType = 104 ;<br />
+		UDROFF:MemoryOrder = &quot;XY &quot; ;<br />
+		UDROFF:description = &quot;UNDERGROUND RUNOFF&quot; ;<br />
+		UDROFF:units = &quot;mm&quot; ;<br />
+		UDROFF:stagger = &quot;&quot; ;<br />
+		UDROFF:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	int IVGTYP(Time, south_north, west_east) ;<br />
+		IVGTYP:FieldType = 106 ;<br />
+		IVGTYP:MemoryOrder = &quot;XY &quot; ;<br />
+		IVGTYP:description = &quot;DOMINANT VEGETATION CATEGORY&quot; ;<br />
+		IVGTYP:units = &quot;&quot; ;<br />
+		IVGTYP:stagger = &quot;&quot; ;<br />
+		IVGTYP:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	int ISLTYP(Time, south_north, west_east) ;<br />
+		ISLTYP:FieldType = 106 ;<br />
+		ISLTYP:MemoryOrder = &quot;XY &quot; ;<br />
+		ISLTYP:description = &quot;DOMINANT SOIL CATEGORY&quot; ;<br />
+		ISLTYP:units = &quot;&quot; ;<br />
+		ISLTYP:stagger = &quot;&quot; ;<br />
+		ISLTYP:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float VEGFRA(Time, south_north, west_east) ;<br />
+		VEGFRA:FieldType = 104 ;<br />
+		VEGFRA:MemoryOrder = &quot;XY &quot; ;<br />
+		VEGFRA:description = &quot;VEGETATION FRACTION&quot; ;<br />
+		VEGFRA:units = &quot;&quot; ;<br />
+		VEGFRA:stagger = &quot;&quot; ;<br />
+		VEGFRA:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float GRDFLX(Time, south_north, west_east) ;<br />
+		GRDFLX:FieldType = 104 ;<br />
+		GRDFLX:MemoryOrder = &quot;XY &quot; ;<br />
+		GRDFLX:description = &quot;GROUND HEAT FLUX&quot; ;<br />
+		GRDFLX:units = &quot;W m-2&quot; ;<br />
+		GRDFLX:stagger = &quot;&quot; ;<br />
+		GRDFLX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float ACGRDFLX(Time, south_north, west_east) ;<br />
+		ACGRDFLX:FieldType = 104 ;<br />
+		ACGRDFLX:MemoryOrder = &quot;XY &quot; ;<br />
+		ACGRDFLX:description = &quot;ACCUMULATED GROUND HEAT FLUX&quot; ;<br />
+		ACGRDFLX:units = &quot;J m-2&quot; ;<br />
+		ACGRDFLX:stagger = &quot;&quot; ;<br />
+		ACGRDFLX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SNOW(Time, south_north, west_east) ;<br />
+		SNOW:FieldType = 104 ;<br />
+		SNOW:MemoryOrder = &quot;XY &quot; ;<br />
+		SNOW:description = &quot;SNOW WATER EQUIVALENT&quot; ;<br />
+		SNOW:units = &quot;kg m-2&quot; ;<br />
+		SNOW:stagger = &quot;&quot; ;<br />
+		SNOW:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SNOWH(Time, south_north, west_east) ;<br />
+		SNOWH:FieldType = 104 ;<br />
+		SNOWH:MemoryOrder = &quot;XY &quot; ;<br />
+		SNOWH:description = &quot;PHYSICAL SNOW DEPTH&quot; ;<br />
+		SNOWH:units = &quot;m&quot; ;<br />
+		SNOWH:stagger = &quot;&quot; ;<br />
+		SNOWH:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float CANWAT(Time, south_north, west_east) ;<br />
+		CANWAT:FieldType = 104 ;<br />
+		CANWAT:MemoryOrder = &quot;XY &quot; ;<br />
+		CANWAT:description = &quot;CANOPY WATER&quot; ;<br />
+		CANWAT:units = &quot;kg m-2&quot; ;<br />
+		CANWAT:stagger = &quot;&quot; ;<br />
+		CANWAT:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SST(Time, south_north, west_east) ;<br />
+		SST:FieldType = 104 ;<br />
+		SST:MemoryOrder = &quot;XY &quot; ;<br />
+		SST:description = &quot;SEA SURFACE TEMPERATURE&quot; ;<br />
+		SST:units = &quot;K&quot; ;<br />
+		SST:stagger = &quot;&quot; ;<br />
+		SST:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SSTSK(Time, south_north, west_east) ;<br />
+		SSTSK:FieldType = 104 ;<br />
+		SSTSK:MemoryOrder = &quot;XY &quot; ;<br />
+		SSTSK:description = &quot;SKIN SEA SURFACE TEMPERATURE&quot; ;<br />
+		SSTSK:units = &quot;K&quot; ;<br />
+		SSTSK:stagger = &quot;&quot; ;<br />
+		SSTSK:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float LAI(Time, south_north, west_east) ;<br />
+		LAI:FieldType = 104 ;<br />
+		LAI:MemoryOrder = &quot;XY &quot; ;<br />
+		LAI:description = &quot;Leaf area index&quot; ;<br />
+		LAI:units = &quot;area/area&quot; ;<br />
+		LAI:stagger = &quot;&quot; ;<br />
+		LAI:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float TKE_MYJ(Time, bottom_top, south_north, west_east) ;<br />
+		TKE_MYJ:FieldType = 104 ;<br />
+		TKE_MYJ:MemoryOrder = &quot;XYZ&quot; ;<br />
+		TKE_MYJ:description = &quot;TKE FROM MELLOR-YAMADA-JANJIC&quot; ;<br />
+		TKE_MYJ:units = &quot;m2 s-2&quot; ;<br />
+		TKE_MYJ:stagger = &quot;&quot; ;<br />
+		TKE_MYJ:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float EL_MYJ(Time, bottom_top, south_north, west_east) ;<br />
+		EL_MYJ:FieldType = 104 ;<br />
+		EL_MYJ:MemoryOrder = &quot;XYZ&quot; ;<br />
+		EL_MYJ:description = &quot;MIXING LENGTH FROM MELLOR-YAMADA-JANJIC&quot; ;<br />
+		EL_MYJ:units = &quot;m&quot; ;<br />
+		EL_MYJ:stagger = &quot;&quot; ;<br />
+		EL_MYJ:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float MAPFAC_M(Time, south_north, west_east) ;<br />
+		MAPFAC_M:FieldType = 104 ;<br />
+		MAPFAC_M:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_M:description = &quot;Map scale factor on mass grid&quot; ;<br />
+		MAPFAC_M:units = &quot;&quot; ;<br />
+		MAPFAC_M:stagger = &quot;&quot; ;<br />
+		MAPFAC_M:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float MAPFAC_U(Time, south_north, west_east_stag) ;<br />
+		MAPFAC_U:FieldType = 104 ;<br />
+		MAPFAC_U:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_U:description = &quot;Map scale factor on u-grid&quot; ;<br />
+		MAPFAC_U:units = &quot;&quot; ;<br />
+		MAPFAC_U:stagger = &quot;X&quot; ;<br />
+		MAPFAC_U:coordinates = &quot;XLONG_U XLAT_U&quot; ;<br />
+	float MAPFAC_V(Time, south_north_stag, west_east) ;<br />
+		MAPFAC_V:FieldType = 104 ;<br />
+		MAPFAC_V:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_V:description = &quot;Map scale factor on v-grid&quot; ;<br />
+		MAPFAC_V:units = &quot;&quot; ;<br />
+		MAPFAC_V:stagger = &quot;Y&quot; ;<br />
+		MAPFAC_V:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float MAPFAC_MX(Time, south_north, west_east) ;<br />
+		MAPFAC_MX:FieldType = 104 ;<br />
+		MAPFAC_MX:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_MX:description = &quot;Map scale factor on mass grid, x direction&quot; ;<br />
+		MAPFAC_MX:units = &quot;&quot; ;<br />
+		MAPFAC_MX:stagger = &quot;&quot; ;<br />
+		MAPFAC_MX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float MAPFAC_MY(Time, south_north, west_east) ;<br />
+		MAPFAC_MY:FieldType = 104 ;<br />
+		MAPFAC_MY:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_MY:description = &quot;Map scale factor on mass grid, y direction&quot; ;<br />
+		MAPFAC_MY:units = &quot;&quot; ;<br />
+		MAPFAC_MY:stagger = &quot;&quot; ;<br />
+		MAPFAC_MY:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float MAPFAC_UX(Time, south_north, west_east_stag) ;<br />
+		MAPFAC_UX:FieldType = 104 ;<br />
+		MAPFAC_UX:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_UX:description = &quot;Map scale factor on u-grid, x direction&quot; ;<br />
+		MAPFAC_UX:units = &quot;&quot; ;<br />
+		MAPFAC_UX:stagger = &quot;X&quot; ;<br />
+		MAPFAC_UX:coordinates = &quot;XLONG_U XLAT_U&quot; ;<br />
+	float MAPFAC_UY(Time, south_north, west_east_stag) ;<br />
+		MAPFAC_UY:FieldType = 104 ;<br />
+		MAPFAC_UY:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_UY:description = &quot;Map scale factor on u-grid, y direction&quot; ;<br />
+		MAPFAC_UY:units = &quot;&quot; ;<br />
+		MAPFAC_UY:stagger = &quot;X&quot; ;<br />
+		MAPFAC_UY:coordinates = &quot;XLONG_U XLAT_U&quot; ;<br />
+	float MAPFAC_VX(Time, south_north_stag, west_east) ;<br />
+		MAPFAC_VX:FieldType = 104 ;<br />
+		MAPFAC_VX:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_VX:description = &quot;Map scale factor on v-grid, x direction&quot; ;<br />
+		MAPFAC_VX:units = &quot;&quot; ;<br />
+		MAPFAC_VX:stagger = &quot;Y&quot; ;<br />
+		MAPFAC_VX:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float MF_VX_INV(Time, south_north_stag, west_east) ;<br />
+		MF_VX_INV:FieldType = 104 ;<br />
+		MF_VX_INV:MemoryOrder = &quot;XY &quot; ;<br />
+		MF_VX_INV:description = &quot;Inverse map scale factor on v-grid, x direction&quot; ;<br />
+		MF_VX_INV:units = &quot;&quot; ;<br />
+		MF_VX_INV:stagger = &quot;Y&quot; ;<br />
+		MF_VX_INV:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float MAPFAC_VY(Time, south_north_stag, west_east) ;<br />
+		MAPFAC_VY:FieldType = 104 ;<br />
+		MAPFAC_VY:MemoryOrder = &quot;XY &quot; ;<br />
+		MAPFAC_VY:description = &quot;Map scale factor on v-grid, y direction&quot; ;<br />
+		MAPFAC_VY:units = &quot;&quot; ;<br />
+		MAPFAC_VY:stagger = &quot;Y&quot; ;<br />
+		MAPFAC_VY:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float F(Time, south_north, west_east) ;<br />
+		F:FieldType = 104 ;<br />
+		F:MemoryOrder = &quot;XY &quot; ;<br />
+		F:description = &quot;Coriolis sine latitude term&quot; ;<br />
+		F:units = &quot;s-1&quot; ;<br />
+		F:stagger = &quot;&quot; ;<br />
+		F:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float E(Time, south_north, west_east) ;<br />
+		E:FieldType = 104 ;<br />
+		E:MemoryOrder = &quot;XY &quot; ;<br />
+		E:description = &quot;Coriolis cosine latitude term&quot; ;<br />
+		E:units = &quot;s-1&quot; ;<br />
+		E:stagger = &quot;&quot; ;<br />
+		E:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SINALPHA(Time, south_north, west_east) ;<br />
+		SINALPHA:FieldType = 104 ;<br />
+		SINALPHA:MemoryOrder = &quot;XY &quot; ;<br />
+		SINALPHA:description = &quot;Local sine of map rotation&quot; ;<br />
+		SINALPHA:units = &quot;&quot; ;<br />
+		SINALPHA:stagger = &quot;&quot; ;<br />
+		SINALPHA:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float COSALPHA(Time, south_north, west_east) ;<br />
+		COSALPHA:FieldType = 104 ;<br />
+		COSALPHA:MemoryOrder = &quot;XY &quot; ;<br />
+		COSALPHA:description = &quot;Local cosine of map rotation&quot; ;<br />
+		COSALPHA:units = &quot;&quot; ;<br />
+		COSALPHA:stagger = &quot;&quot; ;<br />
+		COSALPHA:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float HGT(Time, south_north, west_east) ;<br />
+		HGT:FieldType = 104 ;<br />
+		HGT:MemoryOrder = &quot;XY &quot; ;<br />
+		HGT:description = &quot;Terrain Height&quot; ;<br />
+		HGT:units = &quot;m&quot; ;<br />
+		HGT:stagger = &quot;&quot; ;<br />
+		HGT:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float TSK(Time, south_north, west_east) ;<br />
+		TSK:FieldType = 104 ;<br />
+		TSK:MemoryOrder = &quot;XY &quot; ;<br />
+		TSK:description = &quot;SURFACE SKIN TEMPERATURE&quot; ;<br />
+		TSK:units = &quot;K&quot; ;<br />
+		TSK:stagger = &quot;&quot; ;<br />
+		TSK:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float P_TOP(Time) ;<br />
+		P_TOP:FieldType = 104 ;<br />
+		P_TOP:MemoryOrder = &quot;0  &quot; ;<br />
+		P_TOP:description = &quot;PRESSURE TOP OF THE MODEL&quot; ;<br />
+		P_TOP:units = &quot;Pa&quot; ;<br />
+		P_TOP:stagger = &quot;&quot; ;<br />
+	float T00(Time) ;<br />
+		T00:FieldType = 104 ;<br />
+		T00:MemoryOrder = &quot;0  &quot; ;<br />
+		T00:description = &quot;BASE STATE TEMPERATURE&quot; ;<br />
+		T00:units = &quot;K&quot; ;<br />
+		T00:stagger = &quot;&quot; ;<br />
+	float P00(Time) ;<br />
+		P00:FieldType = 104 ;<br />
+		P00:MemoryOrder = &quot;0  &quot; ;<br />
+		P00:description = &quot;BASE STATE PRESURE&quot; ;<br />
+		P00:units = &quot;Pa&quot; ;<br />
+		P00:stagger = &quot;&quot; ;<br />
+	float TLP(Time) ;<br />
+		TLP:FieldType = 104 ;<br />
+		TLP:MemoryOrder = &quot;0  &quot; ;<br />
+		TLP:description = &quot;BASE STATE LAPSE RATE&quot; ;<br />
+		TLP:units = &quot;&quot; ;<br />
+		TLP:stagger = &quot;&quot; ;<br />
+	float TISO(Time) ;<br />
+		TISO:FieldType = 104 ;<br />
+		TISO:MemoryOrder = &quot;0  &quot; ;<br />
+		TISO:description = &quot;TEMP AT WHICH THE BASE T TURNS CONST&quot; ;<br />
+		TISO:units = &quot;K&quot; ;<br />
+		TISO:stagger = &quot;&quot; ;<br />
+	float MAX_MSTFX(Time) ;<br />
+		MAX_MSTFX:FieldType = 104 ;<br />
+		MAX_MSTFX:MemoryOrder = &quot;0  &quot; ;<br />
+		MAX_MSTFX:description = &quot;Max map factor in domain&quot; ;<br />
+		MAX_MSTFX:units = &quot;&quot; ;<br />
+		MAX_MSTFX:stagger = &quot;&quot; ;<br />
+	float MAX_MSTFY(Time) ;<br />
+		MAX_MSTFY:FieldType = 104 ;<br />
+		MAX_MSTFY:MemoryOrder = &quot;0  &quot; ;<br />
+		MAX_MSTFY:description = &quot;Max map factor in domain&quot; ;<br />
+		MAX_MSTFY:units = &quot;&quot; ;<br />
+		MAX_MSTFY:stagger = &quot;&quot; ;<br />
+	float RAINC(Time, south_north, west_east) ;<br />
+		RAINC:FieldType = 104 ;<br />
+		RAINC:MemoryOrder = &quot;XY &quot; ;<br />
+		RAINC:description = &quot;ACCUMULATED TOTAL CUMULUS PRECIPITATION&quot; ;<br />
+		RAINC:units = &quot;mm&quot; ;<br />
+		RAINC:stagger = &quot;&quot; ;<br />
+		RAINC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float RAINNC(Time, south_north, west_east) ;<br />
+		RAINNC:FieldType = 104 ;<br />
+		RAINNC:MemoryOrder = &quot;XY &quot; ;<br />
+		RAINNC:description = &quot;ACCUMULATED TOTAL GRID SCALE PRECIPITATION&quot; ;<br />
+		RAINNC:units = &quot;mm&quot; ;<br />
+		RAINNC:stagger = &quot;&quot; ;<br />
+		RAINNC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SNOWNC(Time, south_north, west_east) ;<br />
+		SNOWNC:FieldType = 104 ;<br />
+		SNOWNC:MemoryOrder = &quot;XY &quot; ;<br />
+		SNOWNC:description = &quot;ACCUMULATED TOTAL GRID SCALE SNOW AND ICE&quot; ;<br />
+		SNOWNC:units = &quot;mm&quot; ;<br />
+		SNOWNC:stagger = &quot;&quot; ;<br />
+		SNOWNC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float GRAUPELNC(Time, south_north, west_east) ;<br />
+		GRAUPELNC:FieldType = 104 ;<br />
+		GRAUPELNC:MemoryOrder = &quot;XY &quot; ;<br />
+		GRAUPELNC:description = &quot;ACCUMULATED TOTAL GRID SCALE GRAUPEL&quot; ;<br />
+		GRAUPELNC:units = &quot;mm&quot; ;<br />
+		GRAUPELNC:stagger = &quot;&quot; ;<br />
+		GRAUPELNC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float HAILNC(Time, south_north, west_east) ;<br />
+		HAILNC:FieldType = 104 ;<br />
+		HAILNC:MemoryOrder = &quot;XY &quot; ;<br />
+		HAILNC:description = &quot;ACCUMULATED TOTAL GRID SCALE HAIL&quot; ;<br />
+		HAILNC:units = &quot;mm&quot; ;<br />
+		HAILNC:stagger = &quot;&quot; ;<br />
+		HAILNC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float CLDFRA(Time, bottom_top, south_north, west_east) ;<br />
+		CLDFRA:FieldType = 104 ;<br />
+		CLDFRA:MemoryOrder = &quot;XYZ&quot; ;<br />
+		CLDFRA:description = &quot;CLOUD FRACTION&quot; ;<br />
+		CLDFRA:units = &quot;&quot; ;<br />
+		CLDFRA:stagger = &quot;&quot; ;<br />
+		CLDFRA:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SWDOWN(Time, south_north, west_east) ;<br />
+		SWDOWN:FieldType = 104 ;<br />
+		SWDOWN:MemoryOrder = &quot;XY &quot; ;<br />
+		SWDOWN:description = &quot;DOWNWARD SHORT WAVE FLUX AT GROUND SURFACE&quot; ;<br />
+		SWDOWN:units = &quot;W m-2&quot; ;<br />
+		SWDOWN:stagger = &quot;&quot; ;<br />
+		SWDOWN:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float GLW(Time, south_north, west_east) ;<br />
+		GLW:FieldType = 104 ;<br />
+		GLW:MemoryOrder = &quot;XY &quot; ;<br />
+		GLW:description = &quot;DOWNWARD LONG WAVE FLUX AT GROUND SURFACE&quot; ;<br />
+		GLW:units = &quot;W m-2&quot; ;<br />
+		GLW:stagger = &quot;&quot; ;<br />
+		GLW:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SWNORM(Time, south_north, west_east) ;<br />
+		SWNORM:FieldType = 104 ;<br />
+		SWNORM:MemoryOrder = &quot;XY &quot; ;<br />
+		SWNORM:description = &quot;NORMAL SHORT WAVE FLUX AT GROUND SURFACE (SLOPE-DEPENDENT)&quot; ;<br />
+		SWNORM:units = &quot;W m-2&quot; ;<br />
+		SWNORM:stagger = &quot;&quot; ;<br />
+		SWNORM:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float OLR(Time, south_north, west_east) ;<br />
+		OLR:FieldType = 104 ;<br />
+		OLR:MemoryOrder = &quot;XY &quot; ;<br />
+		OLR:description = &quot;TOA OUTGOING LONG WAVE&quot; ;<br />
+		OLR:units = &quot;W m-2&quot; ;<br />
+		OLR:stagger = &quot;&quot; ;<br />
+		OLR:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float XLAT(Time, south_north, west_east) ;<br />
+		XLAT:FieldType = 104 ;<br />
+		XLAT:MemoryOrder = &quot;XY &quot; ;<br />
+		XLAT:description = &quot;LATITUDE, SOUTH IS NEGATIVE&quot; ;<br />
+		XLAT:units = &quot;degree_north&quot; ;<br />
+		XLAT:stagger = &quot;&quot; ;<br />
+	float XLONG(Time, south_north, west_east) ;<br />
+		XLONG:FieldType = 104 ;<br />
+		XLONG:MemoryOrder = &quot;XY &quot; ;<br />
+		XLONG:description = &quot;LONGITUDE, WEST IS NEGATIVE&quot; ;<br />
+		XLONG:units = &quot;degree_east&quot; ;<br />
+		XLONG:stagger = &quot;&quot; ;<br />
+	float XLAT_U(Time, south_north, west_east_stag) ;<br />
+		XLAT_U:FieldType = 104 ;<br />
+		XLAT_U:MemoryOrder = &quot;XY &quot; ;<br />
+		XLAT_U:description = &quot;LATITUDE, SOUTH IS NEGATIVE&quot; ;<br />
+		XLAT_U:units = &quot;degree_north&quot; ;<br />
+		XLAT_U:stagger = &quot;X&quot; ;<br />
+		XLAT_U:coordinates = &quot;XLONG_U XLAT_U&quot; ;<br />
+	float XLONG_U(Time, south_north, west_east_stag) ;<br />
+		XLONG_U:FieldType = 104 ;<br />
+		XLONG_U:MemoryOrder = &quot;XY &quot; ;<br />
+		XLONG_U:description = &quot;LONGITUDE, WEST IS NEGATIVE&quot; ;<br />
+		XLONG_U:units = &quot;degree_east&quot; ;<br />
+		XLONG_U:stagger = &quot;X&quot; ;<br />
+		XLONG_U:coordinates = &quot;XLONG_U XLAT_U&quot; ;<br />
+	float XLAT_V(Time, south_north_stag, west_east) ;<br />
+		XLAT_V:FieldType = 104 ;<br />
+		XLAT_V:MemoryOrder = &quot;XY &quot; ;<br />
+		XLAT_V:description = &quot;LATITUDE, SOUTH IS NEGATIVE&quot; ;<br />
+		XLAT_V:units = &quot;degree_north&quot; ;<br />
+		XLAT_V:stagger = &quot;Y&quot; ;<br />
+		XLAT_V:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float XLONG_V(Time, south_north_stag, west_east) ;<br />
+		XLONG_V:FieldType = 104 ;<br />
+		XLONG_V:MemoryOrder = &quot;XY &quot; ;<br />
+		XLONG_V:description = &quot;LONGITUDE, WEST IS NEGATIVE&quot; ;<br />
+		XLONG_V:units = &quot;degree_east&quot; ;<br />
+		XLONG_V:stagger = &quot;Y&quot; ;<br />
+		XLONG_V:coordinates = &quot;XLONG_V XLAT_V&quot; ;<br />
+	float ALBEDO(Time, south_north, west_east) ;<br />
+		ALBEDO:FieldType = 104 ;<br />
+		ALBEDO:MemoryOrder = &quot;XY &quot; ;<br />
+		ALBEDO:description = &quot;ALBEDO&quot; ;<br />
+		ALBEDO:units = &quot;-&quot; ;<br />
+		ALBEDO:stagger = &quot;&quot; ;<br />
+		ALBEDO:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float ALBBCK(Time, south_north, west_east) ;<br />
+		ALBBCK:FieldType = 104 ;<br />
+		ALBBCK:MemoryOrder = &quot;XY &quot; ;<br />
+		ALBBCK:description = &quot;BACKGROUND ALBEDO&quot; ;<br />
+		ALBBCK:units = &quot;&quot; ;<br />
+		ALBBCK:stagger = &quot;&quot; ;<br />
+		ALBBCK:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float EMISS(Time, south_north, west_east) ;<br />
+		EMISS:FieldType = 104 ;<br />
+		EMISS:MemoryOrder = &quot;XY &quot; ;<br />
+		EMISS:description = &quot;SURFACE EMISSIVITY&quot; ;<br />
+		EMISS:units = &quot;&quot; ;<br />
+		EMISS:stagger = &quot;&quot; ;<br />
+		EMISS:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float NOAHRES(Time, south_north, west_east) ;<br />
+		NOAHRES:FieldType = 104 ;<br />
+		NOAHRES:MemoryOrder = &quot;XY &quot; ;<br />
+		NOAHRES:description = &quot;RESIDUAL OF THE NOAH SURFACE ENERGY BUDGET&quot; ;<br />
+		NOAHRES:units = &quot;W m{-2}&quot; ;<br />
+		NOAHRES:stagger = &quot;&quot; ;<br />
+		NOAHRES:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float TMN(Time, south_north, west_east) ;<br />
+		TMN:FieldType = 104 ;<br />
+		TMN:MemoryOrder = &quot;XY &quot; ;<br />
+		TMN:description = &quot;SOIL TEMPERATURE AT LOWER BOUNDARY&quot; ;<br />
+		TMN:units = &quot;K&quot; ;<br />
+		TMN:stagger = &quot;&quot; ;<br />
+		TMN:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float XLAND(Time, south_north, west_east) ;<br />
+		XLAND:FieldType = 104 ;<br />
+		XLAND:MemoryOrder = &quot;XY &quot; ;<br />
+		XLAND:description = &quot;LAND MASK (1 FOR LAND, 2 FOR WATER)&quot; ;<br />
+		XLAND:units = &quot;&quot; ;<br />
+		XLAND:stagger = &quot;&quot; ;<br />
+		XLAND:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float UST(Time, south_north, west_east) ;<br />
+		UST:FieldType = 104 ;<br />
+		UST:MemoryOrder = &quot;XY &quot; ;<br />
+		UST:description = &quot;U* IN SIMILARITY THEORY&quot; ;<br />
+		UST:units = &quot;m s-1&quot; ;<br />
+		UST:stagger = &quot;&quot; ;<br />
+		UST:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float PBLH(Time, south_north, west_east) ;<br />
+		PBLH:FieldType = 104 ;<br />
+		PBLH:MemoryOrder = &quot;XY &quot; ;<br />
+		PBLH:description = &quot;PBL HEIGHT&quot; ;<br />
+		PBLH:units = &quot;m&quot; ;<br />
+		PBLH:stagger = &quot;&quot; ;<br />
+		PBLH:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float HFX(Time, south_north, west_east) ;<br />
+		HFX:FieldType = 104 ;<br />
+		HFX:MemoryOrder = &quot;XY &quot; ;<br />
+		HFX:description = &quot;UPWARD HEAT FLUX AT THE SURFACE&quot; ;<br />
+		HFX:units = &quot;W m-2&quot; ;<br />
+		HFX:stagger = &quot;&quot; ;<br />
+		HFX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float QFX(Time, south_north, west_east) ;<br />
+		QFX:FieldType = 104 ;<br />
+		QFX:MemoryOrder = &quot;XY &quot; ;<br />
+		QFX:description = &quot;UPWARD MOISTURE FLUX AT THE SURFACE&quot; ;<br />
+		QFX:units = &quot;kg m-2 s-1&quot; ;<br />
+		QFX:stagger = &quot;&quot; ;<br />
+		QFX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float LH(Time, south_north, west_east) ;<br />
+		LH:FieldType = 104 ;<br />
+		LH:MemoryOrder = &quot;XY &quot; ;<br />
+		LH:description = &quot;LATENT HEAT FLUX AT THE SURFACE&quot; ;<br />
+		LH:units = &quot;W m-2&quot; ;<br />
+		LH:stagger = &quot;&quot; ;<br />
+		LH:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float ACHFX(Time, south_north, west_east) ;<br />
+		ACHFX:FieldType = 104 ;<br />
+		ACHFX:MemoryOrder = &quot;XY &quot; ;<br />
+		ACHFX:description = &quot;ACCUMULATED UPWARD HEAT FLUX AT THE SURFACE&quot; ;<br />
+		ACHFX:units = &quot;J m-2&quot; ;<br />
+		ACHFX:stagger = &quot;&quot; ;<br />
+		ACHFX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float ACLHF(Time, south_north, west_east) ;<br />
+		ACLHF:FieldType = 104 ;<br />
+		ACLHF:MemoryOrder = &quot;XY &quot; ;<br />
+		ACLHF:description = &quot;ACCUMULATED UPWARD LATENT HEAT FLUX AT THE SURFACE&quot; ;<br />
+		ACLHF:units = &quot;J m-2&quot; ;<br />
+		ACLHF:stagger = &quot;&quot; ;<br />
+		ACLHF:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SNOWC(Time, south_north, west_east) ;<br />
+		SNOWC:FieldType = 104 ;<br />
+		SNOWC:MemoryOrder = &quot;XY &quot; ;<br />
+		SNOWC:description = &quot;FLAG INDICATING SNOW COVERAGE (1 FOR SNOW COVER)&quot; ;<br />
+		SNOWC:units = &quot;&quot; ;<br />
+		SNOWC:stagger = &quot;&quot; ;<br />
+		SNOWC:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SR(Time, south_north, west_east) ;<br />
+		SR:FieldType = 104 ;<br />
+		SR:MemoryOrder = &quot;XY &quot; ;<br />
+		SR:description = &quot;fraction of frozen precipitation&quot; ;<br />
+		SR:units = &quot;-&quot; ;<br />
+		SR:stagger = &quot;&quot; ;<br />
+		SR:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float POTEVP(Time, south_north, west_east) ;<br />
+		POTEVP:FieldType = 104 ;<br />
+		POTEVP:MemoryOrder = &quot;XY &quot; ;<br />
+		POTEVP:description = &quot;accumulated potential evaporation&quot; ;<br />
+		POTEVP:units = &quot;W m-2&quot; ;<br />
+		POTEVP:stagger = &quot;&quot; ;<br />
+		POTEVP:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SNOPCX(Time, south_north, west_east) ;<br />
+		SNOPCX:FieldType = 104 ;<br />
+		SNOPCX:MemoryOrder = &quot;XY &quot; ;<br />
+		SNOPCX:description = &quot;snow phase change heat flux&quot; ;<br />
+		SNOPCX:units = &quot;W m-2&quot; ;<br />
+		SNOPCX:stagger = &quot;&quot; ;<br />
+		SNOPCX:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	float SOILTB(Time, south_north, west_east) ;<br />
+		SOILTB:FieldType = 104 ;<br />
+		SOILTB:MemoryOrder = &quot;XY &quot; ;<br />
+		SOILTB:description = &quot;bottom soil temperature&quot; ;<br />
+		SOILTB:units = &quot;K&quot; ;<br />
+		SOILTB:stagger = &quot;&quot; ;<br />
+		SOILTB:coordinates = &quot;XLONG XLAT&quot; ;<br />
+	int SAVE_TOPO_FROM_REAL(Time) ;<br />
+		SAVE_TOPO_FROM_REAL:FieldType = 106 ;<br />
+		SAVE_TOPO_FROM_REAL:MemoryOrder = &quot;0  &quot; ;<br />
+		SAVE_TOPO_FROM_REAL:description = &quot;1=original topo from real/0=topo modified by WRF&quot; ;<br />
+		SAVE_TOPO_FROM_REAL:units = &quot;flag&quot; ;<br />
+		SAVE_TOPO_FROM_REAL:stagger = &quot;&quot; ;</p>
+<p>// global attributes:<br />
+		:TITLE = &quot; OUTPUT FROM WRF V3.2.1 MODEL&quot; ;<br />
+		:START_DATE = &quot;2010-08-20_13:00:00&quot; ;<br />
+		:SIMULATION_START_DATE = &quot;2010-08-20_13:00:00&quot; ;<br />
+		:WEST-EAST_GRID_DIMENSION = 121 ;<br />
+		:SOUTH-NORTH_GRID_DIMENSION = 121 ;<br />
+		:BOTTOM-TOP_GRID_DIMENSION = 90 ;<br />
+		:DX = 1000.f ;<br />
+		:DY = 1000.f ;<br />
+		:GRIDTYPE = &quot;C&quot; ;<br />
+		:DIFF_OPT = 1 ;<br />
+		:KM_OPT = 4 ;<br />
+		:DAMP_OPT = 3 ;<br />
+		:DAMPCOEF = 0.2f ;<br />
+		:KHDIF = 0.f ;<br />
+		:KVDIF = 0.f ;<br />
+		:MP_PHYSICS = 8 ;<br />
+		:RA_LW_PHYSICS = 1 ;<br />
+		:RA_SW_PHYSICS = 1 ;<br />
+		:SF_SFCLAY_PHYSICS = 4 ;<br />
+		:SF_SURFACE_PHYSICS = 2 ;<br />
+		:BL_PBL_PHYSICS = 4 ;<br />
+		:CU_PHYSICS = 0 ;<br />
+		:SURFACE_INPUT_SOURCE = 1 ;<br />
+		:SST_UPDATE = 0 ;<br />
+		:GRID_FDDA = 0 ;<br />
+		:GFDDA_INTERVAL_M = 0 ;<br />
+		:GFDDA_END_H = 0 ;<br />
+		:GRID_SFDDA = 0 ;<br />
+		:SGFDDA_INTERVAL_M = 0 ;<br />
+		:SGFDDA_END_H = 0 ;<br />
+		:SF_URBAN_PHYSICS = 0 ;<br />
+		:FEEDBACK = 0 ;<br />
+		:SMOOTH_OPTION = 0 ;<br />
+		:SWRAD_SCAT = 1.f ;<br />
+		:W_DAMPING = 1 ;<br />
+		:MOIST_ADV_OPT = 1 ;<br />
+		:SCALAR_ADV_OPT = 1 ;<br />
+		:TKE_ADV_OPT = 1 ;<br />
+		:DIFF_6TH_OPT = 2 ;<br />
+		:DIFF_6TH_FACTOR = 0.12f ;<br />
+		:OBS_NUDGE_OPT = 1 ;<br />
+		:FDDA_END = 240.f ;<br />
+		:OBS_NUDGE_WIND = 1 ;<br />
+		:OBS_COEF_WIND = 0.001f ;<br />
+		:OBS_NUDGE_TEMP = 1 ;<br />
+		:OBS_COEF_TEMP = 0.001f ;<br />
+		:OBS_NUDGE_MOIS = 1 ;<br />
+		:OBS_COEF_MOIS = 0.001f ;<br />
+		:OBS_NUDGE_PSTR = 0 ;<br />
+		:OBS_COEF_PSTR = 0.f ;<br />
+		:OBS_IONF = 1 ;<br />
+		:OBS_IDYNIN = 1 ;<br />
+		:OBS_DTRAMP = 40.f ;<br />
+		:BUCKET_MM = -1.f ;<br />
+		:BUCKET_J = -1.f ;<br />
+		:PREC_ACC_DT = 0.f ;<br />
+		:OMLCALL = 0 ;<br />
+		:ISFTCFLX = 0 ;<br />
+		:WEST-EAST_PATCH_START_UNSTAG = 1 ;<br />
+		:WEST-EAST_PATCH_END_UNSTAG = 120 ;<br />
+		:WEST-EAST_PATCH_START_STAG = 1 ;<br />
+		:WEST-EAST_PATCH_END_STAG = 121 ;<br />
+		:SOUTH-NORTH_PATCH_START_UNSTAG = 1 ;<br />
+		:SOUTH-NORTH_PATCH_END_UNSTAG = 120 ;<br />
+		:SOUTH-NORTH_PATCH_START_STAG = 1 ;<br />
+		:SOUTH-NORTH_PATCH_END_STAG = 121 ;<br />
+		:BOTTOM-TOP_PATCH_START_UNSTAG = 1 ;<br />
+		:BOTTOM-TOP_PATCH_END_UNSTAG = 89 ;<br />
+		:BOTTOM-TOP_PATCH_START_STAG = 1 ;<br />
+		:BOTTOM-TOP_PATCH_END_STAG = 90 ;<br />
+		:GRID_ID = 2 ;<br />
+		:PARENT_ID = 1 ;<br />
+		:I_PARENT_START = 61 ;<br />
+		:J_PARENT_START = 61 ;<br />
+		:PARENT_GRID_RATIO = 3 ;<br />
+		:DT = 1.f ;<br />
+		:CEN_LAT = 32.217f ;<br />
+		:CEN_LON = -107.167f ;<br />
+		:TRUELAT1 = 32.217f ;<br />
+		:TRUELAT2 = 32.217f ;<br />
+		:MOAD_CEN_LAT = 32.217f ;<br />
+		:STAND_LON = -107.167f ;<br />
+		:POLE_LAT = 90.f ;<br />
+		:POLE_LON = 0.f ;<br />
+		:GMT = 13.f ;<br />
+		:JULYR = 2010 ;<br />
+		:JULDAY = 232 ;<br />
+		:MAP_PROJ = 1 ;<br />
+		:MMINLU = &quot;USGS&quot; ;<br />
+		:NUM_LAND_CAT = 24 ;<br />
+		:ISWATER = 16 ;<br />
+		:ISLAKE = -1 ;<br />
+		:ISICE = 24 ;<br />
+		:ISURBAN = 1 ;<br />
+		:ISOILWATER = 14 ;<br />
+}</p>
+</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4897"></a>
+
+
+<div id="post-4897" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 23, 2014 - 5:12pm
+                    
+        
+                  </div>
+    
+    
+        
+    <span class="forum-post-number"><a href="4897.html#comment-4897" class="permalink" rel="bookmark">#5</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Steve,</p><p> </p><p>This is a bug. A bug report has been opened, and it describes a partial workaround for the problem:</p><p> </p><p><a href="https://sourceforge.net/p/vapor/bugs/1041/">https://sourceforge.net/p/vapor/bugs/1041/</a></p><p> </p><p>We will try to have this fixed in the 2.4 release of VAPOR, which should be available by the end of the year.</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4900"></a>
+
+
+<div id="post-4900" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 27, 2014 - 9:47am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4897" class="active">(Reply to #5)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4900.html#comment-4900" class="permalink" rel="bookmark">#6</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Hi,
+
+Thanks for letting me know.  Looking forward to a code fix for this.  In the interim, as a temporary workaround, I turned off cropping by setting the last arg of wrf2geotiff_write to FALSE.
+
+However, now my final TIFF file is not being created.  (The "_temp.tiff" TIFF file is ok).
+
+This call is the culprit:
+ tiff2geotiff -4 " +proj=lcc +ellps=WGS84 +lon_0=-107.167 +lat_0=32.217 +lat_1=32.217 +lat_2=32.217" -m ./steve_plot.dat ./steve_plot_temp.tiff ./steve_plot.tiff
+
+It is giving me a segmentation fault.  Could the fact that all three lat values being the same be an issue?
+
+steve_plot.dat shows these values:
+2010-08-20_20:00:00 -107.796 31.6802 -106.531 32.7506 7.85233 7.47339 23.5151 19.5763 
+
+Let me know if you see anything that could be a problem.
+
+TIA,
+Steve</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4906"></a>
+
+
+<div id="post-4906" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 27, 2014 - 4:47pm
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4900" class="active">(Reply to #6)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4906.html#comment-4906" class="permalink" rel="bookmark">#7</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I can't reproduce this. Can you post your ./steve_plot_temp.tiff file somehow?</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4909"></a>
+
+
+<div id="post-4909" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 27, 2014 - 6:27pm
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4906" class="active">(Reply to #7)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4909.html#comment-4909" class="permalink" rel="bookmark">#8</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Hi, 
+
+Is there a way to attach files in this forum?  If not, I could email it to you.
+
+thanks,
+Steve</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4912"></a>
+
+
+<div id="post-4912" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 28, 2014 - 9:28am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4906" class="active">(Reply to #8)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4912.html#comment-4912" class="permalink" rel="bookmark">#9</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Hi,
+I clicked on your email link in this forum, but didn't see a way to attach a file.  I'm surprised there is no way to attach files, either in the forum itself, or via the email links.  Could you provide an email?  Or is there a better way?</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4915"></a>
+
+
+<div id="post-4915" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 28, 2014 - 9:35am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4912" class="active">(Reply to #9)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4915.html#comment-4915" class="permalink" rel="bookmark">#10</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>You can mail it to <a href="mailto:vapor@ucar.edu">vapor@ucar.edu</a></p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4918"></a>
+
+
+<div id="post-4918" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 28, 2014 - 4:14pm
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4915" class="active">(Reply to #10)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4918.html#comment-4918" class="permalink" rel="bookmark">#11</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Just tried to send, but it was rejected.  Here's what I got:
+
+The message you are sending is too large.  All messages must be less than 5.00 MBytes.
+
+The max size was set by the owners of this list (<a href="mailto:vapor+owner@ucar.edu">vapor+owner@ucar.edu</a>).
+
+If you have questions related to this or any other Google Group, visit the Help Center at <a href="http://support.google.com/a/ucar.edu/bin/topic.py?topic=25838">http://support.google.com/a/ucar.edu/bin/topic.py?topic=25838</a>
+
+The file size is about 7MB.</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4921"></a>
+
+
+<div id="post-4921" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 28, 2014 - 4:25pm
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4918" class="active">(Reply to #11)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4921.html#comment-4921" class="permalink" rel="bookmark">#12</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Can you put it on DropBox or GoogleDrive?</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4927"></a>
+
+
+<div id="post-4927" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      October 30, 2014 - 12:52pm
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4921" class="active">(Reply to #12)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4927.html#comment-4927" class="permalink" rel="bookmark">#13</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>I got the file sent to <a href="mailto:vapor@ucar.edu">vapor@ucar.edu</a></p>
+</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4930"></a>
+
+
+<div id="post-4930" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      November 3, 2014 - 8:40am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4927" class="active">(Reply to #13)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4930.html#comment-4930" class="permalink" rel="bookmark">#14</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Steve, I'venot received anything.</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4933"></a>
+
+
+<div id="post-4933" class="forum-post clearfix en posted-by-655091 post-by-starter" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      November 3, 2014 - 10:01am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4930" class="active">(Reply to #14)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4933.html#comment-4933" class="permalink" rel="bookmark">#15</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">steve.kirby</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Hi,</p>
+<p>I just uploaded it again.  Can you check please.  There should be a password for you to access.</p>
+<p>--Steve</p>
+</div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4936"></a>
+
+
+<div id="post-4936" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      November 3, 2014 - 10:34am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4933" class="active">(Reply to #15)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4936.html#comment-4936" class="permalink" rel="bookmark">#16</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Uploaded it where? I thought you were trying to email the image. I've not received any email.</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-4939"></a>
+
+
+<div id="post-4939" class="forum-post clearfix en posted-by-24377" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      November 4, 2014 - 9:26am
+                    
+        
+                  </div>
+    
+       	 <span class="forum-in-reply-to"><a href="../forum/wrf2geotiffncl-generating-offsets-are-way-too-large.html#comment-4900" class="active">(Reply to #16)</a></span>
+    
+        
+    <span class="forum-post-number"><a href="4939.html#comment-4939" class="permalink" rel="bookmark">#17</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">clyne</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>This is a bug in tiff-4.0.0. It has been fixed in tiff-4.0.3. The next release of VAPOR (version 2.4.0) which will be released in December, will be built against tiff-4.0.3.</p><p>A possible workaround for vapor2.3.0 pre-compiled binaries may be to replace the tiff shared library in $VAPOR_HOME/lib (libtiff.so) with the tiff-4.0.3 libtiff.so</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+<a id="comment-5084"></a>
+
+
+<div id="post-5084" class="forum-post clearfix en posted-by-24368" >
+  <div class="forum-post-info clearfix">
+    <div class="forum-posted-on">
+      August 27, 2015 - 10:09am
+                    
+        
+                  </div>
+    
+    
+        
+    <span class="forum-post-number"><a href="5084.html#comment-5084" class="permalink" rel="bookmark">#18</a></span>
+  </div> 
+  <div class="forum-post-wrapper">
+    <div class="forum-post-panel-sub">
+              <div class="author-pane"><span class="username">alan</span></div>          </div>
+
+    <div class="forum-post-panel-main clearfix">
+      
+      <div class="forum-post-content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>We now have a new version of wrf2geotiff.ncl that fixes the image alignment problem.  This will be available in the next vapor release, later this year.  If you need it sooner, send an email to <a href="mailto:vapor@ucar.edu">vapor@ucar.edu</a> and I'll send you a copy.</p>
+<p>-Alan</p></div></div></div>      </div>
+
+      
+          </div>
+  </div>
+  
+  <div class="forum-post-footer clearfix">
+    <div class="forum-jump-links">
+      <a href="4906.html#forum-topic-top" title="Jump to top of page" class="af-button-small"><span>Top</span></a>
+    </div>
+
+    <div class="forum-post-links">
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=node%252F28120%2523comment-form.html">Log in</a> or <a href="../user/register%3Fdestination=node%252F28120%2523comment-form.html">register</a> to post comments</span></li>
+</ul>    </div>
+  </div>
+  </div>
+        </div>
+  </div>
+</div>
+  </div>
+          </div>
+          <div class="feed_icons">
+                      </div>
+
+        </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+            <div id="rightcol" class="sidebar">
+            <div class="region region-sidebar-second">
+    <div id="block-nodeblock-22858" class="block block-nodeblock">
+
+    <h2>Download button</h2>
+  
+  <div class="content">
+    <div id="node-22858" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p style="margin: 0;"><a class="button" style="width: 100%; padding: 20px 0;" href="http://www.vapor.ucar.edu/internal/downloads">Download Vapor</a></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+        </div> <!-- /#rightcol -->
+    
+  
+    </div> <!-- /center-wrapper -->
+  
+  
+  
+      <div class="footernav">
+        <div class="region region-footer">
+    <div id="block-nodeblock-22831" class="block block-nodeblock">
+
+    <h2>VAPOR Sponsors</h2>
+  
+  <div class="content">
+    <div id="node-22831" class="node node-nodeblock clearfix">
+  
+<div class="content clearfix"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3 style="text-align: center; color: #fff; margin-bottom: 40px; font-size: 20px;">SPONSORS</h3>
+<p><img src="../sites/default/files/users/geinosky/vapor-sponsors.png" alt="VAPOR sponsors" width="980" height="132" /></p></div></div></div></div>
+
+
+
+  
+  
+</div>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <!-- OrgNavFooter Script -->
+<script>
+
+// CUSTOM VARIABLES
+var contactLink = "/contact";     // enter your Contact/Feedback link or mailto: link
+var hideOrgNav = false;        // hide the entire OrgNav from view
+var hideFooter = false;          // hide the entire OrgFooter from view
+var hideNSF = false;               // hide the NSF disclaimer
+var footerColor = '#666';       // hex color of the footer font including the #
+
+// DO NOT EDIT BELOW THIS POINT
+var jsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+if(typeof jQuery === "undefined"){
+  document.write("<scr"+"ipt src='"+jsHost+"ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'></scr"+"ipt>");
+}
+document.write("<scr"+"ipt src='https://orgnav.ucar.edu/orgnav.js' type='text/javascript'></scr"+"ipt>");
+</script>
+<noscript><iframe frameborder="0" width="100%" src="https://orgnav.ucar.edu/noscript.html"></iframe></noscript>
+<!-- END OrgNavFooter Script -->  </div>
+</div>
+<div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div id="loginlink" align="center">
+<a href="../user.html">Login</a>
+</div>  </div>
+</div>
+  </div>
+    </div> <!-- /#footernav -->
+  
+  </div><!-- /#container -->
+</div> <!-- /#wrap -->
+<!-- /layout -->
+
+  <script type="text/javascript" src="../sites/default/files/js/js_KpbuXFbunBaGjtuvRkOuscNXQlFkv4Fjgh1fiknomL8.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4903.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+</body>
+</html>

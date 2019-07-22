@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.vapor.ucar.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>VAPOR | Computational Information Systems Laboratory - News &amp; Announcements</title>
+ <link>https://www.vapor.ucar.edu/taxonomy/term/183</link>
+ <description>News and announcements regarding VAPOR and the forum. Not for support questions.
+</description>
+ <language>en</language>
+<item>
+ <title>Version 2.5.0 Release Candidate 0 available</title>
+ <link>https://www.vapor.ucar.edu/forum/version-250-release-candidate-0-available</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/183&quot;&gt;News &amp;amp; Announcements&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;VAPOR 2.5.0.RC0 (release candiate 0) is now available for download from the vapor web site: &lt;a href=&quot;www.vapor.ucar.edu&quot;&gt;www.vapor.ucar.edu&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 04 Dec 2015 16:48:00 +0000</pubDate>
+ <dc:creator>clyne</dc:creator>
+ <guid isPermaLink="false">29248 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/version-250-release-candidate-0-available#comments</comments>
+</item>
+<item>
+ <title>Version 2.2.4 released</title>
+ <link>https://www.vapor.ucar.edu/forum/version-224-released</link>
+ <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/183&quot;&gt;News &amp;amp; Announcements&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;VAPOR Version 2.2.4 is now available for download:&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;h4&gt;New Features&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;Parallel data translation on Windows&lt;/strong&gt;: VDC data translation (reading and writing) has been parallelized (threaded) on Windows platforms. Windows platforms with multiple cores can now take advantage of parallel data translation by VAPOR&#039;s command line data translation utilities (e.g. raw2vdf, wrf2vdf, etc.) and vaporgui. Note, parallel data transformation already exists on Mac and Linux platforms.&lt;/p&gt;&lt;p&gt; &lt;/p&gt;&lt;h3&gt;Bugs fixed:&lt;/h3&gt;&lt;p&gt;911     Vertical coordinates incorrect with some MOM and POP data sets&lt;br /&gt;906     Derived variables don&#039;t work when resume saved session&lt;br /&gt;905     Can&#039;t display multiple fields with 2D only data sets&lt;br /&gt;904     2D visualizer can&#039;t load transfer functions if no 3D data are present&lt;br /&gt;903     Mixed up variable names from session files&lt;br /&gt;897     Program crash due to steady field parameters&lt;br /&gt;893     Flow Image capture crash &lt;br /&gt;891     TF window does not refresh&lt;br /&gt;884     Can&#039;t overlay data in   &lt;br /&gt;876     IDL broken on Windows&lt;/p&gt;&lt;p&gt;863     Apply to terrain does not correctly handle missing values&lt;br /&gt;861     transparency slider not updated    &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 27 Aug 2013 18:32:49 +0000</pubDate>
+ <dc:creator>clyne</dc:creator>
+ <guid isPermaLink="false">28021 at https://www.vapor.ucar.edu</guid>
+ <comments>https://www.vapor.ucar.edu/forum/version-224-released#comments</comments>
+</item>
+</channel>
+</rss>

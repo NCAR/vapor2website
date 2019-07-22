@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.vapor.ucar.edu/forum/unanswered/feed?forum=All" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unanswered forum topics</title>
+    <link>https://www.vapor.ucar.edu/forum/unanswered/feed?forum=All</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="https://www.vapor.ucar.edu/forum/unanswered/feed?forum=All&amp;order=title&amp;sort=desc" rel="self" type="application/rss+xml" />
+      <item>
+    <title>Flow visualization (streamline) is missing in Vapor3</title>
+    <link>https://www.vapor.ucar.edu/forum/flow-visualization-streamline-missing-vapor3</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello
+
+I am using VAPOR3 to visualized WRF output. &lt;p&gt;
+VDC and data files are made using &quot;wrfvdccreate&quot; and &quot;wrf2vdc&quot; as below &lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+&amp;gt; wrfvdccreate wrfout_d01_2016-07-05_06:00:00 test.vdc &lt;/p&gt;&lt;p&gt;
+&amp;gt; wrf2vdc wrfout_d01_2016-07-05_06:00:00 test.vdc &lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+All is working fine, but flow visualization (streamline) does not appear in the
+renderer menu. Barb, contour, isosurface etc are all fine, but NO flow (attached figure) &lt;/p&gt;&lt;p&gt;
+Is it no longer supported, or my data handling misses something?&lt;/p&gt;&lt;p&gt;
+&lt;a&gt; This is my Renderer menu &lt;/a&gt;&lt;/p&gt;&lt;p&gt;
+(I am using macOS 10.14)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Sat, 04 May 2019 01:25:28 +0000</pubDate>
+ <dc:creator>joowan_668152</dc:creator>
+ <guid isPermaLink="false">29809 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Problem starting Vapor</title>
+    <link>https://www.vapor.ucar.edu/forum/problem-starting-vapor</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi. I am a new user of Vapor. I installed VAPOR 3 following the instruction in the website. I tried opening vapor but there were errors that popped out. 
+
+Unable to load library icui18n &quot;Cannot load library icui18n: (icui18n: cannot open shared object file: No such file or directory)&quot; 
+
+And the GUI shows,
+
+InitializeGL failure
+OpenGL version &quot;3.1 Mesa 18.2.2&quot; is too low and is not supported
+
+
+Please help? Thank you so much.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 27 Feb 2019 05:03:31 +0000</pubDate>
+ <dc:creator>ronald.gil.bilang_667750</dc:creator>
+ <guid isPermaLink="false">29791 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>How to start the GUI of VAPOR3 on Linux </title>
+    <link>https://www.vapor.ucar.edu/forum/how-start-gui-vapor3-linux</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hi, &lt;/p&gt;
+&lt;p&gt;I followed the instructions on the website to download and install VAPOR3 on my Linux system CentOS 7. &lt;a href=&quot;https://www.vapor.ucar.edu/docs/installation&quot;&gt;https://www.vapor.ucar.edu/docs/installation&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Then under the directory ..../VAPOR3/VAPOR3-3.0.0-Linux/bin, I typed &quot;./vapor&quot; to try to start the GUI of VAPOR3, but an error message was given in the terminal:&lt;br /&gt;
+vapor: error while loading shared libraries: liblzma.so.5: cannot open shared object file: No such file or directory&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Tue, 18 Dec 2018 22:46:28 +0000</pubDate>
+ <dc:creator>caoxx409_660429</dc:creator>
+ <guid isPermaLink="false">29768 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Cylindrical Grid</title>
+    <link>https://www.vapor.ucar.edu/forum/cylindrical-grid</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi,
+Does VAPOR support cylindrical visualizations? I know for flow lines boundaries can be made periodic, but is there anyway to actually see a cylinder instead of a slab?
+
+-Nick&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 20 Jun 2018 19:56:17 +0000</pubDate>
+ <dc:creator>nanders4_665536</dc:creator>
+ <guid isPermaLink="false">29736 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Creating VDF files for a vertically stretched grid</title>
+    <link>https://www.vapor.ucar.edu/forum/creating-vdf-files-vertically-stretched-grid</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi all,
+&lt;pre&gt;
+I am new to Vapor (Version: 2.6.0) and I have run into a problem. 
+I am trying to transform a netcdf file which contains several variables on 
+a vertically stretched staggered grid to a vdf input file. My commands are:
+
+ncdfvdfcreate -vars thl:buoy:sv:u:v:w -xcoordvar xt -ycoordvar yt -zcoordvar zt -gridtype
+stretched -timedims time -timevars time concatenated1.007.nc test.vdf
+
+ncdf2vdf -vars thl:buoy:sv:u:v:w -stagdims xm:ym:zm -timedims time -timevars time
+concatenated1.007.nc test.vdf
+
+If I leave the -vars out it for some reason only includes variable u.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 07 Mar 2018 00:47:44 +0000</pubDate>
+ <dc:creator>franslql_664945</dc:creator>
+ <guid isPermaLink="false">29702 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Animation keyframe not reading view direction, up vector</title>
+    <link>https://www.vapor.ucar.edu/forum/animation-keyframe-not-reading-view-direction-vector</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;When I try to make an animation of my dataset, the keyframes don&#039;t seem to be working correctly. First, I hit &#039;Set Current Key&#039; once I have the camera position where I desire. Then I &#039;Enable Keyframing&quot; to double check that keyframe is correct, however, it isn&#039;t. When I check the view window the camera position and center remains the same, however the view direction and up vector changes to seemingly random, slightly wrong values. This either be a slight adjustment or a significant change to where I desired the camera. Am I missing something obvious? I am running on windows 10.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 14 Feb 2018 22:07:19 +0000</pubDate>
+ <dc:creator>alex.schueth_662288</dc:creator>
+ <guid isPermaLink="false">29700 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Unable to install on Ubuntu 16.04 VAPOR dependencies</title>
+    <link>https://www.vapor.ucar.edu/forum/unable-install-ubuntu-1604-vapor-dependencies</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/192&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hello,
+          I am installing VAPOR on a brand new box Ubuntu 16.04 LTS (32 gb ram) and I am unable to install from source the following dependencies - libgeotiff and ftgl. I am using the same version you have described in the documentation-&lt;a href=&quot;https://www.vapor.ucar.edu/internal/downloads/source-distributions&quot;&gt;https://www.vapor.ucar.edu/internal/downloads/source-distributions&lt;/a&gt;
+
+Can you guide me on how I could go about fixing the install errors so that I can use VAPOR ?
+
+Best regards,
+Ashwin.
+
+Here are the logs 
+
+make  all-recursive&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Sun, 26 Nov 2017 13:04:15 +0000</pubDate>
+ <dc:creator>winash12_660754</dc:creator>
+ <guid isPermaLink="false">29669 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Problems with WRF data - either directly loaded or as VDC</title>
+    <link>https://www.vapor.ucar.edu/forum/problems-wrf-data-either-directly-loaded-or-vdc</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Hi folks -
+
+(Disclaimer: I&#039;m not a meteorologist, and I am somewhat &#039;green&#039; working with the inner workings of netCDF file structures.)
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Mon, 17 Jul 2017 19:26:00 +0000</pubDate>
+ <dc:creator>cyndyb_663728</dc:creator>
+ <guid isPermaLink="false">29649 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>Unable to find  the VAPOR structure analysis dialog?</title>
+    <link>https://www.vapor.ucar.edu/forum/unable-find-vapor-structure-analysis-dialog</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/198&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;I am not able to locate the VAPOR structure analysis dialog, which displays feature-local histograms of the selected field distributions.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Mon, 03 Jul 2017 08:47:08 +0000</pubDate>
+ <dc:creator>yadavn_663617</dc:creator>
+ <guid isPermaLink="false">29645 at https://www.vapor.ucar.edu</guid>
+  </item>
+  <item>
+    <title>specifying variable dimensions with ncdfvdfcreate</title>
+    <link>https://www.vapor.ucar.edu/forum/specifying-variable-dimensions-ncdfvdfcreate</link>
+    <description>&lt;div class=&quot;field field-name-taxonomy-forums field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Forums: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/forum/177&quot;&gt;General Discussion&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Hello&lt;/p&gt;
+&lt;p&gt;I am using ncdfvdfcreate instead of romsvdfcreate to create a vdf and populate a vdc because I do not have a grid file for the ROMS netcdf files that I am using.&lt;/p&gt;
+&lt;p&gt;To create a vdf I am using:&lt;br /&gt;
+# ======================================&lt;br /&gt;
+# create the vdf file using ncdfvdfcreate&lt;br /&gt;
+# specify both the variables and the dimensions of those variables&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Mon, 13 Mar 2017 17:07:36 +0000</pubDate>
+ <dc:creator>sam.mcclatchie</dc:creator>
+ <guid isPermaLink="false">29611 at https://www.vapor.ucar.edu</guid>
+  </item>
+  </channel>
+</rss>
